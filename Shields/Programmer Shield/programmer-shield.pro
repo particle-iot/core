@@ -1,15 +1,15 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/zsupalla/Dropbox/Spark/Hardware/Eagle/Projects/Shields/Programmer Shield/programmer-shield.brd
+Job           : /Users/zsupalla/Dropbox/Spark/Hardware/Core/Shields/Programmer Shield/programmer-shield.brd
 
-Start at      : 19:00:16 (3/26/13)
-End at        : 19:00:16 (3/26/13)
+Start at      : 11:33:41 (3/27/13)
+End at        : 11:33:41 (3/27/13)
 Elapsed time  : 00:00:00
 
-Signals       :    13   RoutingGrid: 50 mil  Layers: 1
+Signals       :    13   RoutingGrid: 20 mil  Layers: 1
 Connections   :    26   predefined:  13 ( 0 Vias )
 
-Router memory :   4032
+Router memory :   19968
 
 Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
