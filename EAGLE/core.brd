@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="$GND" color="13" fill="1" visible="no" active="yes"/>
@@ -167,9 +167,9 @@
 <text x="17.018" y="2.032" size="0.8128" layer="21" font="vector" ratio="15" rot="SR270">D0</text>
 <text x="8.636" y="25.908" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">BTN</text>
 <text x="14.097" y="26.797" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">RST</text>
-<text x="4.191" y="28.448" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">PWR</text>
+<text x="6.604" y="28.448" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">PWR</text>
 <text x="5.461" y="28.448" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">LED1</text>
-<text x="6.604" y="28.448" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">LED2</text>
+<text x="4.191" y="28.448" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">LED2</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -1071,19 +1071,19 @@ design rules under a new name.</description>
 <element name="D1" library="SparkFun" package="SOD-323" value="" x="10.16" y="31.75" rot="MR180"/>
 <element name="U3" library="stm32" package="TQFP48" value="STM32F10XCXT6" x="10.16" y="17.78" rot="MR45"/>
 <element name="C11" library="SparkFun-Capacitors" package="0402-CAP" value="100nF" x="10.16" y="11.43" rot="MR270"/>
-<element name="C12" library="SparkFun-Capacitors" package="0402-CAP" value="100nF" x="16.256" y="17.78" rot="MR180"/>
+<element name="C6" library="SparkFun-Capacitors" package="0402-CAP" value="100nF" x="16.256" y="17.78" rot="MR180"/>
 <element name="U2" library="CC3000" package="CC3000" value="" x="10.16" y="12.7" smashed="yes" rot="R180"/>
 <element name="A1" library="SparkFun-RF" package="ANTENNA-CHIP5" value="ANTENNA2SMD5" x="7.62" y="1.524" rot="R180"/>
 <element name="L1" library="SparkFun-Passives" package="C0402" value="2.2nH" x="13.97" y="3.81"/>
 <element name="C4" library="SparkFun-Capacitors" package="0402-CAP" value="2.2pF" x="13.208" y="2.032" rot="R90"/>
 <element name="C3" library="SparkFun-Capacitors" package="0402-CAP" value="100nF" x="16.002" y="3.302" rot="R270"/>
 <element name="RESET" library="okie" package="PUSHBUTTON-KMR241GLFS" value="KMR211GLFS" x="15.24" y="24.13" smashed="yes" rot="R90"/>
-<element name="R12" library="SparkFun-Passives" package="0402-RES" value="10K" x="16.002" y="29.21" rot="R90"/>
+<element name="R10" library="SparkFun-Passives" package="0402-RES" value="10K" x="16.002" y="29.21" rot="R90"/>
 <element name="BTN" library="okie" package="PUSHBUTTON-KMR241GLFS" value="KMR211GLFS" x="10.16" y="24.13" smashed="yes" rot="R90"/>
-<element name="R15" library="SparkFun" package="0402-RES" value="1K" x="3.81" y="24.638" rot="R270"/>
+<element name="R12" library="SparkFun" package="0402-RES" value="1K" x="3.81" y="24.638" rot="R270"/>
 <element name="LED3" library="SparkFun" package="LED-0603" value="Red" x="3.81" y="27.178"/>
 <element name="LED2" library="SparkFun" package="LED-0603" value="Red" x="5.08" y="27.178"/>
-<element name="R14" library="SparkFun" package="0402-RES" value="1K" x="5.08" y="24.638" rot="R270"/>
+<element name="R11" library="SparkFun" package="0402-RES" value="1K" x="5.08" y="24.638" rot="R270"/>
 <element name="U4" library="Silicon_Storage_Tech_By_element14_Batch_1" package="SOIC127P790X216-8N" value="SST25VF040B-50-4I-S2AF" x="13.208" y="6.604" smashed="yes" rot="MR270">
 <attribute name="PACKAGE" value="SOIC-8" x="13.208" y="6.604" size="1.778" layer="28" font="vector" ratio="15" rot="MR270" display="off"/>
 <attribute name="OC_NEWARK" value="-" x="13.208" y="6.604" size="1.778" layer="28" font="vector" ratio="15" rot="MR270" display="off"/>
@@ -1102,9 +1102,9 @@ design rules under a new name.</description>
 <element name="R8" library="SparkFun" package="0402-RES" value="10K" x="12.7" y="21.844" rot="R180"/>
 <element name="R9" library="SparkFun" package="0402-RES" value="10K" x="5.588" y="3.81" rot="R180"/>
 <element name="Q1" library="SparkFun-DiscreteSemi" package="SOT363" value="MMDT3904" x="4.318" y="30.988" rot="MR90"/>
-<element name="R16" library="SparkFun" package="0402-RES" value="1K" x="9.652" y="8.636" rot="MR0"/>
+<element name="R13" library="SparkFun" package="0402-RES" value="1K" x="9.652" y="8.636" rot="MR0"/>
 <element name="C7" library="SparkFun-Capacitors" package="0402-CAP" value="100nF" x="9.652" y="4.826" rot="MR270"/>
-<element name="C6" library="SparkFun" package="EIA3216" value="10uF" x="15.748" y="31.496" rot="MR180"/>
+<element name="C12" library="SparkFun" package="EIA3216" value="10uF" x="15.748" y="31.496" rot="MR180"/>
 <element name="L2" library="inductors" package="0402" value="BLM15HB121SN1" x="16.51" y="27.432" rot="MR270"/>
 <element name="C13" library="SparkFun-Capacitors" package="0402-CAP" value="100nF" x="5.461" y="13.589" rot="MR270"/>
 </elements>
@@ -1120,7 +1120,7 @@ design rules under a new name.</description>
 <contactref element="U3" pad="23"/>
 <contactref element="U3" pad="35"/>
 <contactref element="U3" pad="47"/>
-<contactref element="C12" pad="2"/>
+<contactref element="C6" pad="2"/>
 <contactref element="C11" pad="2"/>
 <contactref element="U2" pad="GND@36"/>
 <contactref element="L1" pad="2"/>
@@ -1287,7 +1287,7 @@ design rules under a new name.</description>
 <via x="9.017" y="24.384" extent="1-16" drill="0.3"/>
 <wire x1="9.017" y1="24.384" x2="9.032" y2="24.399" width="0.2032" layer="16"/>
 <wire x1="9.032" y1="24.399" x2="10.16" y2="24.399" width="0.2032" layer="16"/>
-<contactref element="C6" pad="C"/>
+<contactref element="C12" pad="C"/>
 <contactref element="C13" pad="2"/>
 <wire x1="9.36" y1="26.23" x2="8.314" y2="26.23" width="0.2032" layer="1"/>
 <wire x1="8.314" y1="26.23" x2="7.62" y2="26.924" width="0.2032" layer="1"/>
@@ -1412,13 +1412,13 @@ design rules under a new name.</description>
 <contactref element="U3" pad="36"/>
 <contactref element="U3" pad="48"/>
 <contactref element="U3" pad="1"/>
-<contactref element="C12" pad="1"/>
+<contactref element="C6" pad="1"/>
 <contactref element="C11" pad="1"/>
 <contactref element="C3" pad="1"/>
 <contactref element="U1" pad="5"/>
 <contactref element="R7" pad="2"/>
 <contactref element="C2" pad="A"/>
-<contactref element="R12" pad="2"/>
+<contactref element="R10" pad="2"/>
 <contactref element="U4" pad="8"/>
 <contactref element="JP2" pad="1"/>
 <wire x1="15.606" y1="17.78" x2="15.606" y2="18.697959375" width="0.2032" layer="16"/>
@@ -1441,7 +1441,7 @@ design rules under a new name.</description>
 <contactref element="R6" pad="1"/>
 <contactref element="C10" pad="1"/>
 <contactref element="Q1" pad="3"/>
-<contactref element="R16" pad="2"/>
+<contactref element="R13" pad="2"/>
 <wire x1="9.017" y1="8.621" x2="9.002" y2="8.636" width="0.2032" layer="16"/>
 <polygon width="0.2032" layer="15" isolate="0.2032">
 <vertex x="0" y="33.02"/>
@@ -1748,7 +1748,7 @@ design rules under a new name.</description>
 <signal name="!RST">
 <contactref element="U3" pad="7"/>
 <contactref element="RESET" pad="P$2"/>
-<contactref element="R12" pad="1"/>
+<contactref element="R10" pad="1"/>
 <contactref element="JP2" pad="2"/>
 <wire x1="18.034" y1="26.67" x2="19.05" y2="26.67" width="0.2032" layer="1"/>
 <wire x1="17.594" y1="26.23" x2="18.034" y2="26.67" width="0.2032" layer="1"/>
@@ -1773,12 +1773,12 @@ design rules under a new name.</description>
 <wire x1="16.9164" y1="18.6944" x2="17.78" y2="19.558" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$2">
-<contactref element="R14" pad="1"/>
+<contactref element="R11" pad="1"/>
 <contactref element="LED2" pad="A"/>
 <wire x1="5.08" y1="25.288" x2="5.08" y2="26.428" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$10">
-<contactref element="R15" pad="1"/>
+<contactref element="R12" pad="1"/>
 <contactref element="LED3" pad="A"/>
 <wire x1="3.81" y1="25.288" x2="3.81" y2="26.428" width="0.2032" layer="1"/>
 </signal>
@@ -1808,7 +1808,7 @@ design rules under a new name.</description>
 <via x="14.224" y="11.684" extent="1-16" drill="0.3"/>
 <via x="11.684" y="14.605" extent="1-16" drill="0.3"/>
 <contactref element="U3" pad="46"/>
-<contactref element="R16" pad="1"/>
+<contactref element="R13" pad="1"/>
 <wire x1="10.302" y1="8.636" x2="10.302" y2="9.2606" width="0.2032" layer="16"/>
 <wire x1="10.302" y1="9.2606" x2="11.303" y2="10.2616" width="0.2032" layer="16"/>
 <wire x1="12.10454375" y1="13.36058125" x2="11.684" y2="13.781125" width="0.2032" layer="16"/>
@@ -1919,7 +1919,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="LED1">
 <contactref element="U3" pad="29"/>
-<contactref element="R14" pad="2"/>
+<contactref element="R11" pad="2"/>
 <wire x1="5.08" y1="22.86" x2="5.08" y2="23.988" width="0.2032" layer="1"/>
 <via x="5.08" y="22.86" extent="1-16" drill="0.3"/>
 <wire x1="12.811653125" y1="21.492309375" x2="13.462" y2="22.14265625" width="0.2032" layer="16"/>
@@ -1937,7 +1937,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="LED2">
 <contactref element="U3" pad="30"/>
-<contactref element="R15" pad="2"/>
+<contactref element="R12" pad="2"/>
 <wire x1="3.81" y1="22.86" x2="3.81" y2="23.988" width="0.2032" layer="1"/>
 <wire x1="4.572" y1="23.622" x2="3.81" y2="22.86" width="0.2032" layer="16"/>
 <wire x1="5.08" y1="23.622" x2="4.572" y2="23.622" width="0.2032" layer="16"/>
@@ -2112,7 +2112,7 @@ design rules under a new name.</description>
 <contactref element="U3" pad="9"/>
 <contactref element="JP2" pad="3"/>
 <contactref element="L2" pad="2"/>
-<contactref element="C6" pad="A"/>
+<contactref element="C12" pad="A"/>
 <contactref element="C13" pad="1"/>
 <wire x1="16.51" y1="26.782" x2="16.398" y2="26.782" width="0.2032" layer="16"/>
 <wire x1="16.398" y1="26.782" x2="15.748" y2="27.432" width="0.2032" layer="16"/>
