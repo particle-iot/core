@@ -13,3 +13,4 @@ The hardware design for the Spark Core.
 - Fix labeling for LEDs
 - Replace micro USB footprint with a better one (maybe with holes for pins?)
 - Make sure part numbers match BOM
+- Make the VDDA circuit actually work and not kill the board
