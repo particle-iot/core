@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5527,8 +5527,8 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="C10" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="100nF"/>
 <part name="C11" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="100nF"/>
+<part name="C12" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="100nF"/>
 <part name="U2" library="CC3000" deviceset="CC3000" device=""/>
 <part name="FRAME2" library="SparkFun" deviceset="FRAME-LETTER" device=""/>
 <part name="A1" library="SparkFun-RF" deviceset="ANTENNA2" device="SMD5"/>
@@ -5543,13 +5543,13 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="100nF"/>
 <part name="RESET" library="okie" deviceset="BUTTON-KMR241GLFS" device="" value="KMR211GLFS"/>
-<part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="10K"/>
+<part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="10K"/>
 <part name="BTN" library="okie" deviceset="BUTTON-KMR241GLFS" device="" value="KMR211GLFS"/>
-<part name="R12" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="1K"/>
+<part name="R15" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="1K"/>
 <part name="LED3" library="SparkFun" deviceset="LED" device="0603" value="Red"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="LED2" library="SparkFun" deviceset="LED" device="0603" value="Red"/>
-<part name="R11" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="1K"/>
+<part name="R14" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="1K"/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
@@ -5567,15 +5567,15 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="R3" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="1K5"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="100nF"/>
+<part name="C10" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="100nF"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="100nF"/>
 <part name="R8" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10K"/>
 <part name="R9" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10K"/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MMDT3904" device=""/>
-<part name="R13" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="1K"/>
-<part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="100nF"/>
+<part name="R16" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="1K"/>
+<part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="100nF"/>
 <part name="VDDA" library="supply2" deviceset="VCC" device=""/>
-<part name="C12" library="SparkFun" deviceset="CAP_POL" device="1206" value="10uF"/>
+<part name="C6" library="SparkFun" deviceset="CAP_POL" device="1206" value="10uF"/>
 <part name="L2" library="inductors" deviceset="BLM15H" device="" technology="B121SN1"/>
 <part name="C13" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="100nF"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
@@ -5690,11 +5690,11 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <attribute name="VALUE" x="444.5" y="125.73" size="1.778" layer="96"/>
 </instance>
 <instance part="GND8" gate="1" x="444.5" y="100.33"/>
-<instance part="C10" gate="G$1" x="444.5" y="115.57" smashed="yes">
+<instance part="C11" gate="G$1" x="444.5" y="115.57" smashed="yes">
 <attribute name="NAME" x="446.024" y="118.491" size="1.778" layer="95"/>
 <attribute name="VALUE" x="447.929" y="104.394" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C11" gate="G$1" x="455.93" y="115.57" smashed="yes">
+<instance part="C12" gate="G$1" x="455.93" y="115.57" smashed="yes">
 <attribute name="NAME" x="457.454" y="118.491" size="1.778" layer="95"/>
 <attribute name="VALUE" x="459.359" y="104.394" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -5726,18 +5726,18 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <instance part="RESET" gate="G$1" x="273.05" y="62.23" smashed="yes">
 <attribute name="NAME" x="270.51" y="67.31" size="1.778" layer="95"/>
 </instance>
-<instance part="R10" gate="G$1" x="300.99" y="69.85" smashed="yes" rot="R90">
+<instance part="R12" gate="G$1" x="300.99" y="69.85" smashed="yes" rot="R90">
 <attribute name="NAME" x="299.4914" y="67.31" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="304.292" y="67.31" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="BTN" gate="G$1" x="295.91" y="21.59" smashed="yes">
 <attribute name="NAME" x="293.37" y="26.67" size="1.778" layer="95"/>
 </instance>
-<instance part="R12" gate="G$1" x="328.93" y="67.31" rot="R180"/>
+<instance part="R15" gate="G$1" x="328.93" y="67.31" rot="R180"/>
 <instance part="LED3" gate="G$1" x="341.63" y="67.31" rot="R90"/>
 <instance part="GND1" gate="1" x="354.33" y="54.61"/>
 <instance part="LED2" gate="G$1" x="341.63" y="80.01" rot="R90"/>
-<instance part="R11" gate="G$1" x="328.93" y="80.01" rot="R180"/>
+<instance part="R14" gate="G$1" x="328.93" y="80.01" rot="R180"/>
 <instance part="GND12" gate="1" x="265.43" y="41.91"/>
 <instance part="+3V2" gate="G$1" x="300.99" y="80.01" smashed="yes">
 <attribute name="VALUE" x="300.99" y="80.01" size="1.778" layer="96"/>
@@ -5772,7 +5772,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <attribute name="VALUE" x="64.77" y="64.008" size="1.778" layer="96"/>
 </instance>
 <instance part="GND17" gate="1" x="457.2" y="160.02"/>
-<instance part="C7" gate="G$1" x="433.07" y="115.57" smashed="yes">
+<instance part="C10" gate="G$1" x="433.07" y="115.57" smashed="yes">
 <attribute name="NAME" x="434.594" y="118.491" size="1.778" layer="95"/>
 <attribute name="VALUE" x="436.499" y="104.394" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -5794,15 +5794,15 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <instance part="Q1" gate="G$2" x="63.5" y="45.72" smashed="yes" rot="R90">
 <attribute name="NAME" x="62.23" y="44.45" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="R13" gate="G$1" x="427.99" y="66.04" rot="R180"/>
-<instance part="C6" gate="G$1" x="416.56" y="59.69" smashed="yes">
+<instance part="R16" gate="G$1" x="427.99" y="66.04" rot="R180"/>
+<instance part="C7" gate="G$1" x="416.56" y="59.69" smashed="yes">
 <attribute name="NAME" x="418.084" y="62.611" size="1.778" layer="95"/>
 <attribute name="VALUE" x="418.084" y="57.531" size="1.778" layer="96"/>
 </instance>
 <instance part="VDDA" gate="G$1" x="398.78" y="119.38" smashed="yes">
 <attribute name="VALUE" x="396.875" y="122.555" size="1.778" layer="96"/>
 </instance>
-<instance part="C12" gate="G$1" x="481.33" y="144.78"/>
+<instance part="C6" gate="G$1" x="481.33" y="144.78"/>
 <instance part="L2" gate="G$1" x="471.17" y="151.13" smashed="yes">
 <attribute name="NAME" x="467.36" y="153.7716" size="1.778" layer="95"/>
 </instance>
@@ -5881,9 +5881,9 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <wire x1="444.5" y1="113.03" x2="444.5" y2="102.87" width="0.1524" layer="91"/>
 <junction x="444.5" y="102.87"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="C12" gate="G$1" pin="2"/>
 <pinref part="C11" gate="G$1" pin="2"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="433.07" y1="113.03" x2="433.07" y2="102.87" width="0.1524" layer="91"/>
 <wire x1="433.07" y1="102.87" x2="444.5" y2="102.87" width="0.1524" layer="91"/>
 <junction x="444.5" y="102.87"/>
@@ -6017,7 +6017,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <wire x1="457.2" y1="55.88" x2="444.5" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND22" gate="1" pin="GND"/>
 <wire x1="444.5" y1="55.88" x2="444.5" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="416.56" y1="57.15" x2="416.56" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="55.88" x2="444.5" y2="55.88" width="0.1524" layer="91"/>
 <junction x="444.5" y="55.88"/>
@@ -6079,7 +6079,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <wire x1="265.43" y1="55.88" x2="265.43" y2="44.45" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C12" gate="G$1" pin="-"/>
+<pinref part="C6" gate="G$1" pin="-"/>
 <wire x1="481.33" y1="139.7" x2="481.33" y2="133.35" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 </segment>
@@ -6182,9 +6182,9 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <wire x1="444.5" y1="120.65" x2="444.5" y2="123.19" width="0.1524" layer="91"/>
 <junction x="444.5" y="123.19"/>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
+<pinref part="C12" gate="G$1" pin="1"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="444.5" y1="123.19" x2="433.07" y2="123.19" width="0.1524" layer="91"/>
 <wire x1="433.07" y1="123.19" x2="433.07" y2="120.65" width="0.1524" layer="91"/>
 <junction x="444.5" y="123.19"/>
@@ -6215,7 +6215,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 </segment>
 <segment>
 <wire x1="300.99" y1="74.93" x2="300.99" y2="77.47" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
@@ -6223,11 +6223,11 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <wire x1="457.2" y1="76.2" x2="416.56" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="+3V12" gate="G$1" pin="+3V3"/>
 <wire x1="416.56" y1="78.74" x2="416.56" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="422.91" y1="66.04" x2="416.56" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="66.04" x2="416.56" y2="76.2" width="0.1524" layer="91"/>
 <junction x="416.56" y="76.2"/>
-<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="416.56" y1="66.04" x2="416.56" y2="64.77" width="0.1524" layer="91"/>
 <junction x="416.56" y="66.04"/>
 </segment>
@@ -6498,7 +6498,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <wire x1="300.99" y1="62.23" x2="300.99" y2="64.77" width="0.1524" layer="91"/>
 <label x="285.75" y="63.5" size="1.778" layer="95"/>
 <pinref part="RESET" gate="G$1" pin="2"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="287.02" y1="55.88" x2="300.99" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="300.99" y1="55.88" x2="300.99" y2="62.23" width="0.1524" layer="91"/>
@@ -6512,14 +6512,14 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <wire x1="334.01" y1="80.01" x2="339.09" y2="80.01" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
 <wire x1="334.01" y1="67.31" x2="339.09" y2="67.31" width="0.1524" layer="91"/>
 </segment>
@@ -6541,7 +6541,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <pinref part="U4" gate="A" pin="CE"/>
 <wire x1="457.2" y1="66.04" x2="433.07" y2="66.04" width="0.1524" layer="91"/>
 <label x="441.96" y="66.04" size="1.778" layer="95"/>
-<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U3" gate="PORTB_H" pin="PB9"/>
@@ -6652,7 +6652,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <label x="284.48" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="323.85" y1="80.01" x2="318.77" y2="80.01" width="0.1524" layer="91"/>
 <label x="316.23" y="80.01" size="1.778" layer="95"/>
 </segment>
@@ -6664,7 +6664,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <label x="284.48" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="323.85" y1="67.31" x2="318.77" y2="67.31" width="0.1524" layer="91"/>
 <label x="316.23" y="67.31" size="1.778" layer="95"/>
 </segment>
@@ -6821,7 +6821,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 </segment>
 <segment>
 <pinref part="L2" gate="G$1" pin="2"/>
-<pinref part="C12" gate="G$1" pin="+"/>
+<pinref part="C6" gate="G$1" pin="+"/>
 <wire x1="476.25" y1="151.13" x2="481.33" y2="151.13" width="0.1524" layer="91"/>
 <wire x1="481.33" y1="151.13" x2="481.33" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="1"/>
