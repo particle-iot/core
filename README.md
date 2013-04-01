@@ -4,13 +4,16 @@ Spark Core
 The hardware design for the Spark Core.
 
 ## TODO
-- Add a 1K resistor in between the MCU and the USB_DISCONNECT transistor, to limit current in case of failure.
-- Replace all resistors/capacitors with 0603.
-- Link WP# on SST25VF to 3.3V
-- Connect HOLD# on SST25VF to 3.3V
 - Re-do the stencil but mirrored correctly
-- Re-run ERC and DRC
-- Fix labeling for LEDs
-- Replace micro USB footprint with a better one (maybe with holes for pins?)
 - Make sure part numbers match BOM
+- Clean up schematic
+- Clean up assembly diagram
+
+## NECESSARY TESTING
+- Get CC3000 and STM32 talking
+- Get memory module and STM32 talking
+- Test all of the pins, LEDs, buttons, etc.
 - Make the VDDA circuit actually work and not kill the board
+
+## NEXT REVISION
+- Replace memory module with a smaller footprint one
