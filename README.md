@@ -5,7 +5,6 @@ The hardware design for the Spark Core.
 
 ## TODO
 - Re-do the stencil but mirrored correctly
-- Re-do BOM
 - Clean up schematic
 - Clean up assembly diagram
 
