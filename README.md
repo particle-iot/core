@@ -5,8 +5,6 @@ The hardware design for the Spark Core.
 
 ## TODO
 - Re-do the stencil but mirrored correctly
-- Clean up schematic
-- Clean up assembly diagram
 
 ## NECESSARY TESTING
 - Get CC3000 and STM32 talking
