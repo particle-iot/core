@@ -14,3 +14,5 @@ The hardware design for the Spark Core.
 
 ## NEXT REVISION
 - Replace memory module with a smaller footprint one
+- Turn the LEDs around so HIGH = on and LOW = off
+- Remove the resistors on WIFI_EN and WIFI_CS
