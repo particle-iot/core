@@ -5,6 +5,7 @@ The hardware design for the Spark Core.
 
 ## TODO
 - Re-do the stencil but mirrored correctly
+- Re-create GERBER, PDFs, etc.
 
 ## NECESSARY TESTING
 - Get CC3000 and STM32 talking
@@ -14,7 +15,3 @@ The hardware design for the Spark Core.
 
 ## NEXT REVISION
 - Replace memory module with a smaller footprint one
-- Turn the LEDs around so HIGH = on and LOW = off
-- Remove the resistors on WIFI_EN and WIFI_CS
-- Connect the power regulator directly to C2, not to the power plane
-- See if we can add more decoupling capacitors for the CC3000

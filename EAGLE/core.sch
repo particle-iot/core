@@ -11037,9 +11037,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="177.8" y="68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U3" gate="PORTC" pin="PC14"/>
-<wire x1="347.98" y1="134.62" x2="363.22" y2="134.62" width="0.1524" layer="91"/>
-<label x="363.22" y="134.62" size="1.778" layer="95"/>
+<pinref part="U3" gate="PORTB_H" pin="PB11"/>
+<wire x1="302.26" y1="165.1" x2="264.16" y2="165.1" width="0.1524" layer="91"/>
+<label x="264.16" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="WIFI_EN" class="0">
@@ -11053,9 +11053,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <junction x="231.14" y="124.46"/>
 </segment>
 <segment>
-<pinref part="U3" gate="PORTC" pin="PC13"/>
-<wire x1="347.98" y1="137.16" x2="363.22" y2="137.16" width="0.1524" layer="91"/>
-<label x="363.22" y="137.16" size="1.778" layer="95"/>
+<pinref part="U3" gate="PORTB_H" pin="PB8"/>
+<wire x1="302.26" y1="157.48" x2="264.16" y2="157.48" width="0.1524" layer="91"/>
+<label x="264.16" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USBM" class="0">
@@ -11508,7 +11508,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="206,1,175.26,91.44,SPI_MISO,,,,,"/>
 <approved hash="206,1,492.76,76.2,SPI_MISO,,,,,"/>
 <approved hash="115,1,35.56,165.587,D1,,,,,"/>
-<approved hash="115,1,178.368,121.017,U2,,,,,"/>
+<approved hash="115,1,178.95,121.379,U2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
