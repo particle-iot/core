@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="$GND" color="13" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,22 +23,22 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="$+3V3" color="11" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -2695,7 +2695,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="SPI_MISO">
 <contactref element="U2" pad="SPI_DOUT"/>
-<contactref element="U2" pad="SPI_DIN"/>
 <contactref element="U3" pad="27"/>
 <contactref element="U4" pad="2"/>
 <wire x1="12.573" y1="10.2616" x2="12.573" y2="8.89" width="0.2032" layer="16"/>
@@ -2717,7 +2716,6 @@ design rules under a new name.</description>
 <wire x1="11.557" y1="18.669" x2="11.938" y2="18.288" width="0.2032" layer="2"/>
 <wire x1="11.938" y1="18.034" x2="11.938" y2="18.161" width="0.2032" layer="1"/>
 <wire x1="11.938" y1="18.161" x2="11.43" y2="18.669" width="0.2032" layer="1"/>
-<wire x1="9.56" y1="19.92" x2="9.56" y2="20.482" width="0.2032" layer="1"/>
 <wire x1="9.56" y1="20.482" x2="9.906" y2="20.828" width="0.2032" layer="1"/>
 <wire x1="9.906" y1="20.828" x2="11.684" y2="20.828" width="0.2032" layer="1"/>
 <wire x1="11.684" y1="20.828" x2="11.938" y2="20.574" width="0.2032" layer="1"/>
@@ -3140,6 +3138,8 @@ design rules under a new name.</description>
 <via x="10.16" y="17.653" extent="1-16" drill="0.3"/>
 <wire x1="10.16" y1="17.653" x2="10.287" y2="17.526" width="0.2032" layer="16"/>
 <wire x1="10.287" y1="17.526" x2="11.43" y2="17.526" width="0.2032" layer="16"/>
+<contactref element="U2" pad="SPI_DIN"/>
+<wire x1="10.16" y1="17.653" x2="9.56" y2="19.92" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="USB_DISC">
 <contactref element="R7" pad="2"/>

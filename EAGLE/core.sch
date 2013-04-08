@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10985,11 +10985,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <label x="175.26" y="68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="SPI_DIN"/>
-<wire x1="180.34" y1="91.44" x2="180.34" y2="76.2" width="0.1524" layer="91"/>
-<label x="180.34" y="68.58" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="U3" gate="PORTB_H" pin="PB14"/>
 <wire x1="302.26" y1="172.72" x2="264.16" y2="172.72" width="0.1524" layer="91"/>
 <label x="264.16" y="172.72" size="1.778" layer="95"/>
@@ -11394,6 +11389,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="U4" gate="A" pin="SI"/>
 <wire x1="457.2" y1="71.12" x2="444.5" y2="71.12" width="0.1524" layer="91"/>
 <label x="441.96" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="SPI_DIN"/>
+<wire x1="180.34" y1="91.44" x2="180.34" y2="76.2" width="0.1524" layer="91"/>
+<label x="180.34" y="68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="USB_DISC" class="0">
