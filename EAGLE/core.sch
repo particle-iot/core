@@ -11508,7 +11508,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <approved hash="206,1,175.26,91.44,SPI_MISO,,,,,"/>
 <approved hash="206,1,492.76,76.2,SPI_MISO,,,,,"/>
 <approved hash="115,1,35.56,165.587,D1,,,,,"/>
-<approved hash="115,1,178.95,121.379,U2,,,,,"/>
+<approved hash="115,1,178.368,121.017,U2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
