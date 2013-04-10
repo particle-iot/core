@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="$GND" color="13" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,22 +23,22 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="$+3V3" color="11" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -48,7 +48,7 @@
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -2278,11 +2278,11 @@ design rules under a new name.</description>
 </element>
 <element name="LED1" library="SparkFun" package="LED-0603" value="Red" x="6.223" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.112" y="72.9615" size="0.4064" layer="25" rot="R180"/>
-<attribute name="VALUE" x="6.858" y="74.6125" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="6.858" y="74.8665" size="0.4064" layer="27" rot="R180"/>
 </element>
 <element name="U1" library="SparkFun" package="SOT23-5" value="MIC5219" x="21.59" y="49.53" smashed="yes" rot="R180">
 <attribute name="NAME" x="22.479" y="47.371" size="0.4064" layer="25" rot="R180"/>
-<attribute name="VALUE" x="22.733" y="49.657" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="23.495" y="49.403" size="0.4064" layer="27"/>
 </element>
 <element name="C1" library="SparkFun" package="EIA3216" value="10uF" x="21.59" y="53.34" smashed="yes" rot="R180">
 <attribute name="NAME" x="24.13" y="51.959" size="0.4064" layer="25" rot="R180"/>
@@ -2304,11 +2304,11 @@ design rules under a new name.</description>
 </element>
 <element name="R5" library="rcl" package="R0603" value="22" x="8.255" y="40.005" smashed="yes" rot="R180">
 <attribute name="NAME" x="8.89" y="39.37" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="7.747" y="40.64" size="0.6096" layer="27"/>
+<attribute name="VALUE" x="10.033" y="39.624" size="0.6096" layer="27"/>
 </element>
 <element name="R6" library="rcl" package="R0603" value="22" x="8.255" y="41.656" smashed="yes" rot="R180">
 <attribute name="NAME" x="8.89" y="41.021" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="7.747" y="42.291" size="0.6096" layer="27"/>
+<attribute name="VALUE" x="10.033" y="41.275" size="0.6096" layer="27"/>
 </element>
 <element name="X1" library="SparkFun-Connectors" package="USB-MICROB" value="USB-MICROB" x="1.27" y="40.64" smashed="yes" rot="R270">
 <attribute name="NAME" x="0.92" y="42.24" size="0.762" layer="25" rot="R270"/>
@@ -2317,7 +2317,7 @@ design rules under a new name.</description>
 </element>
 <element name="F1" library="SparkFun" package="PTC-1206" value="500mA" x="18.415" y="49.276" smashed="yes" rot="R270">
 <attribute name="NAME" x="19.685" y="50.8" size="0.4064" layer="25" rot="R270"/>
-<attribute name="VALUE" x="19.558" y="50.419" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="18.034" y="47.117" size="0.4064" layer="27" rot="R270"/>
 </element>
 <element name="D1" library="SparkFun" package="SOD-323" value="" x="16.383" y="49.53" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.399" y="50.419" size="0.4064" layer="25" rot="R270"/>
@@ -2333,13 +2333,13 @@ design rules under a new name.</description>
 </element>
 <element name="C11" library="rcl" package="C0603" value="100nF" x="43.18" y="44.45" smashed="yes" rot="R180">
 <attribute name="NAME" x="43.815" y="43.815" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="42.164" y="47.879" size="0.6096" layer="27" rot="R270"/>
+<attribute name="VALUE" x="38.735" y="44.196" size="0.6096" layer="27"/>
 </element>
 <element name="U2" library="CC3000" package="CC3000" value="" x="8.89" y="13.97" smashed="yes" rot="R180"/>
 <element name="A1" library="SparkFun-RF" package="ANTENNA-CHIP5" value="ANTENNA2SMD5" x="6.35" y="2.794" rot="R180"/>
 <element name="L1" library="SparkFun-Passives" package="0603" value="2.2nH" x="12.7" y="5.08" smashed="yes">
 <attribute name="NAME" x="11.811" y="5.842" size="0.4064" layer="25" font="vector"/>
-<attribute name="VALUE" x="8.636" y="4.826" size="0.6096" layer="27" font="vector"/>
+<attribute name="VALUE" x="14.478" y="4.826" size="0.6096" layer="27" font="vector"/>
 </element>
 <element name="C4" library="rcl" package="C0603" value="2.2pF" x="11.938" y="2.921" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.303" y="2.286" size="1.27" layer="25" rot="R90"/>
@@ -2347,12 +2347,12 @@ design rules under a new name.</description>
 </element>
 <element name="C3" library="rcl" package="C0603" value="100nF" x="4.699" y="23.114" smashed="yes">
 <attribute name="NAME" x="4.064" y="23.749" size="1.27" layer="25"/>
-<attribute name="VALUE" x="3.302" y="23.749" size="0.6096" layer="27"/>
+<attribute name="VALUE" x="3.556" y="24.003" size="0.6096" layer="27"/>
 </element>
 <element name="RESET" library="okie" package="PUSHBUTTON-KMR241GLFS" value="KMR211GLFS" x="12.7" y="59.69" smashed="yes" rot="R90"/>
 <element name="R11" library="rcl" package="R0603" value="10K" x="15.875" y="63.246" smashed="yes">
 <attribute name="NAME" x="15.24" y="63.881" size="1.27" layer="25"/>
-<attribute name="VALUE" x="17.399" y="63.754" size="0.6096" layer="27" rot="R270"/>
+<attribute name="VALUE" x="15.24" y="61.849" size="0.6096" layer="27"/>
 </element>
 <element name="BTN" library="okie" package="PUSHBUTTON-KMR241GLFS" value="KMR211GLFS" x="5.08" y="59.69" smashed="yes" rot="R90"/>
 <element name="R13" library="rcl" package="R0603" value="1K" x="10.16" y="70.866" smashed="yes">
@@ -2361,11 +2361,11 @@ design rules under a new name.</description>
 </element>
 <element name="LED3" library="SparkFun" package="LED-0603" value="Blue" x="6.223" y="71.12" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.112" y="70.4215" size="0.4064" layer="25" rot="R180"/>
-<attribute name="VALUE" x="5.842" y="71.9455" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="6.858" y="70.4215" size="0.4064" layer="27" rot="R180"/>
 </element>
 <element name="LED2" library="SparkFun" package="LED-0603" value="Blue" x="6.223" y="72.39" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.112" y="71.6915" size="0.4064" layer="25" rot="R180"/>
-<attribute name="VALUE" x="5.842" y="73.2155" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="7.5565" y="73.152" size="0.4064" layer="27" rot="R270"/>
 </element>
 <element name="R12" library="rcl" package="R0603" value="1K" x="10.16" y="72.39" smashed="yes">
 <attribute name="NAME" x="9.525" y="73.025" size="1.27" layer="25"/>
@@ -2382,44 +2382,44 @@ design rules under a new name.</description>
 <element name="U$1" library="Spark" package="SPARK_LOGO2" value="SPARK_LOGO2" x="91.44" y="33.02"/>
 <element name="R2" library="rcl" package="R0603" value="33K" x="12.7" y="32.258" smashed="yes" rot="R180">
 <attribute name="NAME" x="13.335" y="31.623" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="13.335" y="33.528" size="0.6096" layer="27" rot="R180"/>
+<attribute name="VALUE" x="13.335" y="31.496" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="R7" library="rcl" package="R0603" value="47K" x="17.526" y="36.195" smashed="yes">
 <attribute name="NAME" x="16.891" y="36.83" size="1.27" layer="25"/>
-<attribute name="VALUE" x="14.478" y="35.941" size="0.6096" layer="27"/>
+<attribute name="VALUE" x="19.304" y="35.941" size="0.6096" layer="27"/>
 </element>
 <element name="R1" library="rcl" package="R0603" value="10K" x="8.255" y="43.307" smashed="yes" rot="R180">
 <attribute name="NAME" x="8.89" y="42.672" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="7.747" y="42.291" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="10.033" y="43.053" size="0.4064" layer="27"/>
 </element>
 <element name="R3" library="rcl" package="R0603" value="1K5" x="8.255" y="38.354" smashed="yes">
 <attribute name="NAME" x="7.62" y="38.989" size="1.27" layer="25"/>
-<attribute name="VALUE" x="7.747" y="38.989" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="10.033" y="38.227" size="0.4064" layer="27"/>
 </element>
 <element name="C7" library="rcl" package="C0603" value="100nF" x="49.53" y="50.673" smashed="yes" rot="R180">
 <attribute name="NAME" x="50.165" y="50.038" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="50.673" y="50.165" size="0.6096" layer="27" rot="R180"/>
+<attribute name="VALUE" x="48.387" y="51.435" size="0.6096" layer="27"/>
 </element>
 <element name="C5" library="rcl" package="C0603" value="100nF" x="12.7" y="63.246" smashed="yes">
 <attribute name="NAME" x="12.065" y="63.881" size="1.27" layer="25"/>
-<attribute name="VALUE" x="11.43" y="62.23" size="0.6096" layer="27"/>
+<attribute name="VALUE" x="11.43" y="64.008" size="0.6096" layer="27"/>
 </element>
 <element name="R9" library="rcl" package="R0603" value="10K" x="10.795" y="23.114" smashed="yes" rot="R180">
 <attribute name="NAME" x="11.43" y="22.479" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="10.033" y="23.749" size="0.6096" layer="27"/>
+<attribute name="VALUE" x="10.033" y="24.003" size="0.6096" layer="27"/>
 </element>
 <element name="R10" library="rcl" package="R0603" value="10K" x="5.588" y="5.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="6.223" y="4.445" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="7.239" y="4.699" size="0.6096" layer="27"/>
+<attribute name="VALUE" x="2.159" y="4.699" size="0.6096" layer="27"/>
 </element>
 <element name="Q1" library="SparkFun-DiscreteSemi" package="SOT363" value="MMDT3904" x="12.573" y="34.925" smashed="yes" rot="R90"/>
 <element name="R14" library="rcl" package="R0603" value="1K" x="30.48" y="65.278" smashed="yes">
 <attribute name="NAME" x="29.845" y="65.913" size="1.27" layer="25"/>
-<attribute name="VALUE" x="28.956" y="64.77" size="0.6096" layer="27" rot="R90"/>
+<attribute name="VALUE" x="29.972" y="66.04" size="0.6096" layer="27"/>
 </element>
 <element name="C6" library="rcl" package="C0603" value="100nF" x="33.909" y="65.278" smashed="yes">
 <attribute name="NAME" x="33.274" y="65.913" size="1.27" layer="25"/>
-<attribute name="VALUE" x="35.433" y="65.024" size="0.6096" layer="27"/>
+<attribute name="VALUE" x="32.893" y="66.04" size="0.6096" layer="27"/>
 </element>
 <element name="C12" library="SparkFun" package="EIA3216" value="10uF" x="85.852" y="38.354" smashed="yes" rot="R180">
 <attribute name="NAME" x="88.392" y="36.973" size="0.4064" layer="25" rot="R180"/>
@@ -2435,7 +2435,7 @@ design rules under a new name.</description>
 </element>
 <element name="R4" library="rcl" package="R0603" value="1K" x="17.526" y="34.671" smashed="yes" rot="R180">
 <attribute name="NAME" x="18.161" y="34.036" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="14.732" y="34.29" size="0.6096" layer="27"/>
+<attribute name="VALUE" x="19.304" y="34.29" size="0.6096" layer="27"/>
 </element>
 <element name="JP5" library="jumper" package="JP2" value="" x="55.88" y="76.2"/>
 <element name="JP6" library="jumper" package="JP2" value="" x="55.88" y="69.85"/>
@@ -2477,10 +2477,22 @@ design rules under a new name.</description>
 <element name="TP10" library="testpad" package="P1-17" value="TPPAD1-17" x="54.61" y="3.81">
 <attribute name="TP_SIGNAL_NAME" value="" x="54.61" y="3.81" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="R18" library="rcl" package="R0603" value="10K" x="85.09" y="66.04" rot="R270"/>
-<element name="R15" library="rcl" package="R0603" value="10K" x="82.55" y="66.04" rot="R90"/>
-<element name="R16" library="rcl" package="R0603" value="10K" x="90.17" y="66.04" rot="R90"/>
-<element name="R17" library="rcl" package="R0603" value="10K" x="92.71" y="66.04" rot="R90"/>
+<element name="R18" library="rcl" package="R0603" value="10K" x="85.09" y="66.04" smashed="yes" rot="R270">
+<attribute name="NAME" x="85.725" y="66.675" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="85.725" y="61.087" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R15" library="rcl" package="R0603" value="10K" x="82.55" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="81.915" y="65.405" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="83.185" y="61.087" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R16" library="rcl" package="R0603" value="10K" x="90.17" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="89.535" y="65.405" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="90.805" y="61.087" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R17" library="rcl" package="R0603" value="10K" x="92.71" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="92.075" y="65.405" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="93.345" y="61.087" size="1.27" layer="27" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -4490,148 +4502,6 @@ design rules under a new name.</description>
 <wire x1="15.416" y1="16.94" x2="14.74" y2="16.94" width="0.2032" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="3,1,8396814ef71593e7"/>
-<approved hash="3,1,acc3c8239fde660e"/>
-<approved hash="3,1,051e9a9446a8b949"/>
-<approved hash="3,1,7e9063c7817213a3"/>
-<approved hash="3,1,97b32c2ad9bddd0b"/>
-<approved hash="3,1,d0c5957522e48434"/>
-<approved hash="3,1,e90ec0c06aee469d"/>
-<approved hash="3,1,a2370d0855a71fe6"/>
-<approved hash="3,1,5c9056510360a830"/>
-<approved hash="3,1,f66861bad5e9e21b"/>
-<approved hash="3,1,c13334e3963d1cc6"/>
-<approved hash="3,1,041af75d5b48a788"/>
-<approved hash="3,1,f6f054a190783c4e"/>
-<approved hash="3,1,2fb1f3435889fb78"/>
-<approved hash="3,1,2469321a1fe2adb1"/>
-<approved hash="3,1,8a1c79a5d5d283c2"/>
-<approved hash="3,1,74dfcecc8c85d828"/>
-<approved hash="3,1,3be29730b0541d63"/>
-<approved hash="3,1,0ff45585fd2f4b5e"/>
-<approved hash="3,1,44810fb60281f611"/>
-<approved hash="3,1,a85ac4eb57c2b415"/>
-<approved hash="3,1,d7f469648c945147"/>
-<approved hash="3,1,022eb7af51790588"/>
-<approved hash="3,1,316922fa3e2a4c55"/>
-<approved hash="3,1,0ae58fdc7bae677b"/>
-<approved hash="3,1,e1bae602b0ec562d"/>
-<approved hash="3,1,b8433ab9e5290c92"/>
-<approved hash="3,1,1f0e6fcf029efd38"/>
-<approved hash="3,1,47bd24124e455a4d"/>
-<approved hash="3,1,bce8f9b88dc8649b"/>
-<approved hash="3,1,1527975d3890a336"/>
-<approved hash="3,1,aa7b422ad019d6f5"/>
-<approved hash="3,1,609071c7a15e0d9f"/>
-<approved hash="3,1,16259ff76fa78254"/>
-<approved hash="3,1,edfae13e5ccd670d"/>
-<approved hash="3,1,8174264587f42ca2"/>
-<approved hash="3,1,7396df834ccced5e"/>
-<approved hash="3,1,0377888092762ead"/>
-<approved hash="3,1,c42d525da5a553f4"/>
-<approved hash="3,1,b61cdc3577eca46b"/>
-<approved hash="3,1,7cab07e409039731"/>
-<approved hash="3,1,c7ca72a3e22b4ac6"/>
-<approved hash="3,1,6222b4d253f8266b"/>
-<approved hash="3,1,957789089481ffd1"/>
-<approved hash="3,1,c9cc2a79d426b814"/>
-<approved hash="3,1,6aa3dcb72f1ff162"/>
-<approved hash="3,1,4f5687847e4a2ba1"/>
-<approved hash="3,1,b812d66eb29942cf"/>
-<approved hash="8,1,1a900fd20f7815b4"/>
-<approved hash="8,1,2b774fd537462f80"/>
-<approved hash="8,1,0d36eb278547c620"/>
-<approved hash="8,1,2e4330408350c9d9"/>
-<approved hash="8,1,e7dd3bdac504a228"/>
-<approved hash="8,1,0a59c0b6a271ad5e"/>
-<approved hash="8,1,baf86bcf5a3858ca"/>
-<approved hash="8,1,c752454ccea8494e"/>
-<approved hash="8,1,cfb5c15ce45fe376"/>
-<approved hash="8,1,c5d9cfdcc02bc107"/>
-<approved hash="8,1,62286d1d64e460d9"/>
-<approved hash="8,1,df1dccacab20c7a9"/>
-<approved hash="8,1,2c4a48904c7f402b"/>
-<approved hash="8,1,66976e416e208a79"/>
-<approved hash="8,1,afaea721eeaddf1a"/>
-<approved hash="8,1,a6a31fc33703caa7"/>
-<approved hash="8,1,6456985dfbc5dea9"/>
-<approved hash="8,1,bb34ceb7f537cab4"/>
-<approved hash="8,1,827d8ac1b944915c"/>
-<approved hash="8,1,12ce0ed13fd701f1"/>
-<approved hash="8,1,75fe0cfe1d5e16e2"/>
-<approved hash="8,1,4b748f657760b0a8"/>
-<approved hash="8,1,c07b0c69fc7ec29a"/>
-<approved hash="8,1,54dcb4fb5ce701ec"/>
-<approved hash="8,1,f889a652c56bc232"/>
-<approved hash="8,1,4dea04a72ed0396c"/>
-<approved hash="8,1,7554689667d5750c"/>
-<approved hash="8,1,946aec63f81efe66"/>
-<approved hash="8,1,5695793d67486f1c"/>
-<approved hash="8,1,c98b189af7b7d4dc"/>
-<approved hash="8,1,7046ef43dbd4ee91"/>
-<approved hash="8,1,f8a61fb0e7908092"/>
-<approved hash="8,1,ab68735e6d26c7fe"/>
-<approved hash="8,1,73fd45d97adc7e95"/>
-<approved hash="8,1,9ffda43b65e3a1fe"/>
-<approved hash="8,1,e3d0e2bfeebef069"/>
-<approved hash="8,1,234e1aa12b205abc"/>
-<approved hash="8,1,262d4f2889ec6c29"/>
-<approved hash="8,1,2997fcaaefa92202"/>
-<approved hash="8,1,846eb76b986d8967"/>
-<approved hash="8,1,5633d4534263d507"/>
-<approved hash="8,1,a66aa6310df9021c"/>
-<approved hash="8,1,12c279599dc6a6d5"/>
-<approved hash="8,1,e3df3e4cec2ee5c4"/>
-<approved hash="8,1,89ef92a99f91a1d0"/>
-<approved hash="8,1,e396eb923926e358"/>
-<approved hash="8,1,fb92f79e4182c0fe"/>
-<approved hash="8,1,e516e91d5f6fc01e"/>
-<approved hash="8,1,3700837b311ecf3c"/>
-<approved hash="8,1,2e6030208153cfdc"/>
-<approved hash="8,1,e2db18ebeedbf9e0"/>
-<approved hash="8,1,6333620409d3154f"/>
-<approved hash="8,1,88a38ccf7937be51"/>
-<approved hash="8,1,dda23356126bd054"/>
-<approved hash="8,1,e8c55caa57a85a6e"/>
-<approved hash="8,1,21aee3a92220a509"/>
-<approved hash="8,1,fae8f5dc43ecc1dc"/>
-<approved hash="8,1,3f76f78fb46ff966"/>
-<approved hash="8,1,3b96360478a8c0a4"/>
-<approved hash="8,1,3620825b31dacd60"/>
-<approved hash="8,1,5aa72a361abc405e"/>
-<approved hash="8,1,1eec93ebe6ef866d"/>
-<approved hash="8,1,d0ab219a32be3f1d"/>
-<approved hash="8,1,b28b4968b17a707b"/>
-<approved hash="8,1,fed6344dee1fe0bd"/>
-<approved hash="8,1,a597b96bc57f5d4e"/>
-<approved hash="8,1,55883f5b4a1149a6"/>
-<approved hash="8,1,7b5c6846724f4d46"/>
-<approved hash="8,1,8af28ce28be487ab"/>
-<approved hash="8,1,ecd4a6326915abd4"/>
-<approved hash="8,1,2fd93677878c2a46"/>
-<approved hash="8,1,632a872c822cef5c"/>
-<approved hash="8,1,2f403100830fcf18"/>
-<approved hash="8,1,e0991991eff9fb8e"/>
-<approved hash="8,1,701a399536b81aab"/>
-<approved hash="8,1,df6401432bb53b7d"/>
-<approved hash="8,1,fad0f7dd41c3c1fc"/>
-<approved hash="8,1,7b6b8a866a74697b"/>
-<approved hash="8,1,ca7f480644186817"/>
-<approved hash="8,1,9f53c3d25bbcd778"/>
-<approved hash="8,1,6947455e4aadca5b"/>
-<approved hash="8,1,cb3d495645587699"/>
-<approved hash="8,1,2799e59d21596c18"/>
-<approved hash="8,1,7754048f10173a07"/>
-<approved hash="8,1,429cdb55edef5e2f"/>
-<approved hash="8,1,e31e3e8eec2ce506"/>
-<approved hash="8,1,e354eb5339a4e29a"/>
-<approved hash="8,1,9f03930e800e8585"/>
-<approved hash="8,1,5fc255c67ec2cb41"/>
-<approved hash="8,1,c19f819cce918298"/>
-<approved hash="8,1,beb5b98c278ad6bb"/>
-<approved hash="8,1,f668e23af92d42db"/>
-</errors>
 </board>
 </drawing>
 </eagle>
