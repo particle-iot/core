@@ -10186,7 +10186,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="22pF"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="R0603" value="22"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="R0603" value="22"/>
-<part name="X1" library="Spark" deviceset="USB" device="USB-MICROB-ALIGN"/>
+<part name="X1" library="Spark" deviceset="USB" device="USB-MICROB-ALIGN" value="USB-MICROB"/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="F1" library="SparkFun" deviceset="PTC" device="SMD" value="500mA"/>
 <part name="D1" library="SparkFun" deviceset="DIODE" device="SOD"/>
