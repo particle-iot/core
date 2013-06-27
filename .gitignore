@@ -1,4 +1,5 @@
 *.b#*
 *.s#*
+*.l#*
 ~*.xlsx
 .DS_Store
