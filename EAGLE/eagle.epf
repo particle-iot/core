@@ -357,6 +357,16 @@ UsedLibrary="C:/Users/Satish/Documents/Electronic-Circuits/Eagle_Libraries/Spark
 UsedLibrary="C:/Users/Satish/Documents/Electronic-Circuits/Eagle_Libraries/SparkFun-Eagle-Libraries/SparkFun-RF.lbr"
 UsedLibrary="C:/Users/Satish/Documents/Electronic-Circuits/Eagle_Libraries/SparkFun-Eagle-Libraries/SparkFun-Resistors.lbr"
 UsedLibrary="C:/Users/Satish/Documents/Electronic-Circuits/Eagle_Libraries/SparkFun-Eagle-Libraries/SparkFun-Sensors.lbr"
+UsedLibrary="C:/Users/Satish/Documents/Electronic-Circuits/Eagle_Libraries/mbed-libraries-v1.0/mbed-connectors.lbr"
+UsedLibrary="C:/Users/Satish/Documents/Electronic-Circuits/Eagle_Libraries/mbed-libraries-v1.0/mbed-discrete.lbr"
+UsedLibrary="C:/Users/Satish/Documents/Electronic-Circuits/Eagle_Libraries/mbed-libraries-v1.0/mbed-drawing.lbr"
+UsedLibrary="C:/Users/Satish/Documents/Electronic-Circuits/Eagle_Libraries/mbed-libraries-v1.0/mbed-ics.lbr"
+UsedLibrary="C:/Users/Satish/Documents/Electronic-Circuits/Eagle_Libraries/mbed-libraries-v1.0/mbed-microcontroller.lbr"
+UsedLibrary="C:/Users/Satish/Documents/Electronic-Circuits/Eagle_Libraries/mbed-libraries-v1.0/mbed-opto.lbr"
+UsedLibrary="C:/Users/Satish/Documents/Electronic-Circuits/Eagle_Libraries/mbed-libraries-v1.0/mbed-power.lbr"
+UsedLibrary="C:/Users/Satish/Documents/Electronic-Circuits/Eagle_Libraries/mbed-libraries-v1.0/mbed-rlcq.lbr"
+UsedLibrary="C:/Users/Satish/Documents/Electronic-Circuits/Eagle_Libraries/mbed-libraries-v1.0/mbed-switches.lbr"
+UsedLibrary="C:/Users/Satish/Documents/Electronic-Circuits/Eagle_Libraries/Silicon_Storage_Tech_Library/Silicon_Storage_Tech_By_element14_Batch_1.lbr"
 
 [Win_1]
 Type="Board Editor"
@@ -364,7 +374,7 @@ Loc="332 182 931 581"
 State=1
 Number=2
 File="core.brd"
-View="-5.36023 -10.9019 23.7485 33.5087"
+View="-8.462 -9.18083 36.9795 47.8022"
 WireWidths=" 0 0.254 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -410,7 +420,7 @@ Loc="332 182 931 581"
 State=1
 Number=1
 File="core.sch"
-View="-122.176 55.813 241.558 190.241"
+View="-10.5806 -4.23062 513.196 189.346"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -449,7 +459,7 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: -122.176 55.813 241.558 190.241"
+Views=" 1: -10.5806 -4.23062 513.196 189.346"
 Sheet=1
 
 [Win_3]
