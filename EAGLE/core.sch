@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -67,7 +67,7 @@
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -10313,6 +10313,9 @@ Source: RS Component / Phycomp</description>
 </class>
 <class number="1" name="vcc" width="0" drill="0">
 </class>
+<class number="2" name="RF" width="0.635" drill="0">
+<clearance class="2" value="0.762"/>
+</class>
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun" deviceset="FRAME-LETTER" device=""/>
@@ -10399,6 +10402,7 @@ Source: RS Component / Phycomp</description>
 <part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="10pF"/>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
 <part name="ANT1" library="Spark" deviceset="AT8010" device=""/>
+<part name="C12" library="rcl" deviceset="C-EU" device="C0603" value="10pF"/>
 </parts>
 <sheets>
 <sheet>
@@ -10514,12 +10518,12 @@ Source: RS Component / Phycomp</description>
 <instance part="U2" gate="G$1" x="180.34" y="119.38"/>
 <instance part="FRAME2" gate="G$1" x="254" y="0"/>
 <instance part="FRAME2" gate="G$2" x="401.32" y="0"/>
-<instance part="L1" gate="G$1" x="161.29" y="165.1"/>
-<instance part="C4" gate="G$1" x="147.32" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="146.304" y="175.641" size="1.778" layer="95"/>
-<attribute name="VALUE" x="143.764" y="168.021" size="1.778" layer="96"/>
+<instance part="L1" gate="G$1" x="153.67" y="165.1"/>
+<instance part="C4" gate="G$1" x="144.78" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="143.764" y="175.641" size="1.778" layer="95"/>
+<attribute name="VALUE" x="141.224" y="168.021" size="1.778" layer="96"/>
 </instance>
-<instance part="GND2" gate="1" x="161.29" y="154.94"/>
+<instance part="GND2" gate="1" x="153.67" y="154.94"/>
 <instance part="GND5" gate="1" x="203.2" y="152.4"/>
 <instance part="GND6" gate="1" x="127" y="91.44"/>
 <instance part="GND9" gate="1" x="226.06" y="91.44"/>
@@ -10644,12 +10648,16 @@ Source: RS Component / Phycomp</description>
 <attribute name="VALUE" x="336.55" y="82.55" size="1.778" layer="96"/>
 </instance>
 <instance part="X2" gate="G$1" x="207.01" y="175.26" rot="MR270"/>
-<instance part="C16" gate="G$1" x="186.69" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="185.674" y="175.641" size="1.778" layer="95"/>
-<attribute name="VALUE" x="183.134" y="168.021" size="1.778" layer="96"/>
+<instance part="C16" gate="G$1" x="179.07" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="178.054" y="175.641" size="1.778" layer="95"/>
+<attribute name="VALUE" x="175.514" y="168.021" size="1.778" layer="96"/>
 </instance>
 <instance part="GND20" gate="1" x="226.06" y="152.4"/>
 <instance part="ANT1" gate="G$1" x="133.35" y="172.72" rot="R90"/>
+<instance part="C12" gate="G$1" x="163.83" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="162.814" y="175.641" size="1.778" layer="95"/>
+<attribute name="VALUE" x="160.274" y="168.021" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11254,18 +11262,17 @@ Source: RS Component / Phycomp</description>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="N$4" class="2">
 <segment>
 <pinref part="U2" gate="G$1" pin="RF_ANT"/>
 <wire x1="172.72" y1="147.32" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="152.4" y1="172.72" x2="161.29" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="161.29" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
-<junction x="161.29" y="172.72"/>
 <pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="184.15" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="176.53" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="172.72" x2="168.91" y2="172.72" width="0.1524" layer="91"/>
 <junction x="172.72" y="172.72"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="168.91" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
+<junction x="168.91" y="172.72"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -11714,18 +11721,29 @@ Source: RS Component / Phycomp</description>
 <label x="384.81" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="N$2" class="2">
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
 <pinref part="X2" gate="G$1" pin="1"/>
-<wire x1="191.77" y1="172.72" x2="207.01" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="184.15" y1="172.72" x2="207.01" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="N$3" class="2">
 <segment>
 <pinref part="ANT1" gate="G$1" pin="SIGNAL"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="138.43" y1="172.72" x2="144.78" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="138.43" y1="172.72" x2="142.24" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="2">
+<segment>
+<pinref part="L1" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="172.72" x2="153.67" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="172.72" x2="161.29" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="161.29" y1="172.72" x2="153.67" y2="172.72" width="0.1524" layer="91"/>
+<junction x="161.29" y="172.72"/>
 </segment>
 </net>
 </nets>
