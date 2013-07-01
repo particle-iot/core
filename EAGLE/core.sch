@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -67,7 +67,7 @@
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -3233,6 +3233,46 @@ Source: http://www.osram.convergy.de/</description>
 <text x="-3.99" y="0.69" size="0.4064" layer="25">&gt;NAME</text>
 <rectangle x1="2.3" y1="-0.5" x2="2.7" y2="0.5" layer="21" rot="R180"/>
 </package>
+<package name="EIA3216">
+<wire x1="-1" y1="-1.2" x2="-2.5" y2="-1.2" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="-1.2" x2="-2.5" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="1.2" x2="-1" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="1" y1="-1.2" x2="2.1" y2="-1.2" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="-1.2" x2="2.5" y2="-0.8" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="-0.8" x2="2.5" y2="0.8" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="0.8" x2="2.1" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="1.2" x2="1" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="0.381" y1="1.016" x2="0.381" y2="-1.016" width="0.127" layer="21"/>
+<smd name="C" x="-1.4" y="0" dx="1.6" dy="1.4" layer="1" rot="R90"/>
+<smd name="A" x="1.4" y="0" dx="1.6" dy="1.4" layer="1" rot="R90"/>
+<text x="-2.54" y="1.381" size="0.4064" layer="25">&gt;NAME</text>
+<text x="0.408" y="1.332" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="PC0603">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="C" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="A" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<wire x1="-1.6" y1="0.7" x2="0.1" y2="0.7" width="0.127" layer="21"/>
+<wire x1="0.1" y1="0.7" x2="1.4" y2="0.7" width="0.127" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="1.6" y2="0.5" width="0.127" layer="21"/>
+<wire x1="1.6" y1="0.5" x2="1.6" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-0.5" x2="1.4" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-0.7" x2="0.1" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="0.1" y1="-0.7" x2="-1.6" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.127" layer="21"/>
+<wire x1="0.1" y1="0.7" x2="0.1" y2="-0.7" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SPARK_LOGO">
@@ -3382,6 +3422,18 @@ Source: http://www.osram.convergy.de/</description>
 <text x="2.54" y="1.27" size="1.778" layer="95" rot="R270">&gt;NAME</text>
 <text x="5.08" y="1.27" size="1.778" layer="96" rot="R270">&gt;VALUE</text>
 <pin name="SIGNAL" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+</symbol>
+<symbol name="CAP_POL">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202" cap="flat"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341" cap="flat"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3791,6 +3843,32 @@ CLVBA-FKA</description>
 <device name="" package="AT8010">
 <connects>
 <connect gate="G$1" pin="SIGNAL" pad="SIG"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TANT-CAP" prefix="C" uservalue="yes">
+<description>Tantalum SMT</description>
+<gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1206" package="EIA3216">
+<connects>
+<connect gate="G$1" pin="+" pad="A"/>
+<connect gate="G$1" pin="-" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0603" package="PC0603">
+<connects>
+<connect gate="G$1" pin="+" pad="A"/>
+<connect gate="G$1" pin="-" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10394,7 +10472,7 @@ Source: RS Component / Phycomp</description>
 <part name="C15" library="rcl" deviceset="C-EU" device="C0603" value="12.5pF"/>
 <part name="IC1" library="Spark" deviceset="MCP1825S" device="-SOT223" value="MCP1825S-3302E"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
 <part name="LED_RGB" library="Spark" deviceset="TOPLED-3" device="PLCC"/>
 <part name="RN1" library="resistor-dil" deviceset="4R-N" device="EXB38V" value="EXB-38V102JV"/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
@@ -10403,6 +10481,8 @@ Source: RS Component / Phycomp</description>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
 <part name="ANT1" library="Spark" deviceset="AT8010" device=""/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C0603" value="10pF"/>
+<part name="C17" library="Spark" deviceset="TANT-CAP" device="0603" value="10uF"/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10547,8 +10627,8 @@ Source: RS Component / Phycomp</description>
 <instance part="BTN" gate="G$1" x="294.64" y="74.93" smashed="yes">
 <attribute name="NAME" x="292.1" y="80.01" size="1.778" layer="95"/>
 </instance>
-<instance part="GND1" gate="1" x="387.35" y="45.72"/>
-<instance part="LED_USR" gate="G$1" x="387.35" y="58.42"/>
+<instance part="GND1" gate="1" x="336.55" y="52.07"/>
+<instance part="LED_USR" gate="G$1" x="336.55" y="63.5"/>
 <instance part="GND12" gate="1" x="273.05" y="12.7"/>
 <instance part="+3V2" gate="G$1" x="308.61" y="50.8" smashed="yes">
 <attribute name="VALUE" x="308.61" y="50.8" size="1.778" layer="96"/>
@@ -10603,11 +10683,11 @@ Source: RS Component / Phycomp</description>
 <attribute name="VALUE" x="418.084" y="57.531" size="1.778" layer="96"/>
 </instance>
 <instance part="VDDA" gate="G$1" x="398.78" y="119.38" smashed="yes"/>
-<instance part="C13" gate="G$1" x="488.95" y="144.78" smashed="yes">
-<attribute name="NAME" x="490.474" y="145.161" size="1.778" layer="95"/>
-<attribute name="VALUE" x="490.474" y="140.081" size="1.778" layer="96"/>
+<instance part="C13" gate="G$1" x="477.52" y="144.78" smashed="yes">
+<attribute name="NAME" x="479.044" y="145.161" size="1.778" layer="95"/>
+<attribute name="VALUE" x="479.044" y="140.081" size="1.778" layer="96"/>
 </instance>
-<instance part="GND18" gate="1" x="488.95" y="133.35"/>
+<instance part="GND18" gate="1" x="477.52" y="133.35"/>
 <instance part="+3V3" gate="G$1" x="488.95" y="172.72" smashed="yes">
 <attribute name="VALUE" x="488.95" y="180.34" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -10639,13 +10719,13 @@ Source: RS Component / Phycomp</description>
 <attribute name="NAME" x="77.724" y="155.321" size="1.778" layer="95"/>
 <attribute name="VALUE" x="77.724" y="150.241" size="1.778" layer="96"/>
 </instance>
-<instance part="LED_RGB" gate="G$1" x="347.98" y="76.2" rot="R90"/>
+<instance part="LED_RGB" gate="G$1" x="347.98" y="76.2" rot="MR270"/>
 <instance part="RN1" gate="A" x="361.95" y="81.28"/>
 <instance part="RN1" gate="B" x="361.95" y="76.2"/>
 <instance part="RN1" gate="C" x="361.95" y="71.12"/>
 <instance part="RN1" gate="D" x="361.95" y="66.04"/>
-<instance part="+3V9" gate="G$1" x="336.55" y="82.55" smashed="yes">
-<attribute name="VALUE" x="336.55" y="82.55" size="1.778" layer="96"/>
+<instance part="+3V9" gate="G$1" x="336.55" y="73.66" smashed="yes" rot="R180">
+<attribute name="VALUE" x="336.55" y="73.66" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="X2" gate="G$1" x="207.01" y="175.26" rot="MR270"/>
 <instance part="C16" gate="G$1" x="179.07" y="172.72" smashed="yes" rot="R90">
@@ -10658,6 +10738,8 @@ Source: RS Component / Phycomp</description>
 <attribute name="NAME" x="162.814" y="175.641" size="1.778" layer="95"/>
 <attribute name="VALUE" x="160.274" y="168.021" size="1.778" layer="96"/>
 </instance>
+<instance part="C17" gate="G$1" x="488.95" y="144.78"/>
+<instance part="GND14" gate="1" x="488.95" y="133.35"/>
 </instances>
 <busses>
 </busses>
@@ -10893,7 +10975,7 @@ Source: RS Component / Phycomp</description>
 <segment>
 <pinref part="C13" gate="G$1" pin="2"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="488.95" y1="139.7" x2="488.95" y2="135.89" width="0.1524" layer="91"/>
+<wire x1="477.52" y1="139.7" x2="477.52" y2="135.89" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="435.61" y1="144.78" x2="435.61" y2="139.7" width="0.1524" layer="91"/>
@@ -10918,13 +11000,18 @@ Source: RS Component / Phycomp</description>
 <segment>
 <pinref part="LED_USR" gate="G$1" pin="C"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="387.35" y1="53.34" x2="387.35" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="336.55" y1="58.42" x2="336.55" y2="54.61" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X2" gate="G$1" pin="GND@1"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="209.55" y1="172.72" x2="226.06" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="172.72" x2="226.06" y2="154.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="-"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="488.95" y1="139.7" x2="488.95" y2="135.89" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RAW" class="1">
@@ -11077,15 +11164,15 @@ Source: RS Component / Phycomp</description>
 <pinref part="Q1" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<pinref part="LED_RGB" gate="G$1" pin="A2"/>
-<pinref part="+3V9" gate="G$1" pin="+3V3"/>
-<wire x1="342.9" y1="71.12" x2="336.55" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="336.55" y1="71.12" x2="336.55" y2="80.01" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <pinref part="L2" gate="G$1" pin="1"/>
 <wire x1="488.95" y1="170.18" x2="488.95" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED_RGB" gate="G$1" pin="A2"/>
+<pinref part="+3V9" gate="G$1" pin="+3V3"/>
+<wire x1="342.9" y1="81.28" x2="336.55" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="336.55" y1="81.28" x2="336.55" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D4" class="0">
@@ -11507,9 +11594,9 @@ Source: RS Component / Phycomp</description>
 <pinref part="U3" gate="PORTA_H" pin="PA13"/>
 </segment>
 <segment>
-<pinref part="RN1" gate="D" pin="1"/>
-<wire x1="356.87" y1="66.04" x2="336.55" y2="66.04" width="0.1524" layer="91"/>
-<label x="336.55" y="66.04" size="1.778" layer="95"/>
+<pinref part="RN1" gate="D" pin="2"/>
+<wire x1="367.03" y1="66.04" x2="387.35" y2="66.04" width="0.1524" layer="91"/>
+<label x="384.81" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="WIFI_CS" class="0">
@@ -11605,13 +11692,16 @@ Source: RS Component / Phycomp</description>
 <label x="383.54" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="488.95" y1="147.32" x2="488.95" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="488.95" y1="149.86" x2="477.52" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="477.52" y1="149.86" x2="477.52" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="VDDA1" gate="G$1" pin="VCC"/>
 <pinref part="L2" gate="G$1" pin="2"/>
 <wire x1="488.95" y1="152.4" x2="488.95" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="477.52" y1="147.32" x2="477.52" y2="149.86" width="0.1524" layer="91"/>
+<junction x="477.52" y="149.86"/>
+<pinref part="C17" gate="G$1" pin="+"/>
+<wire x1="488.95" y1="147.32" x2="488.95" y2="149.86" width="0.1524" layer="91"/>
 <junction x="488.95" y="149.86"/>
 </segment>
 </net>
@@ -11655,36 +11745,6 @@ Source: RS Component / Phycomp</description>
 <label x="452.12" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="LED_RGB" gate="G$1" pin="CGREEN"/>
-<pinref part="RN1" gate="A" pin="1"/>
-<wire x1="350.52" y1="81.28" x2="356.87" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="LED_RGB" gate="G$1" pin="CBLUE"/>
-<pinref part="RN1" gate="B" pin="1"/>
-<wire x1="350.52" y1="76.2" x2="356.87" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="LED_RGB" gate="G$1" pin="CRED"/>
-<pinref part="RN1" gate="C" pin="1"/>
-<wire x1="350.52" y1="71.12" x2="356.87" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LED1" class="0">
-<segment>
-<pinref part="RN1" gate="D" pin="2"/>
-<pinref part="LED_USR" gate="G$1" pin="A"/>
-<wire x1="367.03" y1="66.04" x2="387.35" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="387.35" y1="66.04" x2="387.35" y2="60.96" width="0.1524" layer="91"/>
-<label x="384.81" y="66.04" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="LED4" class="0">
 <segment>
 <pinref part="U3" gate="PORTA_H" pin="PA10"/>
@@ -11692,9 +11752,9 @@ Source: RS Component / Phycomp</description>
 <label x="270.51" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="RN1" gate="A" pin="2"/>
-<wire x1="367.03" y1="81.28" x2="387.35" y2="81.28" width="0.1524" layer="91"/>
-<label x="384.81" y="81.28" size="1.778" layer="95"/>
+<pinref part="RN1" gate="C" pin="2"/>
+<wire x1="367.03" y1="71.12" x2="387.35" y2="71.12" width="0.1524" layer="91"/>
+<label x="384.81" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED3" class="0">
@@ -11716,9 +11776,9 @@ Source: RS Component / Phycomp</description>
 <label x="270.51" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="RN1" gate="C" pin="2"/>
-<wire x1="367.03" y1="71.12" x2="387.35" y2="71.12" width="0.1524" layer="91"/>
-<label x="384.81" y="71.12" size="1.778" layer="95"/>
+<pinref part="RN1" gate="A" pin="2"/>
+<wire x1="367.03" y1="81.28" x2="387.35" y2="81.28" width="0.1524" layer="91"/>
+<label x="384.81" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="2">
@@ -11744,6 +11804,35 @@ Source: RS Component / Phycomp</description>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="161.29" y1="172.72" x2="153.67" y2="172.72" width="0.1524" layer="91"/>
 <junction x="161.29" y="172.72"/>
+</segment>
+</net>
+<net name="LED1" class="0">
+<segment>
+<pinref part="LED_USR" gate="G$1" pin="A"/>
+<pinref part="RN1" gate="D" pin="1"/>
+<wire x1="336.55" y1="66.04" x2="356.87" y2="66.04" width="0.1524" layer="91"/>
+<label x="345.44" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="LED_RGB" gate="G$1" pin="CRED"/>
+<pinref part="RN1" gate="A" pin="1"/>
+<wire x1="350.52" y1="81.28" x2="356.87" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="LED_RGB" gate="G$1" pin="CBLUE"/>
+<pinref part="RN1" gate="B" pin="1"/>
+<wire x1="350.52" y1="76.2" x2="356.87" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="LED_RGB" gate="G$1" pin="CGREEN"/>
+<pinref part="RN1" gate="C" pin="1"/>
+<wire x1="350.52" y1="71.12" x2="356.87" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
