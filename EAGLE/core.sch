@@ -2312,62 +2312,6 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </deviceset>
 </devicesets>
 </library>
-<library name="okie">
-<packages>
-<package name="PUSHBUTTON-KMR241GLFS">
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
-<smd name="P$1" x="2.1" y="0.8" dx="1" dy="1" layer="1"/>
-<smd name="P$2" x="2.1" y="-0.8" dx="1" dy="1" layer="1"/>
-<smd name="P$3" x="-2.1" y="0.8" dx="1" dy="1" layer="1"/>
-<smd name="P$4" x="-2.1" y="-0.8" dx="1" dy="1" layer="1"/>
-<text x="-2.5" y="2" size="1.27" layer="21">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="SWITCH">
-<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="4.445" x2="1.905" y2="3.175" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="4.445" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
-<wire x1="1.905" y1="4.445" x2="0" y2="4.445" width="0.254" layer="94"/>
-<wire x1="0" y1="4.445" x2="-1.905" y2="4.445" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="0" y1="4.445" x2="0" y2="3.175" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
-<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
-<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
-<text x="-2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
-<pin name="3" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
-<pin name="4" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="2" rot="R180"/>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="2" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BUTTON-KMR241GLFS">
-<gates>
-<gate name="G$1" symbol="SWITCH" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PUSHBUTTON-KMR241GLFS">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Spark">
 <packages>
 <package name="SPARK_LOGO2">
@@ -3273,6 +3217,23 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.127" layer="21"/>
 <wire x1="0.1" y1="0.7" x2="0.1" y2="-0.7" width="0.127" layer="21"/>
 </package>
+<package name="TACTILE_SWITCH_SMD">
+<smd name="1" x="-1.875" y="0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
+<smd name="2" x="1.875" y="0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
+<smd name="3" x="-1.875" y="-0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
+<smd name="4" x="1.875" y="-0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
+<text x="-0.889" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.889" y="-2.032" size="0.4064" layer="27">&gt;Value</text>
+<wire x1="-1.8" y1="1.5" x2="1.8" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.8" y1="1.5" x2="1.8" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.8" y1="-1.5" x2="-1.8" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.8" y1="-1.5" x2="-1.8" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1" y1="1.5" x2="0.9" y2="1.5" width="0.2" layer="21"/>
+<wire x1="-1" y1="-1.5" x2="1" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="-1.8" y1="0.2" x2="-1.8" y2="-0.2" width="0.2" layer="21"/>
+<wire x1="1.8" y1="0.2" x2="1.8" y2="-0.2" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="0.875" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SPARK_LOGO">
@@ -3434,6 +3395,27 @@ Source: http://www.osram.convergy.de/</description>
 <rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="SWITCH-MOMENTARY">
+<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="4.445" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="0" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="4.445" x2="-1.905" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="0" y1="4.445" x2="0" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<text x="-2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="2"/>
+<pin name="3" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="2"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3869,6 +3851,25 @@ CLVBA-FKA</description>
 <connects>
 <connect gate="G$1" pin="+" pad="A"/>
 <connect gate="G$1" pin="-" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TAC_SWITCH" prefix="S" uservalue="yes">
+<description>SMD Tactiile Switch</description>
+<gates>
+<gate name="S" symbol="SWITCH-MOMENTARY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD" package="TACTILE_SWITCH_SMD">
+<connects>
+<connect gate="S" pin="1" pad="1"/>
+<connect gate="S" pin="2" pad="2"/>
+<connect gate="S" pin="3" pad="3"/>
+<connect gate="S" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10432,9 +10433,9 @@ Source: RS Component / Phycomp</description>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
-<part name="RESET" library="okie" deviceset="BUTTON-KMR241GLFS" device="" value="KMR211GLFS"/>
+<part name="RESET" library="Spark" deviceset="TAC_SWITCH" device="SMD" value="KMR211GLFS"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
-<part name="BTN" library="okie" deviceset="BUTTON-KMR241GLFS" device="" value="KMR211GLFS"/>
+<part name="BTN" library="Spark" deviceset="TAC_SWITCH" device="SMD" value="KMR211GLFS"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="LED_USR" library="SparkFun" deviceset="LED" device="0603"/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
@@ -10617,14 +10618,14 @@ Source: RS Component / Phycomp</description>
 <attribute name="VALUE" x="146.304" y="58.801" size="1.778" layer="96"/>
 </instance>
 <instance part="U3" gate="RESET" x="436.88" y="170.18"/>
-<instance part="RESET" gate="G$1" x="280.67" y="33.02" smashed="yes">
-<attribute name="NAME" x="278.13" y="38.1" size="1.778" layer="95"/>
+<instance part="RESET" gate="S" x="280.67" y="33.02" smashed="yes" rot="MR0">
+<attribute name="NAME" x="283.21" y="38.1" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="R10" gate="G$1" x="308.61" y="40.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="307.1114" y="38.1" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="311.912" y="38.1" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="BTN" gate="G$1" x="294.64" y="74.93" smashed="yes">
+<instance part="BTN" gate="S" x="294.64" y="74.93" smashed="yes">
 <attribute name="NAME" x="292.1" y="80.01" size="1.778" layer="95"/>
 </instance>
 <instance part="GND1" gate="1" x="336.55" y="52.07"/>
@@ -10903,7 +10904,7 @@ Source: RS Component / Phycomp</description>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="273.05" y1="74.93" x2="273.05" y2="62.23" width="0.1524" layer="91"/>
-<pinref part="BTN" gate="G$1" pin="1"/>
+<pinref part="BTN" gate="S" pin="1"/>
 <wire x1="289.56" y1="74.93" x2="273.05" y2="74.93" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -10963,14 +10964,14 @@ Source: RS Component / Phycomp</description>
 <wire x1="457.2" y1="167.64" x2="457.2" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="275.59" y1="33.02" x2="273.05" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="273.05" y1="33.02" x2="273.05" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="RESET" gate="G$1" pin="1"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="289.56" y1="22.86" x2="273.05" y2="22.86" width="0.1524" layer="91"/>
-<junction x="273.05" y="22.86"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="273.05" y1="22.86" x2="273.05" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="RESET" gate="S" pin="3"/>
+<wire x1="275.59" y1="33.02" x2="273.05" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="273.05" y1="33.02" x2="273.05" y2="22.86" width="0.1524" layer="91"/>
+<junction x="273.05" y="22.86"/>
 </segment>
 <segment>
 <pinref part="C13" gate="G$1" pin="2"/>
@@ -11396,16 +11397,16 @@ Source: RS Component / Phycomp</description>
 <label x="458.47" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="285.75" y1="33.02" x2="308.61" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="308.61" y1="33.02" x2="308.61" y2="35.56" width="0.1524" layer="91"/>
 <label x="316.23" y="34.29" size="1.778" layer="95"/>
-<pinref part="RESET" gate="G$1" pin="2"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="297.18" y1="22.86" x2="308.61" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="308.61" y1="22.86" x2="308.61" y2="33.02" width="0.1524" layer="91"/>
 <junction x="308.61" y="33.02"/>
 <wire x1="308.61" y1="33.02" x2="321.31" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="RESET" gate="S" pin="1"/>
+<wire x1="285.75" y1="33.02" x2="308.61" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="2"/>
@@ -11415,7 +11416,7 @@ Source: RS Component / Phycomp</description>
 </net>
 <net name="BTN" class="0">
 <segment>
-<pinref part="BTN" gate="G$1" pin="2"/>
+<pinref part="BTN" gate="S" pin="3"/>
 <wire x1="299.72" y1="74.93" x2="321.31" y2="74.93" width="0.1524" layer="91"/>
 <label x="317.5" y="76.2" size="1.778" layer="95"/>
 </segment>
