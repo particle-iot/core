@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -67,7 +67,7 @@
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -10529,7 +10529,6 @@ Source: RS Component / Phycomp</description>
 <wire x1="500.38" y1="86.36" x2="500.38" y2="39.37" width="0.1524" layer="97" style="dashdot"/>
 <text x="477.52" y="40.64" size="1.778" layer="97">External FLASH</text>
 <wire x1="256.54" y1="2.54" x2="256.54" y2="86.36" width="0.1524" layer="97" style="dashdot"/>
-<wire x1="256.54" y1="86.36" x2="397.51" y2="86.36" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="397.51" y1="2.54" x2="397.51" y2="86.36" width="0.1524" layer="97" style="dashdot"/>
 <wire x1="256.54" y1="2.54" x2="397.51" y2="2.54" width="0.1524" layer="97" style="dashdot"/>
 <text x="384.81" y="5.08" size="1.778" layer="97">User IO</text>
@@ -10618,8 +10617,8 @@ Source: RS Component / Phycomp</description>
 <attribute name="VALUE" x="146.304" y="58.801" size="1.778" layer="96"/>
 </instance>
 <instance part="U2" gate="RESET" x="436.88" y="170.18"/>
-<instance part="RESET" gate="S" x="280.67" y="33.02" smashed="yes" rot="MR0">
-<attribute name="NAME" x="283.21" y="38.1" size="1.778" layer="95" rot="MR0"/>
+<instance part="RESET" gate="S" x="287.02" y="33.02" smashed="yes" rot="MR0">
+<attribute name="NAME" x="289.56" y="38.1" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="R8" gate="G$1" x="308.61" y="40.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="307.1114" y="38.1" size="1.778" layer="95" rot="R90"/>
@@ -10902,12 +10901,6 @@ Source: RS Component / Phycomp</description>
 <pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="273.05" y1="74.93" x2="273.05" y2="62.23" width="0.1524" layer="91"/>
-<pinref part="BTN" gate="S" pin="1"/>
-<wire x1="289.56" y1="74.93" x2="273.05" y2="74.93" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U3" gate="A" pin="VSS"/>
 <wire x1="457.2" y1="55.88" x2="444.5" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND22" gate="1" pin="GND"/>
@@ -10968,9 +10961,9 @@ Source: RS Component / Phycomp</description>
 <wire x1="289.56" y1="22.86" x2="273.05" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="273.05" y1="22.86" x2="273.05" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="RESET" gate="S" pin="3"/>
-<wire x1="275.59" y1="33.02" x2="273.05" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="273.05" y1="33.02" x2="273.05" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="RESET" gate="S" pin="4"/>
+<wire x1="281.94" y1="30.48" x2="273.05" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="273.05" y1="30.48" x2="273.05" y2="22.86" width="0.1524" layer="91"/>
 <junction x="273.05" y="22.86"/>
 </segment>
 <segment>
@@ -11013,6 +11006,12 @@ Source: RS Component / Phycomp</description>
 <pinref part="C16" gate="G$1" pin="-"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="488.95" y1="139.7" x2="488.95" y2="135.89" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BTN" gate="S" pin="2"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="289.56" y1="72.39" x2="273.05" y2="72.39" width="0.1524" layer="91"/>
+<wire x1="273.05" y1="72.39" x2="273.05" y2="62.23" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RAW" class="1">
@@ -11406,7 +11405,7 @@ Source: RS Component / Phycomp</description>
 <junction x="308.61" y="33.02"/>
 <wire x1="308.61" y1="33.02" x2="321.31" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="RESET" gate="S" pin="1"/>
-<wire x1="285.75" y1="33.02" x2="308.61" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="33.02" x2="308.61" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="2"/>
