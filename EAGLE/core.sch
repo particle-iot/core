@@ -10482,7 +10482,7 @@ Source: RS Component / Phycomp</description>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
 <part name="ANT1" library="Spark" deviceset="AT8010" device=""/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="10pF"/>
-<part name="C16" library="Spark" deviceset="TANT-CAP" device="0603" value="10uF"/>
+<part name="C16" library="Spark" deviceset="TANT-CAP" device="1206" value="10uF"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
