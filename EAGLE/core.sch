@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11012,6 +11012,10 @@ Source: RS Component / Phycomp</description>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="289.56" y1="72.39" x2="273.05" y2="72.39" width="0.1524" layer="91"/>
 <wire x1="273.05" y1="72.39" x2="273.05" y2="62.23" width="0.1524" layer="91"/>
+<pinref part="BTN" gate="S" pin="1"/>
+<wire x1="289.56" y1="74.93" x2="273.05" y2="74.93" width="0.1524" layer="91"/>
+<wire x1="273.05" y1="74.93" x2="273.05" y2="72.39" width="0.1524" layer="91"/>
+<junction x="273.05" y="72.39"/>
 </segment>
 </net>
 <net name="RAW" class="1">
