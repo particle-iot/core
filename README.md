@@ -21,6 +21,8 @@ Development of the Spark Core in its current form began in January 2013 in Shenz
 
 **Gerber** — Complete set of Gerber files for the current version of the Core.  Use these files to spin up and assemble your own Cores!
 
+**Libraries** — EAGLE libraries for the components used on the Spark Core
+
 **PDFs** — Includes detailed description of component placement on the Core (especially useful during assembly).  Also includes mechanical drawings and a detailed schematic of the Core for reference and debugging.
 
 **Pin Mapping** — Detailed pin mapping of the Spark Core and STM32, providing information about which pins are mapped to which peripherals.
