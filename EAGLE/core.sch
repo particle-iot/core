@@ -3234,6 +3234,48 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="1.8" y1="0.2" x2="1.8" y2="-0.2" width="0.2" layer="21"/>
 <circle x="0" y="0" radius="0.875" width="0.2" layer="21"/>
 </package>
+<package name="USB-MICROB-SMT-DIP">
+<wire x1="-3.4" y1="-2.25" x2="-3" y2="-2.25" width="0.127" layer="51"/>
+<wire x1="3" y1="-2.25" x2="3.4" y2="-2.25" width="0.127" layer="51"/>
+<wire x1="-3.4" y1="-2.25" x2="-3.4" y2="-1.55" width="0.127" layer="51"/>
+<wire x1="-3.4" y1="-1.55" x2="-3.4" y2="2.75" width="0.127" layer="51"/>
+<wire x1="3.4" y1="2.75" x2="2.2" y2="2.75" width="0.127" layer="51"/>
+<wire x1="3.4" y1="2.75" x2="3.4" y2="-1.55" width="0.127" layer="51"/>
+<wire x1="3.4" y1="-1.55" x2="3.4" y2="-2.25" width="0.127" layer="51"/>
+<wire x1="-3.4" y1="-1.55" x2="3.4" y2="-1.55" width="0.127" layer="51"/>
+<wire x1="-3.4" y1="1.15" x2="-3.4" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="2.75" x2="-2.2" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="3.4" y1="2.75" x2="2.2" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="3.4" y1="1.15" x2="3.4" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="-1.55" x2="3.4" y2="-1.55" width="0.2032" layer="21"/>
+<wire x1="-2.2" y1="1.35" x2="2.2" y2="1.35" width="0.127" layer="51"/>
+<wire x1="2.2" y1="1.35" x2="2.2" y2="2.75" width="0.127" layer="51"/>
+<wire x1="-2.2" y1="1.35" x2="-2.2" y2="2.75" width="0.127" layer="51"/>
+<wire x1="-3.4" y1="2.75" x2="-2.2" y2="2.75" width="0.127" layer="51"/>
+<wire x1="-2.2" y1="2.75" x2="-2.2" y2="1.35" width="0.2032" layer="21"/>
+<wire x1="-2.2" y1="1.35" x2="2.2" y2="1.35" width="0.2032" layer="21"/>
+<wire x1="2.2" y1="1.35" x2="2.2" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="-2.25" x2="-4" y2="-2.85" width="0.2032" layer="51"/>
+<wire x1="3.4" y1="-2.25" x2="4" y2="-2.85" width="0.2032" layer="51"/>
+<wire x1="-3" y1="-2.25" x2="-3" y2="-2.65" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-2.9" x2="2.75" y2="-2.9" width="0.127" layer="51"/>
+<wire x1="3" y1="-2.7" x2="3" y2="-2.25" width="0.127" layer="51"/>
+<wire x1="-3" y1="-2.65" x2="-2.8" y2="-2.9" width="0.127" layer="51" curve="84.547378"/>
+<wire x1="2.75" y1="-2.9" x2="3" y2="-2.7" width="0.127" layer="51" curve="84.547378"/>
+<smd name="VBUS" x="-1.3" y="2.675" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="GND" x="1.3" y="2.675" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="D-" x="-0.65" y="2.675" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="D+" x="0" y="2.675" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="ID" x="0.65" y="2.675" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<text x="-1.6" y="-0.45" size="0.762" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.275" size="0.762" layer="27">&gt;VALUE</text>
+<smd name="P$1" x="-1" y="0" dx="1.5" dy="1.9" layer="1"/>
+<smd name="P$2" x="1" y="0.01" dx="1.5" dy="1.9" layer="1"/>
+<hole x="-1.95" y="2.1" drill="0.6"/>
+<hole x="1.95" y="2.1" drill="0.6"/>
+<pad name="MT1" x="-2.775" y="0" drill="1" diameter="1.6" rot="R90"/>
+<pad name="MT2" x="2.775" y="0" drill="1" diameter="1.6" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SPARK_LOGO">
@@ -3249,7 +3291,7 @@ Source: http://www.osram.convergy.de/</description>
 <pin name="VBUS" x="-2.54" y="2.54" visible="pad" length="short"/>
 <pin name="GND" x="-2.54" y="0" visible="pad" length="short"/>
 </symbol>
-<symbol name="Q@1">
+<symbol name="Q">
 <text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-4.318" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
@@ -3432,15 +3474,6 @@ Source: http://www.osram.convergy.de/</description>
 </devices>
 </deviceset>
 <deviceset name="USB" prefix="JP">
-<description>&lt;b&gt;USB Connectors&lt;/b&gt;
-&lt;p&gt;USB-B-PTH is fully proven SKU : PRT-00139/CONN-08278
-&lt;p&gt;USB-miniB is fully proven SKU : PRT-00587
-&lt;p&gt;USB-A-PCB is untested.
-&lt;p&gt;USB-A-H is throughly reviewed, but untested. Spark Fun Electronics SKU : PRT-00437
-&lt;p&gt;USB-B-SMT is throughly reviewed, but untested. Needs silkscreen touching up.
-&lt;p&gt;USB-A-S has not been used/tested
-&lt;p&gt;USB-MB-H has not been used/tested
-&lt;P&gt;USB-MICROB has been used. CONN-09505</description>
 <gates>
 <gate name="G$1" symbol="USB" x="0" y="0"/>
 </gates>
@@ -3639,11 +3672,22 @@ Source: http://www.osram.convergy.de/</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="USB-MICROB-SMT-DIP" package="USB-MICROB-SMT-DIP">
+<connects>
+<connect gate="G$1" pin="D+" pad="D+"/>
+<connect gate="G$1" pin="D-" pad="D-"/>
+<connect gate="G$1" pin="GND" pad="GND MT1 MT2"/>
+<connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="Q" prefix="Q" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="Q@1" x="0" y="0"/>
+<gate name="G$1" symbol="Q" x="0" y="0"/>
 </gates>
 <devices>
 <device name="_FC135" package="FC135">
@@ -10809,7 +10853,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="C12" library="rcl" deviceset="C-EU" device="C0603" value="22pF"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="R0603" value="22"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="R0603" value="22"/>
-<part name="X1" library="Spark" deviceset="USB" device="USB-MICROB-ALIGN" value="USB-MICROB"/>
+<part name="X1" library="Spark" deviceset="USB" device="USB-MICROB-SMT-DIP" value="USB-MICROB"/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun" deviceset="DIODE" device="SOD"/>
 <part name="U2" library="stm32" deviceset="STM32F10XCXT6" device=""/>
