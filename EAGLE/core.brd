@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="$GND" color="13" fill="1" visible="yes" active="yes"/>
@@ -52,8 +52,8 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -428,7 +428,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <vertex x="1.27" y="0.635"/>
 </polygon>
 </package>
-<package name="USB-MICROB-SMT-DIP">
+<package name="USB-MICROB-SLOT-HOLE">
 <wire x1="-3.4" y1="-2.25" x2="-3" y2="-2.25" width="0.127" layer="51"/>
 <wire x1="3" y1="-2.25" x2="3.4" y2="-2.25" width="0.127" layer="51"/>
 <wire x1="-3.4" y1="-2.25" x2="-3.4" y2="-1.55" width="0.127" layer="51"/>
@@ -467,8 +467,20 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="P$2" x="1" y="0.01" dx="1.5" dy="1.9" layer="1"/>
 <hole x="-1.95" y="2.1" drill="0.6"/>
 <hole x="1.95" y="2.1" drill="0.6"/>
-<pad name="MT1" x="-2.775" y="0" drill="1" diameter="1.6" rot="R90"/>
-<pad name="MT2" x="2.775" y="0" drill="1" diameter="1.6" rot="R90"/>
+<pad name="MT1" x="-2.775" y="0" drill="0.5" diameter="1.1" shape="long" rot="R90"/>
+<pad name="MT2" x="2.775" y="0" drill="0.5" diameter="1.1" shape="long" rot="R90"/>
+<wire x1="-3.03" y1="0.35" x2="-2.78" y2="0.6" width="0" layer="46" curve="-90"/>
+<wire x1="-2.78" y1="0.6" x2="-2.52" y2="0.34" width="0" layer="46" curve="-90"/>
+<wire x1="-2.52" y1="0.34" x2="-2.52" y2="-0.34" width="0" layer="46"/>
+<wire x1="-2.52" y1="-0.34" x2="-2.78" y2="-0.6" width="0" layer="46" curve="-90"/>
+<wire x1="-2.78" y1="-0.6" x2="-3.03" y2="-0.35" width="0" layer="46" curve="-90"/>
+<wire x1="-3.03" y1="-0.35" x2="-3.03" y2="0.35" width="0" layer="46"/>
+<wire x1="2.505" y1="0.35" x2="2.755" y2="0.6" width="0" layer="46" curve="-90"/>
+<wire x1="2.755" y1="0.6" x2="3.015" y2="0.34" width="0" layer="46" curve="-90"/>
+<wire x1="3.015" y1="0.34" x2="3.015" y2="-0.34" width="0" layer="46"/>
+<wire x1="3.015" y1="-0.34" x2="2.755" y2="-0.6" width="0" layer="46" curve="-90"/>
+<wire x1="2.755" y1="-0.6" x2="2.505" y2="-0.35" width="0" layer="46" curve="-90"/>
+<wire x1="2.505" y1="-0.35" x2="2.505" y2="0.35" width="0" layer="46"/>
 </package>
 <package name="FC135">
 <description>&lt;B&gt;Abracon ABS07 32.768 kHz crystal&lt;/B&gt;
@@ -2161,7 +2173,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="12.192" y="26.289" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="13.462" y="27.432" size="0.6096" layer="27" rot="R270"/>
 </element>
-<element name="X1" library="Spark" package="USB-MICROB-SMT-DIP" value="USB-MICROB" x="10.16" y="31.75" locked="yes" smashed="yes" rot="R180">
+<element name="X1" library="Spark" package="USB-MICROB-SLOT-HOLE" value="USB-MICROB" x="10.16" y="31.75" locked="yes" smashed="yes" rot="R180">
 <attribute name="NAME" x="11.76" y="32.1" size="0.762" layer="25" rot="R180"/>
 <attribute name="VALUE" x="7.366" y="34.671" size="0.6096" layer="27"/>
 </element>
