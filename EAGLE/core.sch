@@ -12003,6 +12003,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <approved hash="102,1,233.68,78.74,3.3V,+3V3,,,,"/>
 <approved hash="102,1,398.78,116.84,VCC,VDDA,,,,"/>
 <approved hash="102,1,477.52,167.64,VCC,VDDA,,,,"/>
+<approved hash="202,1,144.78,111.76,U1,WL_RS232_RX,,,,"/>
 <approved hash="208,1,393.7,172.72,+3V3,sup,,,,"/>
 <approved hash="208,1,393.7,119.38,+3V3,sup,,,,"/>
 <approved hash="208,1,482.6,120.65,+3V3,sup,,,,"/>
@@ -12015,6 +12016,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <approved hash="208,1,99.06,69.85,+3V3,sup,,,,"/>
 <approved hash="208,1,38.1,72.39,+3V3,sup,,,,"/>
 <approved hash="208,1,488.95,170.18,+3V3,sup,,,,"/>
+<approved hash="208,1,336.55,76.2,+3V3,sup,,,,"/>
 <approved hash="209,1,144.78,114.3,N$9,,,,,"/>
 <approved hash="209,1,144.78,119.38,N$9,,,,,"/>
 <approved hash="206,1,175.26,91.44,SPI_MISO,,,,,"/>
