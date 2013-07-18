@@ -10627,8 +10627,8 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="R4" library="rcl" deviceset="R-US_" device="R0603" value="1K"/>
 <part name="GND19" library="SparkFun" deviceset="GND" device=""/>
 <part name="Y1" library="Spark" deviceset="Q" device="_FC135" value="32Khz"/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="12.5pF"/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C0603" value="12.5pF"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="22pF"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0603" value="22pF"/>
 <part name="IC1" library="Spark" deviceset="MCP1825S" device="-SOT223" value="MCP1825S-3302E"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
