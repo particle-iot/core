@@ -169,6 +169,7 @@
 <text x="17.018" y="2.032" size="0.8128" layer="21" font="vector" ratio="15" rot="SR270">D0</text>
 <text x="4.064" y="22.352" size="0.8128" layer="21" font="vector" ratio="15">BTN</text>
 <text x="14.224" y="22.352" size="0.8128" layer="21" font="vector" ratio="15">RST</text>
+<circle x="14.9098" y="7.2898" radius="0.234175" width="0.2032" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun">
