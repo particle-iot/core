@@ -1,9 +1,9 @@
-Top Copper Layer: GTP
-Second Copper Layer: G2P
-Third Copper Layer: G15P
-Bottom Copper Layer: GBP
-Top Soldermask: GTP
-Bottom Soldermask: GBP
+Top Copper Layer: GTL
+Second Copper Layer: G2L
+Third Copper Layer: G15L
+Bottom Copper Layer: GBL
+Top Soldermask: GTS
+Bottom Soldermask: GBS
 Top Silkscreen: GTO
 Bottom Silkscreen: GBO
 Milling Layer: MIL
