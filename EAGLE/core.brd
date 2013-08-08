@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="$GND" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="$GND" color="13" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="$+3V3" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="$+3V3" color="11" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -2534,7 +2534,6 @@ design rules under a new name.</description>
 <wire x1="0.8128" y1="34.4052" x2="0.762" y2="34.3544" width="0.8128" layer="16"/>
 <wire x1="0.762" y1="34.3544" x2="0.762" y2="33.528" width="0.8128" layer="16"/>
 <via x="0.762" y="33.528" extent="1-16" drill="0.3"/>
-<via x="0.762" y="33.528" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="RAW" class="1">
 <contactref element="IC1" pad="1"/>
@@ -3368,6 +3367,52 @@ design rules under a new name.</description>
 <wire x1="15.1384" y1="27.432" x2="15.7734" y2="28.067" width="0.2032" layer="1"/>
 </signal>
 </signals>
+<errors>
+<approved hash="3,1,1dbf265527ee1c04"/>
+<approved hash="4,1,b41bac988b3792a8"/>
+<approved hash="4,1,8af88279d4d0dd4e"/>
+<approved hash="5,1,24e68f22d5c2592b"/>
+<approved hash="5,1,68e2e488a6b00ec6"/>
+<approved hash="5,1,893d699cccb10208"/>
+<approved hash="5,1,3d4af13b0f002f6a"/>
+<approved hash="5,1,b0e4ed3158380009"/>
+<approved hash="5,1,26fb62c3f1761e6a"/>
+<approved hash="5,1,f61cbac603aa74c1"/>
+<approved hash="5,1,3755bb7cb555c37b"/>
+<approved hash="5,1,46c9855ee94a2adb"/>
+<approved hash="5,1,0bbe3eacd4991dd6"/>
+<approved hash="19,1,b22667bad846e722"/>
+<approved hash="4,1,23680430fbe7dfa5"/>
+<approved hash="4,1,238a6e1e91e7dfa5"/>
+<approved hash="5,1,88445fb1c29e1f96"/>
+<approved hash="19,1,8bcdfa7d0ac41a85"/>
+<approved hash="5,1,e5333dc7531575ba"/>
+<approved hash="5,1,194c02ce17faf796"/>
+<approved hash="5,1,8f94e9fbcf247ace"/>
+<approved hash="5,1,10a1de6173f8c1d6"/>
+<approved hash="4,1,c8358477798e361a"/>
+<approved hash="5,1,c8281ca8bba49897"/>
+<approved hash="5,1,dcacc281550dd031"/>
+<approved hash="5,1,fda69a7fc7de4465"/>
+<approved hash="5,1,c496ab5330882d11"/>
+<approved hash="19,1,e70775b1d1ea6aeb"/>
+<approved hash="5,1,88f413e9701c1885"/>
+<approved hash="5,1,b057507850d0e5c4"/>
+<approved hash="5,1,545780a86ba448e8"/>
+<approved hash="5,1,0c8a657585e4a712"/>
+<approved hash="5,1,f0da25814e33c00a"/>
+<approved hash="5,1,aeb40bb5dcb1a843"/>
+<approved hash="5,1,4cf413fb566b3681"/>
+<approved hash="4,16,b41bac988b3792a8"/>
+<approved hash="4,16,1bdfbdce50dce6cf"/>
+<approved hash="4,16,8af88279d4d0dd4e"/>
+<approved hash="19,16,8db1b04839ef1e0f"/>
+<approved hash="5,16,752f50029100baf0"/>
+<approved hash="5,16,ec15041f7b2c3c2e"/>
+<approved hash="5,16,5b6a06b018cd5985"/>
+<approved hash="5,16,2b1ea492d6d81fcc"/>
+<approved hash="5,16,e11080ce22911d5c"/>
+</errors>
 </board>
 </drawing>
 </eagle>
