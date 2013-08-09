@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -220,7 +220,6 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="0.5" y1="-1.65" x2="0.5" y2="-1.8" width="0.1016" layer="51"/>
 <wire x1="0.5" y1="-1.8" x2="1" y2="-1.8" width="0.1016" layer="51"/>
 <wire x1="1" y1="-1.8" x2="1" y2="-1.6" width="0.1016" layer="51"/>
-<wire x1="-0.85" y1="-1.6" x2="-1.4" y2="-1.05" width="0.2032" layer="51"/>
 <wire x1="-1.4" y1="1.6" x2="-1.4" y2="-1.05" width="0.2032" layer="51"/>
 <circle x="0" y="0" radius="1.1" width="0.2032" layer="51"/>
 <smd name="4" x="-0.9" y="1.45" dx="1.1" dy="1.4" layer="1"/>
@@ -229,10 +228,17 @@ Source: http://www.osram.convergy.de/</description>
 <smd name="1" x="-0.9" y="-1.45" dx="1.1" dy="1.4" layer="1"/>
 <text x="2.9438" y="-2.4534" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="4.427" y="-2.4518" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="-2.1686" y="-1.8568" size="0.8128" layer="21" ratio="15">1</text>
-<rectangle x1="0.1" y1="0.1" x2="0.5" y2="0.5" layer="21"/>
-<rectangle x1="0.1" y1="-0.5" x2="0.5" y2="-0.1" layer="21"/>
-<rectangle x1="-0.5" y1="-0.5" x2="-0.1" y2="-0.1" layer="21"/>
+<wire x1="-1.397" y1="0.508" x2="-1.397" y2="-0.508" width="0.2032" layer="21"/>
+<wire x1="-0.1016" y1="1.6002" x2="0.1016" y2="1.6002" width="0.2032" layer="21"/>
+<wire x1="1.397" y1="0.508" x2="1.397" y2="-0.508" width="0.2032" layer="21"/>
+<wire x1="-0.1016" y1="-1.6002" x2="0.1016" y2="-1.6002" width="0.2032" layer="21"/>
+<wire x1="1.3598" y1="1.0162" x2="0.8098" y2="1.5662" width="0.2032" layer="51"/>
+<polygon width="0.127" layer="21">
+<vertex x="0" y="0"/>
+<vertex x="0.5588" y="0" curve="90"/>
+<vertex x="0" y="0.5588"/>
+</polygon>
+<circle x="0" y="0" radius="0.55764375" width="0.127" layer="21"/>
 </package>
 <package name="SM-R6">
 <description>SMD TOROIDAL CORE &lt;B&gt;TRANSFORMER&lt;/B&gt;&lt;p&gt;
@@ -2574,6 +2580,16 @@ Source: www.cree.com/xlamp .. XLampXP-E.pdf</description>
 <hole x="25.4" y="0" drill="1.4732"/>
 <hole x="27.94" y="0" drill="1.4732"/>
 </package>
+<package name="DIODE-DO-220AA(SMP)">
+<smd name="CATHODE" x="0" y="0" dx="2.667" dy="2.54" layer="1"/>
+<smd name="ANODE" x="2.3495" y="0" dx="0.762" dy="1.27" layer="1"/>
+<wire x1="-1.1176" y1="-1.0922" x2="-1.1176" y2="1.0922" width="0.127" layer="51"/>
+<wire x1="-1.1176" y1="1.0922" x2="2.4892" y2="1.0922" width="0.127" layer="51"/>
+<wire x1="2.4892" y1="1.0922" x2="2.4892" y2="-1.0922" width="0.127" layer="51"/>
+<wire x1="2.4892" y1="-1.0922" x2="-1.1176" y2="-1.0922" width="0.127" layer="51"/>
+<rectangle x1="-1.1176" y1="-1.0922" x2="0" y2="1.0922" layer="51"/>
+<rectangle x1="-1.778" y1="-1.27" x2="-1.524" y2="1.27" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="UCC28700">
@@ -3084,6 +3100,18 @@ Source: www.cree.com/xlamp .. XLampXP-E.pdf</description>
 <pin name="10" x="10.16" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="11" x="10.16" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="12" x="10.16" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="DIODE">
+<wire x1="0" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.81" y2="0" width="0.254" layer="94"/>
+<pin name="ANODE" x="-1.27" y="0" visible="off" length="point"/>
+<pin name="CATHODE" x="3.81" y="0" visible="off" length="point"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4015,6 +4043,22 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODE">
+<gates>
+<gate name="G$1" symbol="DIODE" x="-1.27" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIODE-DO-220AA(SMP)">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
 </connects>
 <technologies>
 <technology name=""/>
