@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="13" fill="1" visible="no" active="no"/>
@@ -10556,9 +10556,9 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <instance part="U1" gate="G$1" x="180.34" y="119.38"/>
 <instance part="FRAME2" gate="G$1" x="254" y="0"/>
 <instance part="FRAME2" gate="G$2" x="401.32" y="0"/>
-<instance part="C4" gate="G$1" x="157.48" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="156.464" y="175.641" size="1.778" layer="95"/>
-<attribute name="VALUE" x="153.924" y="168.021" size="1.778" layer="96"/>
+<instance part="C4" gate="G$1" x="144.78" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="143.764" y="175.641" size="1.778" layer="95"/>
+<attribute name="VALUE" x="141.224" y="168.021" size="1.778" layer="96"/>
 </instance>
 <instance part="GND5" gate="1" x="203.2" y="152.4"/>
 <instance part="GND6" gate="1" x="127" y="91.44"/>
@@ -10689,14 +10689,14 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <attribute name="VALUE" x="181.864" y="168.021" size="1.778" layer="96"/>
 </instance>
 <instance part="GND20" gate="1" x="226.06" y="152.4"/>
-<instance part="ANT1" gate="G$1" x="133.35" y="172.72" rot="R90"/>
+<instance part="ANT1" gate="G$1" x="132.08" y="172.72" rot="R90"/>
 <instance part="C15" gate="G$1" x="488.95" y="144.78"/>
 <instance part="GND14" gate="1" x="488.95" y="133.35"/>
 <instance part="JP1" gate="G$1" x="358.14" y="22.86" rot="R180"/>
 <instance part="JP2" gate="G$1" x="365.76" y="22.86" rot="MR180"/>
 <instance part="D1" gate="G$1" x="30.48" y="165.1"/>
-<instance part="L1" gate="G$1" x="142.24" y="165.1"/>
-<instance part="GND21" gate="1" x="142.24" y="154.94"/>
+<instance part="L1" gate="G$1" x="157.48" y="165.1"/>
+<instance part="GND21" gate="1" x="157.48" y="154.94"/>
 </instances>
 <busses>
 </busses>
@@ -11732,25 +11732,18 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="190.5" y1="172.72" x2="207.01" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="2">
-<segment>
-<pinref part="ANT1" gate="G$1" pin="SIGNAL"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="138.43" y1="172.72" x2="142.24" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="172.72" x2="154.94" y2="172.72" width="0.1524" layer="91"/>
-<junction x="142.24" y="172.72"/>
-</segment>
-</net>
 <net name="N$5" class="2">
 <segment>
-<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="RF_ANT"/>
 <wire x1="172.72" y1="147.32" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="172.72" y1="172.72" x2="157.48" y2="172.72" width="0.1524" layer="91"/>
 <junction x="172.72" y="172.72"/>
-<wire x1="172.72" y1="172.72" x2="162.56" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="172.72" x2="149.86" y2="172.72" width="0.1524" layer="91"/>
+<junction x="157.48" y="172.72"/>
 </segment>
 </net>
 <net name="LED1" class="0">
@@ -11780,6 +11773,13 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <pinref part="LED_RGB" gate="G$1" pin="CGREEN"/>
 <pinref part="RN1" gate="C" pin="1"/>
 <wire x1="350.52" y1="71.12" x2="356.87" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="2">
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="ANT1" gate="G$1" pin="SIGNAL"/>
+<wire x1="142.24" y1="172.72" x2="137.16" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

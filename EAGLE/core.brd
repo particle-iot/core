@@ -6,10 +6,10 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="$GND" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="$GND" color="13" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -2199,9 +2199,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="16.891" y="18.923" size="0.6096" layer="28" rot="MR270"/>
 </element>
 <element name="U1" library="CC3000" package="CC3000" value="" x="10.16" y="15.24" locked="yes" smashed="yes" rot="R180"/>
-<element name="C4" library="rcl" package="C0603" value="2.2pF" x="13.1826" y="5.5118" smashed="yes" rot="R90">
-<attribute name="NAME" x="12.5476" y="4.8768" size="1.27" layer="25" rot="R90"/>
-<attribute name="VALUE" x="12.5476" y="5.0292" size="0.4064" layer="27" rot="R180"/>
+<element name="C4" library="rcl" package="C0603" value="2.2pF" x="13.1826" y="4.2418" smashed="yes" rot="R90">
+<attribute name="NAME" x="12.5476" y="3.6068" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="12.5476" y="3.7592" size="0.4064" layer="27" rot="R180"/>
 </element>
 <element name="C3" library="rcl" package="C0603" value="100nF" x="5.969" y="24.257" locked="yes" smashed="yes">
 <attribute name="NAME" x="5.334" y="24.892" size="1.27" layer="25"/>
@@ -2300,9 +2300,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="13.3945" y="27.94" size="0.4064" layer="28" rot="MR180"/>
 </element>
 <element name="X2" library="Spark" package="IPEX-20279-001E" value="IPEX-20279-001E" x="5.08" y="4.318" locked="yes"/>
-<element name="C5" library="rcl" package="C0603" value="10pF" x="12.319" y="6.3754" smashed="yes" rot="R180">
-<attribute name="NAME" x="12.954" y="5.7404" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="10.668" y="6.5024" size="0.4064" layer="27" rot="R180"/>
+<element name="C5" library="rcl" package="C0603" value="10pF" x="12.319" y="5.2324" smashed="yes" rot="R180">
+<attribute name="NAME" x="12.954" y="4.5974" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="10.668" y="5.3594" size="0.4064" layer="27" rot="R180"/>
 </element>
 <element name="ANT1" library="Spark" package="AT8010" value="AT8010" x="7.5184" y="1.016" smashed="yes">
 <attribute name="NAME" x="3.5284" y="1.706" size="0.4064" layer="25"/>
@@ -2318,7 +2318,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="17.2212" y="33.0962" size="1.27" layer="26" ratio="10" rot="MR270"/>
 </element>
 <element name="D1" library="Spark" package="DIODE-DO-220AA(SMP)" value="DIODE" x="3.048" y="34.036" locked="yes"/>
-<element name="L1" library="SparkFun-Passives" package="0603" value="2.2nH" x="14.0462" y="3.429"/>
+<element name="L1" library="SparkFun-Passives" package="0603" value="2.2nH" x="14.0462" y="6.35"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -2526,18 +2526,19 @@ design rules under a new name.</description>
 <wire x1="0.762" y1="34.3544" x2="0.762" y2="33.528" width="0.8128" layer="16"/>
 <via x="0.762" y="33.528" extent="1-16" drill="0.3"/>
 <contactref element="L1" pad="2"/>
-<via x="15.24" y="2.032" extent="1-16" drill="0.3"/>
-<via x="11.176" y="3.81" extent="1-16" drill="0.3"/>
-<via x="15.24" y="4.572" extent="1-16" drill="0.3"/>
+<via x="15.113" y="2.032" extent="1-16" drill="0.3"/>
+<via x="11.049" y="3.556" extent="1-16" drill="0.3"/>
+<via x="15.113" y="4.572" extent="1-16" drill="0.3"/>
 <polygon width="0.1524" layer="1" thermals="no">
-<vertex x="17.272" y="3.048"/>
+<vertex x="17.272" y="3.556"/>
 <vertex x="17.272" y="0.254"/>
 <vertex x="13.208" y="0.254"/>
-<vertex x="13.208" y="3.048"/>
+<vertex x="13.208" y="3.556"/>
 </polygon>
 <via x="13.716" y="0.762" extent="1-16" drill="0.3"/>
-<via x="15.24" y="0.762" extent="1-16" drill="0.3"/>
+<via x="15.113" y="0.762" extent="1-16" drill="0.3"/>
 <via x="16.764" y="0.762" extent="1-16" drill="0.3"/>
+<via x="15.113" y="3.302" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="RAW" class="1">
 <contactref element="IC1" pad="1"/>
@@ -3293,28 +3294,22 @@ design rules under a new name.</description>
 <signal name="N$2" class="2">
 <contactref element="C5" pad="2"/>
 <contactref element="X2" pad="1"/>
-<wire x1="5.3975" y1="6.3754" x2="5.08" y2="6.0579" width="0.635" layer="1"/>
 <wire x1="5.08" y1="6.0579" x2="5.08" y2="5.8455" width="0.635" layer="1"/>
-<wire x1="11.469" y1="6.3754" x2="5.3975" y2="6.3754" width="0.635" layer="1"/>
-</signal>
-<signal name="N$3" class="2">
-<contactref element="ANT1" pad="SIG"/>
-<contactref element="C4" pad="1"/>
-<contactref element="L1" pad="1"/>
-<wire x1="13.1826" y1="4.6618" x2="13.1826" y2="3.4426" width="0.635" layer="1"/>
-<wire x1="13.1826" y1="3.4426" x2="13.1962" y2="3.429" width="0.635" layer="1"/>
-<wire x1="13.1826" y1="3.4426" x2="13.0946" y2="3.4426" width="0.635" layer="1"/>
-<wire x1="13.0946" y1="3.4426" x2="11.43" y2="1.778" width="0.635" layer="1"/>
-<wire x1="11.43" y1="1.778" x2="11.43" y2="1.1044" width="0.635" layer="1"/>
-<wire x1="11.43" y1="1.1044" x2="11.5184" y2="1.016" width="0.635" layer="1"/>
+<wire x1="9.398" y1="6.477" x2="5.7115" y2="6.477" width="0.635" layer="1"/>
+<wire x1="5.7115" y1="6.477" x2="5.08" y2="5.8455" width="0.635" layer="1"/>
+<wire x1="11.469" y1="5.2324" x2="10.6426" y2="5.2324" width="0.635" layer="1"/>
+<wire x1="10.6426" y1="5.2324" x2="9.398" y2="6.477" width="0.635" layer="1"/>
 </signal>
 <signal name="N$5" class="2">
-<contactref element="C4" pad="2"/>
 <contactref element="U1" pad="RF_ANT"/>
 <contactref element="C5" pad="1"/>
-<wire x1="13.1826" y1="6.3618" x2="13.169" y2="6.3754" width="0.635" layer="1"/>
-<wire x1="13.16" y1="7.96" x2="13.16" y2="6.3844" width="0.635" layer="1"/>
-<wire x1="13.16" y1="6.3844" x2="13.169" y2="6.3754" width="0.635" layer="1"/>
+<contactref element="L1" pad="1"/>
+<contactref element="C4" pad="2"/>
+<wire x1="13.16" y1="7.96" x2="13.16" y2="6.3862" width="0.635" layer="1"/>
+<wire x1="13.16" y1="6.3862" x2="13.1962" y2="6.35" width="0.635" layer="1"/>
+<wire x1="13.1962" y1="6.35" x2="13.1962" y2="5.1326" width="0.635" layer="1"/>
+<wire x1="13.1962" y1="5.1326" x2="13.169" y2="5.2324" width="0.635" layer="1"/>
+<wire x1="13.1826" y1="5.0918" x2="13.169" y2="5.2324" width="0.635" layer="1"/>
 </signal>
 <signal name="LED1">
 <contactref element="LED_USR" pad="A"/>
@@ -3361,6 +3356,14 @@ design rules under a new name.</description>
 <wire x1="15.894" y1="27.039" x2="15.894" y2="27.9464" width="0.2032" layer="16"/>
 <wire x1="15.894" y1="27.9464" x2="15.7734" y2="28.067" width="0.2032" layer="16"/>
 <wire x1="15.1384" y1="27.432" x2="15.7734" y2="28.067" width="0.2032" layer="1"/>
+</signal>
+<signal name="N$3" class="2">
+<contactref element="C4" pad="1"/>
+<contactref element="ANT1" pad="SIG"/>
+<wire x1="13.1826" y1="3.3918" x2="13.1708" y2="3.3918" width="0.635" layer="1"/>
+<wire x1="13.1708" y1="3.3918" x2="11.43" y2="1.651" width="0.635" layer="1"/>
+<wire x1="11.43" y1="1.651" x2="11.43" y2="1.1044" width="0.635" layer="1"/>
+<wire x1="11.43" y1="1.1044" x2="11.5184" y2="1.016" width="0.635" layer="1"/>
 </signal>
 </signals>
 <errors>
