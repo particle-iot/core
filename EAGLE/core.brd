@@ -2530,14 +2530,22 @@ design rules under a new name.</description>
 <via x="11.176" y="3.81" extent="1-16" drill="0.3"/>
 <via x="15.24" y="4.572" extent="1-16" drill="0.3"/>
 <polygon width="0.1524" layer="1" thermals="no">
-<vertex x="17.272" y="3.048"/>
-<vertex x="17.272" y="0.254"/>
+<vertex x="20.574" y="3.302"/>
+<vertex x="20.574" y="0.254"/>
 <vertex x="13.208" y="0.254"/>
-<vertex x="13.208" y="3.048"/>
+<vertex x="13.208" y="3.302"/>
 </polygon>
 <via x="13.716" y="0.762" extent="1-16" drill="0.3"/>
 <via x="15.24" y="0.762" extent="1-16" drill="0.3"/>
 <via x="16.764" y="0.762" extent="1-16" drill="0.3"/>
+<polygon width="0.1524" layer="2" thermals="no">
+<vertex x="20.574" y="3.302"/>
+<vertex x="20.574" y="0.254"/>
+<vertex x="13.208" y="0.254"/>
+<vertex x="13.208" y="3.302"/>
+</polygon>
+<via x="18.034" y="1.27" extent="1-16" drill="0.3"/>
+<via x="19.05" y="2.286" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="RAW" class="1">
 <contactref element="IC1" pad="1"/>
@@ -3370,8 +3378,8 @@ design rules under a new name.</description>
 <approved hash="5,1,68e2e488a6b00ec6"/>
 <approved hash="5,1,893d699cccb10208"/>
 <approved hash="5,1,3d4af13b0f002f6a"/>
-<approved hash="5,1,26fb62c3f1761e6a"/>
 <approved hash="5,1,b0e4ed3158380009"/>
+<approved hash="5,1,26fb62c3f1761e6a"/>
 <approved hash="5,1,f61cbac603aa74c1"/>
 <approved hash="5,1,3755bb7cb555c37b"/>
 <approved hash="5,1,46c9855ee94a2adb"/>
