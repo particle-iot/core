@@ -5209,8 +5209,8 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 </class>
 <class number="1" name="vcc" width="0" drill="0">
 </class>
-<class number="2" name="RF" width="0.5842" drill="0">
-<clearance class="2" value="0.762"/>
+<class number="2" name="RF" width="0.635" drill="0">
+<clearance class="2" value="0.635"/>
 </class>
 <class number="3" name="RF2" width="0.5842" drill="0">
 <clearance class="3" value="1.143"/>
@@ -5224,10 +5224,9 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="2.2pF"/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="X2" library="Spark" deviceset="IPEX-20279-001E" device=""/>
-<part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="10pF"/>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
 <part name="ANT1" library="Spark" deviceset="AT8010" device=""/>
-<part name="C12" library="rcl" deviceset="C-EU" device="C0603" value="10pF"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="10pF"/>
 <part name="X1" library="andyw-oct-2011" deviceset="SMA-" device="142-0701-881/886"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 </parts>
@@ -5248,14 +5247,10 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <attribute name="VALUE" x="100.584" y="117.221" size="1.778" layer="96"/>
 </instance>
 <instance part="GND2" gate="1" x="113.03" y="104.14"/>
-<instance part="X2" gate="G$1" x="166.37" y="124.46" rot="MR270"/>
-<instance part="C16" gate="G$1" x="138.43" y="121.92" smashed="yes" rot="R90">
-<attribute name="NAME" x="137.414" y="124.841" size="1.778" layer="95"/>
-<attribute name="VALUE" x="134.874" y="117.221" size="1.778" layer="96"/>
-</instance>
+<instance part="X2" gate="G$1" x="165.1" y="124.46" rot="MR270"/>
 <instance part="GND20" gate="1" x="185.42" y="101.6"/>
 <instance part="ANT1" gate="G$1" x="92.71" y="121.92" rot="R90"/>
-<instance part="C12" gate="G$1" x="123.19" y="121.92" smashed="yes" rot="R90">
+<instance part="C5" gate="G$1" x="123.19" y="121.92" smashed="yes" rot="R90">
 <attribute name="NAME" x="122.174" y="124.841" size="1.778" layer="95"/>
 <attribute name="VALUE" x="119.634" y="117.221" size="1.778" layer="96"/>
 </instance>
@@ -5283,7 +5278,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <segment>
 <pinref part="X2" gate="G$1" pin="GND@1"/>
 <pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="168.91" y1="121.92" x2="185.42" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="121.92" x2="185.42" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="121.92" x2="185.42" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -5342,18 +5337,18 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <label x="60.96" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="3">
+<net name="N$4" class="2">
 <segment>
 <wire x1="132.08" y1="88.9" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="135.89" y1="121.92" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="127" y1="121.92" x2="128.27" y2="121.92" width="0.1524" layer="91"/>
-<junction x="132.08" y="121.92"/>
-<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="128.27" y1="121.92" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
 <junction x="128.27" y="121.92"/>
 <pinref part="X1" gate="G1" pin="1"/>
 <wire x1="121.92" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="121.92" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
+<junction x="132.08" y="121.92"/>
 </segment>
 </net>
 <net name="!RST" class="0">
@@ -5461,13 +5456,6 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <label x="60.96" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="2">
-<segment>
-<pinref part="C16" gate="G$1" pin="2"/>
-<pinref part="X2" gate="G$1" pin="1"/>
-<wire x1="143.51" y1="121.92" x2="166.37" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$3" class="2">
 <segment>
 <pinref part="ANT1" gate="G$1" pin="SIGNAL"/>
@@ -5481,7 +5469,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="121.92" x2="113.03" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="121.92" x2="120.65" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="120.65" y1="121.92" x2="113.03" y2="121.92" width="0.1524" layer="91"/>
 <junction x="120.65" y="121.92"/>
 </segment>

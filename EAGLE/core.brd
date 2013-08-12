@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="$+3V3" color="11" fill="1" visible="no" active="yes"/>
+<layer number="15" name="$+3V3" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -143,7 +143,7 @@
 <wire x1="20.32" y1="35.56" x2="0" y2="35.56" width="0.2032" layer="20"/>
 <wire x1="17.78" y1="3.048" x2="17.78" y2="31.75" width="0.2032" layer="51"/>
 <wire x1="2.54" y1="3.048" x2="2.54" y2="31.75" width="0.2032" layer="51"/>
-<text x="2.413" y="1.778" size="0.8128" layer="21" font="vector" ratio="15" rot="R45">A0</text>
+<text x="3.302" y="3.302" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">A0</text>
 <text x="3.302" y="5.842" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">A1</text>
 <text x="3.302" y="8.382" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">A2</text>
 <text x="3.302" y="10.922" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">A3</text>
@@ -2374,7 +2374,6 @@ design rules under a new name.</description>
 <wire x1="14.932971875" y1="21.9109875" x2="15.373984375" y2="22.352" width="0.2032" layer="16"/>
 <wire x1="15.373984375" y1="22.352" x2="17.4498" y2="22.352" width="0.2032" layer="16"/>
 <wire x1="16.01" y1="7.96" x2="16.01" y2="8.12" width="0.2032" layer="1"/>
-<wire x1="16.01" y1="9.81" x2="15.398" y2="9.81" width="0.2032" layer="1"/>
 <wire x1="8.36" y1="7.96" x2="9.56" y2="7.96" width="0.2032" layer="1"/>
 <wire x1="9.56" y1="7.96" x2="10.76" y2="7.96" width="0.2032" layer="1"/>
 <wire x1="10.76" y1="7.96" x2="11.96" y2="7.96" width="0.2032" layer="1"/>
@@ -2411,7 +2410,6 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="2"/>
 <contactref element="IC1" pad="4"/>
 <contactref element="LED_USR" pad="C"/>
-<via x="16.764" y="6.35" extent="1-16" drill="0.3"/>
 <polygon width="0.1524" layer="1" thermals="no">
 <vertex x="3.048" y="2.921"/>
 <vertex x="3.048" y="24.638"/>
@@ -2522,7 +2520,7 @@ design rules under a new name.</description>
 <via x="0.762" y="33.528" extent="1-16" drill="0.3"/>
 <contactref element="L1" pad="2"/>
 <via x="9.2202" y="3.2512" extent="1-16" drill="0.3"/>
-<via x="16.764" y="3.683" extent="1-16" drill="0.3"/>
+<via x="16.764" y="3.302" extent="1-16" drill="0.3"/>
 <via x="12.446" y="3.2512" extent="1-16" drill="0.3"/>
 <via x="3.048" y="3.2512" extent="1-16" drill="0.3"/>
 <via x="5.969" y="3.2512" extent="1-16" drill="0.3"/>
