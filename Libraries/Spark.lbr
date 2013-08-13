@@ -2828,6 +2828,31 @@ Source: www.cree.com/xlamp .. XLampXP-E.pdf</description>
 <vertex x="0.4186" y="-1.0105"/>
 </polygon>
 </package>
+<package name="SOT-553">
+<smd name="IN" x="0" y="0" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="GND" x="0.5" y="0" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="/OE" x="-0.5" y="0" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="VCC" x="-0.5" y="1.35" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="OUT" x="0.5" y="1.35" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<wire x1="-0.85" y1="0.05" x2="0.85" y2="0.05" width="0.127" layer="51"/>
+<wire x1="0.85" y1="0.05" x2="0.85" y2="1.35" width="0.127" layer="51"/>
+<wire x1="0.85" y1="1.35" x2="-0.85" y2="1.35" width="0.127" layer="51"/>
+<wire x1="-0.85" y1="1.35" x2="-0.85" y2="0.05" width="0.127" layer="51"/>
+<wire x1="-0.85" y1="1.35" x2="-0.85" y2="0.05" width="0.127" layer="21"/>
+<wire x1="0.85" y1="1.35" x2="0.85" y2="0.05" width="0.127" layer="21"/>
+</package>
+<package name="SOT-953">
+<smd name="GND" x="0" y="0" dx="0.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="/OE" x="0.35" y="0" dx="0.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="IN" x="-0.35" y="0" dx="0.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="VCC" x="-0.35" y="0.85" dx="0.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="OUT" x="0.35" y="0.85" dx="0.35" dy="0.2" layer="1" rot="R90"/>
+<wire x1="-0.525" y1="0.005" x2="0.525" y2="0.005" width="0.127" layer="51"/>
+<wire x1="0.525" y1="0.005" x2="0.525" y2="0.855" width="0.127" layer="51"/>
+<wire x1="0.525" y1="0.855" x2="-0.525" y2="0.855" width="0.127" layer="51"/>
+<wire x1="-0.525" y1="0.855" x2="-0.525" y2="0.005" width="0.127" layer="51"/>
+<wire x1="-0.52" y1="0.42" x2="0.52" y2="0.42" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="UCC28700">
@@ -6919,6 +6944,17 @@ Source: www.cree.com/xlamp .. XLampXP-E.pdf</description>
 <vertex x="0.6834" y="-1.65"/>
 </polygon>
 </symbol>
+<symbol name="NL17SZ125">
+<pin name="/OE" x="-5.08" y="2.54" length="short"/>
+<pin name="IN" x="-5.08" y="0" length="short"/>
+<pin name="GND" x="-5.08" y="-2.54" length="short"/>
+<pin name="OUT" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="VCC" x="15.24" y="2.54" length="short" rot="R180"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="UCC28700">
@@ -7988,6 +8024,37 @@ Mating wall wart : TOL-00298 (and others)</description>
 </technologies>
 </device>
 <device name="L" package="OSHW-LOGO-L">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NL17SZ125">
+<gates>
+<gate name="G$1" symbol="NL17SZ125" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="SOT553" package="SOT-553">
+<connects>
+<connect gate="G$1" pin="/OE" pad="/OE"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IN" pad="IN"/>
+<connect gate="G$1" pin="OUT" pad="OUT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT953" package="SOT-953">
+<connects>
+<connect gate="G$1" pin="/OE" pad="/OE"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IN" pad="IN"/>
+<connect gate="G$1" pin="OUT" pad="OUT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

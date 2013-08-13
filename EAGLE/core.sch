@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="13" fill="1" visible="no" active="no"/>
@@ -2692,6 +2692,31 @@ Source: http://www.osram.convergy.de/</description>
 <rectangle x1="-1.1176" y1="-1.0922" x2="0" y2="1.0922" layer="51"/>
 <rectangle x1="-1.778" y1="-1.27" x2="-1.524" y2="1.27" layer="21"/>
 </package>
+<package name="SOT-553">
+<smd name="IN" x="0" y="0" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="GND" x="0.5" y="0" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="/OE" x="-0.5" y="0" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="VCC" x="-0.5" y="1.35" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<smd name="OUT" x="0.5" y="1.35" dx="0.45" dy="0.3" layer="1" rot="R90"/>
+<wire x1="-0.85" y1="0.05" x2="0.85" y2="0.05" width="0.127" layer="51"/>
+<wire x1="0.85" y1="0.05" x2="0.85" y2="1.35" width="0.127" layer="51"/>
+<wire x1="0.85" y1="1.35" x2="-0.85" y2="1.35" width="0.127" layer="51"/>
+<wire x1="-0.85" y1="1.35" x2="-0.85" y2="0.05" width="0.127" layer="51"/>
+<wire x1="-0.85" y1="1.35" x2="-0.85" y2="0.05" width="0.127" layer="21"/>
+<wire x1="0.85" y1="1.35" x2="0.85" y2="0.05" width="0.127" layer="21"/>
+</package>
+<package name="SOT-953">
+<smd name="GND" x="0" y="0" dx="0.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="/OE" x="0.35" y="0" dx="0.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="IN" x="-0.35" y="0" dx="0.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="VCC" x="-0.35" y="0.85" dx="0.35" dy="0.2" layer="1" rot="R90"/>
+<smd name="OUT" x="0.35" y="0.85" dx="0.35" dy="0.2" layer="1" rot="R90"/>
+<wire x1="-0.525" y1="0.005" x2="0.525" y2="0.005" width="0.127" layer="51"/>
+<wire x1="0.525" y1="0.005" x2="0.525" y2="0.855" width="0.127" layer="51"/>
+<wire x1="0.525" y1="0.855" x2="-0.525" y2="0.855" width="0.127" layer="51"/>
+<wire x1="-0.525" y1="0.855" x2="-0.525" y2="0.005" width="0.127" layer="51"/>
+<wire x1="-0.52" y1="0.42" x2="0.52" y2="0.42" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SPARK_LOGO">
@@ -2918,6 +2943,17 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="2.54" y1="0" x2="3.81" y2="0" width="0.254" layer="94"/>
 <pin name="ANODE" x="-1.27" y="0" visible="off" length="point"/>
 <pin name="CATHODE" x="3.81" y="0" visible="off" length="point"/>
+</symbol>
+<symbol name="NL17SZ125">
+<pin name="/OE" x="-5.08" y="2.54" length="short"/>
+<pin name="IN" x="-5.08" y="0" length="short"/>
+<pin name="GND" x="-5.08" y="-2.54" length="short"/>
+<pin name="OUT" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="VCC" x="15.24" y="2.54" length="short" rot="R180"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3429,6 +3465,37 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <connects>
 <connect gate="G$1" pin="ANODE" pad="ANODE"/>
 <connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NL17SZ125">
+<gates>
+<gate name="G$1" symbol="NL17SZ125" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="SOT553" package="SOT-553">
+<connects>
+<connect gate="G$1" pin="/OE" pad="/OE"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IN" pad="IN"/>
+<connect gate="G$1" pin="OUT" pad="OUT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT953" package="SOT-953">
+<connects>
+<connect gate="G$1" pin="/OE" pad="/OE"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IN" pad="IN"/>
+<connect gate="G$1" pin="OUT" pad="OUT"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10445,6 +10512,9 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="D1" library="Spark" deviceset="DIODE" device=""/>
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="2.2nH"/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
+<part name="U$2" library="Spark" deviceset="NL17SZ125" device="SOT553"/>
+<part name="GND2" library="SparkFun" deviceset="GND" device=""/>
+<part name="P+2" library="SparkFun" deviceset="3.3V" device="" value="+3V3"/>
 </parts>
 <sheets>
 <sheet>
@@ -10563,7 +10633,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <instance part="GND5" gate="1" x="203.2" y="152.4"/>
 <instance part="GND6" gate="1" x="127" y="91.44"/>
 <instance part="GND9" gate="1" x="226.06" y="91.44"/>
-<instance part="GND10" gate="1" x="187.96" y="50.8"/>
+<instance part="GND10" gate="1" x="170.18" y="50.8"/>
 <instance part="+3V1" gate="G$1" x="144.78" y="73.66" smashed="yes">
 <attribute name="VALUE" x="144.78" y="73.66" size="1.778" layer="96"/>
 </instance>
@@ -10697,6 +10767,9 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <instance part="D1" gate="G$1" x="30.48" y="165.1"/>
 <instance part="L1" gate="G$1" x="142.24" y="165.1"/>
 <instance part="GND21" gate="1" x="142.24" y="154.94"/>
+<instance part="U$2" gate="G$1" x="203.2" y="53.34"/>
+<instance part="GND2" gate="1" x="198.12" y="43.18"/>
+<instance part="P+2" gate="G$1" x="220.98" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -10874,20 +10947,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <pinref part="JP2" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GND@11"/>
-<wire x1="170.18" y1="91.44" x2="170.18" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GND@16"/>
-<wire x1="182.88" y1="91.44" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GND@18"/>
-<wire x1="187.96" y1="91.44" x2="187.96" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="187.96" y1="60.96" x2="187.96" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="60.96" x2="187.96" y2="60.96" width="0.1524" layer="91"/>
-<junction x="187.96" y="60.96"/>
-<wire x1="170.18" y1="60.96" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
-<junction x="182.88" y="60.96"/>
-</segment>
-<segment>
 <wire x1="401.32" y1="109.22" x2="396.24" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="396.24" y1="109.22" x2="396.24" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="U2" gate="AN_POWER" pin="VSSA"/>
@@ -10969,6 +11028,25 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <segment>
 <pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="GND21" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND@11"/>
+<wire x1="170.18" y1="91.44" x2="170.18" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GND@16"/>
+<wire x1="182.88" y1="91.44" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GND@18"/>
+<wire x1="187.96" y1="91.44" x2="187.96" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="60.96" x2="187.96" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="60.96" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
+<junction x="182.88" y="60.96"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="170.18" y1="60.96" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
+<junction x="170.18" y="60.96"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="198.12" y1="50.8" x2="198.12" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RAW" class="1">
@@ -11131,6 +11209,12 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="342.9" y1="81.28" x2="336.55" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="336.55" y1="81.28" x2="336.55" y2="76.2" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="P+2" gate="G$1" pin="3.3V"/>
+<pinref part="U$2" gate="G$1" pin="VCC"/>
+<wire x1="220.98" y1="60.96" x2="220.98" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="55.88" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="D4" class="0">
 <segment>
@@ -11211,11 +11295,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 </net>
 <net name="SPI_MISO" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="SPI_DOUT"/>
-<wire x1="175.26" y1="91.44" x2="175.26" y2="76.2" width="0.1524" layer="91"/>
-<label x="175.26" y="68.58" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="U2" gate="PORTB_H" pin="PB14"/>
 <wire x1="295.91" y1="170.18" x2="270.51" y2="170.18" width="0.1524" layer="91"/>
 <label x="270.51" y="170.18" size="1.778" layer="95"/>
@@ -11224,6 +11303,11 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <pinref part="U3" gate="A" pin="SO"/>
 <wire x1="492.76" y1="76.2" x2="495.3" y2="76.2" width="0.1524" layer="91"/>
 <label x="487.68" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="OUT"/>
+<wire x1="218.44" y1="50.8" x2="236.22" y2="50.8" width="0.1524" layer="91"/>
+<label x="223.52" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OSC_OUT" class="0">
@@ -11280,6 +11364,11 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <pinref part="U2" gate="PORTB_H" pin="PB8"/>
 <wire x1="295.91" y1="154.94" x2="270.51" y2="154.94" width="0.1524" layer="91"/>
 <label x="270.51" y="154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="/OE"/>
+<wire x1="198.12" y1="55.88" x2="180.34" y2="55.88" width="0.1524" layer="91"/>
+<label x="182.88" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USBM" class="0">
@@ -11780,6 +11869,15 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <pinref part="LED_RGB" gate="G$1" pin="CGREEN"/>
 <pinref part="RN1" gate="C" pin="1"/>
 <wire x1="350.52" y1="71.12" x2="356.87" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SPI_DOUT" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="SPI_DOUT"/>
+<pinref part="U$2" gate="G$1" pin="IN"/>
+<wire x1="175.26" y1="91.44" x2="175.26" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="53.34" x2="198.12" y2="53.34" width="0.1524" layer="91"/>
+<label x="182.88" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
