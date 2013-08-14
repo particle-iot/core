@@ -38,7 +38,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -2416,7 +2416,7 @@ design rules under a new name.</description>
 <contactref element="X2" pad="2@1"/>
 <contactref element="X2" pad="2@2"/>
 <via x="3.683" y="0.635" extent="1-16" drill="0.3"/>
-<via x="9.652" y="3.429" extent="1-16" drill="0.3"/>
+<via x="10.414" y="3.429" extent="1-16" drill="0.3"/>
 <via x="13.208" y="3.429" extent="1-16" drill="0.3"/>
 <via x="16.637" y="3.429" extent="1-16" drill="0.3"/>
 <polygon width="0.1524" layer="1" thermals="no">
@@ -2495,7 +2495,6 @@ design rules under a new name.</description>
 <wire x1="7.01654375" y1="18.2372" x2="9.7536" y2="18.2372" width="0.2032" layer="16"/>
 <via x="0.9144" y="33.3248" extent="1-16" drill="0.3"/>
 <contactref element="L1" pad="2"/>
-<via x="15.113" y="5.08" extent="1-16" drill="0.3"/>
 <contactref element="U1" pad="GND@11"/>
 <contactref element="U1" pad="GND@16"/>
 <contactref element="U1" pad="GND@18"/>
@@ -2549,7 +2548,6 @@ design rules under a new name.</description>
 <wire x1="6.78878125" y1="26.8732" x2="6.7564" y2="26.8732" width="0.2032" layer="16"/>
 <via x="9.7028" y="10.7188" extent="1-16" drill="0.3"/>
 <via x="14.8336" y="10.9982" extent="1-16" drill="0.3"/>
-<via x="11.557" y="3.429" extent="1-16" drill="0.3"/>
 <via x="4.318" y="4.318" extent="1-16" drill="0.3"/>
 <wire x1="15.506" y1="34.6202" x2="14.3002" y2="34.6202" width="0.6096" layer="1"/>
 <wire x1="14.3002" y1="34.6202" x2="14.2748" y2="34.6456" width="0.6096" layer="1"/>
@@ -3484,6 +3482,47 @@ design rules under a new name.</description>
 <signal name="N$5">
 </signal>
 </signals>
+<errors>
+<approved hash="4,1,46e74d814d8b8491"/>
+<approved hash="4,1,04e0ddf93d8da697"/>
+<approved hash="5,1,bd6ecb9ffd291a9d"/>
+<approved hash="5,1,4f5d4d9a638c785d"/>
+<approved hash="5,1,d27858e6bea8d020"/>
+<approved hash="5,1,60db46cefa4a9f61"/>
+<approved hash="5,1,66c77998b5695f65"/>
+<approved hash="5,1,46044c1f76ae98a3"/>
+<approved hash="5,1,27136d958e65bfd3"/>
+<approved hash="5,1,12f5707b71f6601e"/>
+<approved hash="5,1,3f608832b04d88a3"/>
+<approved hash="5,1,4c46ab2ecbc85d91"/>
+<approved hash="5,1,b30b0bbb23690426"/>
+<approved hash="19,1,b22667bad846e722"/>
+<approved hash="5,1,f457020311722b3c"/>
+<approved hash="19,1,8bcdfa7d0ac41a85"/>
+<approved hash="5,1,e5333dc7531575ba"/>
+<approved hash="5,1,13460c0623b7c9a4"/>
+<approved hash="5,1,dbed3afde509f35a"/>
+<approved hash="5,1,c117d568d027cb77"/>
+<approved hash="5,1,880e0c957617d925"/>
+<approved hash="5,1,c8281ca8bba49897"/>
+<approved hash="5,1,dcacc281550dd031"/>
+<approved hash="5,1,fac47f9273f42c4c"/>
+<approved hash="19,1,bf5974c6f8bb3324"/>
+<approved hash="5,1,2613c55dfbae954b"/>
+<approved hash="5,1,1fb874a44c76ad09"/>
+<approved hash="5,1,2d33d1bdf9ae954b"/>
+<approved hash="5,1,1fb876a45896a629"/>
+<approved hash="5,1,4b61e3bc7e61f496"/>
+<approved hash="5,1,39cfed99c43b04db"/>
+<approved hash="5,1,545780a86ba448e8"/>
+<approved hash="5,1,54826f7e334e83da"/>
+<approved hash="5,1,4e894d9a40bbdae4"/>
+<approved hash="5,1,ac13f6db390521f2"/>
+<approved hash="5,1,0c8a657585e4a712"/>
+<approved hash="4,16,46e74d814d8b8491"/>
+<approved hash="4,16,788fb434ab2bf070"/>
+<approved hash="4,16,04e0ddf93d8da697"/>
+</errors>
 </board>
 </drawing>
 </eagle>
