@@ -11873,7 +11873,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <label x="182.88" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="N$3" class="2">
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="ANT1" gate="G$1" pin="SIGNAL"/>

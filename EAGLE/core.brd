@@ -2212,9 +2212,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="16.891" y="18.923" size="0.6096" layer="28" rot="MR270"/>
 </element>
 <element name="U1" library="CC3000" package="CC3000" value="" x="10.16" y="15.24" locked="yes" smashed="yes" rot="R180"/>
-<element name="C4" library="rcl" package="C0603" value="2.2pF" x="13.1826" y="5.5118" smashed="yes" rot="R90">
-<attribute name="NAME" x="12.5476" y="4.8768" size="1.27" layer="25" rot="R90"/>
-<attribute name="VALUE" x="12.5476" y="5.0292" size="0.4064" layer="27" rot="R180"/>
+<element name="C4" library="rcl" package="C0603" value="2.2pF" x="13.1826" y="4.4196" smashed="yes" rot="R90">
+<attribute name="NAME" x="12.5476" y="3.7846" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="12.5476" y="3.937" size="0.4064" layer="27" rot="R180"/>
 </element>
 <element name="C3" library="rcl" package="C0603" value="100nF" x="5.969" y="24.257" locked="yes" smashed="yes">
 <attribute name="NAME" x="5.334" y="24.892" size="1.27" layer="25"/>
@@ -2313,9 +2313,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="13.7755" y="27.6352" size="0.4064" layer="28" rot="MR180"/>
 </element>
 <element name="X2" library="Spark" package="IPEX-20279-001E" value="IPEX-20279-001E" x="5.08" y="4.318" locked="yes"/>
-<element name="C5" library="rcl" package="C0603" value="10pF" x="12.319" y="6.3754" smashed="yes" rot="R180">
-<attribute name="NAME" x="12.954" y="5.7404" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="10.668" y="6.5024" size="0.4064" layer="27" rot="R180"/>
+<element name="C5" library="rcl" package="C0603" value="10pF" x="12.2936" y="5.3086" smashed="yes" rot="R180">
+<attribute name="NAME" x="12.9286" y="4.6736" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="10.6426" y="5.4356" size="0.4064" layer="27" rot="R180"/>
 </element>
 <element name="ANT1" library="Spark" package="AT8010" value="AT8010" x="9.0424" y="1.016" smashed="yes">
 <attribute name="NAME" x="5.0524" y="1.706" size="0.4064" layer="25"/>
@@ -2331,7 +2331,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="17.2212" y="33.0962" size="1.27" layer="26" ratio="10" rot="MR270"/>
 </element>
 <element name="D1" library="Spark" package="DIODE-DO-220AA(SMP)" value="DIODE" x="3.048" y="34.036" locked="yes"/>
-<element name="L1" library="SparkFun-Passives" package="0603" value="2.2nH" x="14.0462" y="3.429"/>
+<element name="L1" library="SparkFun-Passives" package="0603" value="2.2nH" x="14.0462" y="6.4262"/>
 <element name="U4" library="Spark" package="SOT-553" value="NL17SZ125SOT553" x="15.6718" y="29.21" rot="MR270"/>
 </elements>
 <signals>
@@ -2498,8 +2498,7 @@ design rules under a new name.</description>
 <wire x1="7.01654375" y1="18.2372" x2="9.7536" y2="18.2372" width="0.2032" layer="16"/>
 <via x="0.9144" y="33.3248" extent="1-16" drill="0.3"/>
 <contactref element="L1" pad="2"/>
-<via x="14.986" y="2.286" extent="1-16" drill="0.3"/>
-<via x="11.176" y="4.445" extent="1-16" drill="0.3"/>
+<via x="14.986" y="2.667" extent="1-16" drill="0.3"/>
 <via x="14.986" y="4.572" extent="1-16" drill="0.3"/>
 <contactref element="U1" pad="GND@11"/>
 <contactref element="U1" pad="GND@16"/>
@@ -2568,7 +2567,7 @@ design rules under a new name.</description>
 <vertex x="20.32" y="2.54"/>
 <vertex x="20.32" y="4.445"/>
 </polygon>
-<via x="9.525" y="4.445" extent="1-16" drill="0.3"/>
+<via x="8.636" y="4.445" extent="1-16" drill="0.3"/>
 <via x="7.62" y="4.445" extent="1-16" drill="0.3"/>
 <via x="14.986" y="0.762" extent="1-16" drill="0.3"/>
 <via x="17.399" y="0.762" extent="1-16" drill="0.3"/>
@@ -3389,19 +3388,22 @@ design rules under a new name.</description>
 <signal name="N$2" class="2">
 <contactref element="C5" pad="2"/>
 <contactref element="X2" pad="1"/>
-<wire x1="5.3975" y1="6.3754" x2="5.08" y2="6.0579" width="0.635" layer="1"/>
+<wire x1="5.4991" y1="6.477" x2="5.08" y2="6.0579" width="0.635" layer="1"/>
 <wire x1="5.08" y1="6.0579" x2="5.08" y2="5.8455" width="0.635" layer="1"/>
-<wire x1="11.469" y1="6.3754" x2="5.3975" y2="6.3754" width="0.635" layer="1"/>
+<wire x1="11.4436" y1="5.3086" x2="10.3124" y2="5.3086" width="0.635" layer="1"/>
+<wire x1="10.3124" y1="5.3086" x2="9.144" y2="6.477" width="0.635" layer="1"/>
+<wire x1="9.144" y1="6.477" x2="5.4991" y2="6.477" width="0.635" layer="1"/>
 </signal>
 <signal name="N$5" class="2">
 <contactref element="C4" pad="2"/>
 <contactref element="U1" pad="RF_ANT"/>
 <contactref element="C5" pad="1"/>
-<wire x1="13.1826" y1="6.3618" x2="13.169" y2="6.3754" width="0.635" layer="1"/>
-<wire x1="13.16" y1="7.96" x2="13.16" y2="6.3844" width="0.635" layer="1"/>
-<wire x1="13.16" y1="6.3844" x2="13.169" y2="6.3754" width="0.635" layer="1"/>
+<wire x1="13.1826" y1="5.2696" x2="13.1436" y2="5.3086" width="0.635" layer="1"/>
 <contactref element="L1" pad="1"/>
-<wire x1="13.1962" y1="3.429" x2="13.1826" y2="6.3618" width="0" layer="19" extent="1-1"/>
+<wire x1="13.16" y1="7.96" x2="13.16" y2="6.4624" width="0.635" layer="1"/>
+<wire x1="13.16" y1="6.4624" x2="13.1962" y2="6.4262" width="0.635" layer="1"/>
+<wire x1="13.1962" y1="6.4262" x2="13.1962" y2="5.3612" width="0.635" layer="1"/>
+<wire x1="13.1962" y1="5.3612" x2="13.1436" y2="5.3086" width="0.635" layer="1"/>
 </signal>
 <signal name="LED1">
 <contactref element="LED_USR" pad="A"/>
@@ -3480,10 +3482,11 @@ design rules under a new name.</description>
 <wire x1="10.1346" y1="20.828" x2="10.287" y2="20.828" width="0.2032" layer="15"/>
 <wire x1="16.6624" y1="28.9052" x2="16.383" y2="28.6258" width="0.2032" layer="15"/>
 </signal>
-<signal name="N$3">
+<signal name="N$3" class="2">
 <contactref element="C4" pad="1"/>
 <contactref element="ANT1" pad="SIG"/>
-<wire x1="13.0424" y1="1.016" x2="13.1826" y2="4.6618" width="0" layer="19" extent="1-1"/>
+<wire x1="13.1826" y1="3.5696" x2="13.1826" y2="1.1562" width="0.635" layer="1"/>
+<wire x1="13.1826" y1="1.1562" x2="13.0424" y2="1.016" width="0.635" layer="1"/>
 </signal>
 </signals>
 </board>
