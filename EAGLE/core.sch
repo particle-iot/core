@@ -10502,7 +10502,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="RN1" library="resistor-dil" deviceset="4R-N" device="EXB38V" value="EXB-38V102JV"/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="X2" library="Spark" deviceset="IPEX-20279-001E" device=""/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="10pF"/>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
 <part name="ANT1" library="Spark" deviceset="AT8010" device=""/>
 <part name="C15" library="Spark" deviceset="TANT-CAP" device="1206" value="10uF"/>
@@ -10515,6 +10514,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="U4" library="Spark" deviceset="NL17SZ125" device="SOT553"/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+2" library="SparkFun" deviceset="3.3V" device="" value="+3V3"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="10pF"/>
 </parts>
 <sheets>
 <sheet>
@@ -10754,10 +10754,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <attribute name="VALUE" x="336.55" y="73.66" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="X2" gate="G$1" x="207.01" y="175.26" rot="MR270"/>
-<instance part="C5" gate="G$1" x="185.42" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="184.404" y="175.641" size="1.778" layer="95"/>
-<attribute name="VALUE" x="181.864" y="168.021" size="1.778" layer="96"/>
-</instance>
 <instance part="GND20" gate="1" x="226.06" y="152.4"/>
 <instance part="ANT1" gate="G$1" x="133.35" y="172.72" rot="R90"/>
 <instance part="C15" gate="G$1" x="488.95" y="144.78"/>
@@ -10765,11 +10761,15 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <instance part="JP1" gate="G$1" x="358.14" y="22.86" rot="R180"/>
 <instance part="JP2" gate="G$1" x="365.76" y="22.86" rot="MR180"/>
 <instance part="D1" gate="G$1" x="30.48" y="165.1"/>
-<instance part="L1" gate="G$1" x="157.48" y="165.1"/>
-<instance part="GND21" gate="1" x="157.48" y="154.94"/>
+<instance part="L1" gate="G$1" x="156.21" y="165.1"/>
+<instance part="GND21" gate="1" x="156.21" y="153.67"/>
 <instance part="U4" gate="G$1" x="203.2" y="53.34"/>
 <instance part="GND2" gate="1" x="198.12" y="43.18"/>
 <instance part="P+2" gate="G$1" x="220.98" y="60.96"/>
+<instance part="C5" gate="G$1" x="165.1" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="164.084" y="175.641" size="1.778" layer="95"/>
+<attribute name="VALUE" x="161.544" y="168.021" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11028,6 +11028,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <segment>
 <pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="156.21" y1="157.48" x2="156.21" y2="156.21" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND@11"/>
@@ -11816,23 +11817,13 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 </net>
 <net name="N$2" class="2">
 <segment>
-<pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="X2" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="172.72" x2="207.01" y2="172.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="2">
-<segment>
-<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="RF_ANT"/>
 <wire x1="172.72" y1="147.32" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="207.01" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="172.72" x2="170.18" y2="172.72" width="0.1524" layer="91"/>
 <junction x="172.72" y="172.72"/>
-<wire x1="172.72" y1="172.72" x2="157.48" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="172.72" x2="152.4" y2="172.72" width="0.1524" layer="91"/>
-<junction x="157.48" y="172.72"/>
 </segment>
 </net>
 <net name="LED1" class="0">
@@ -11878,6 +11869,16 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="ANT1" gate="G$1" pin="SIGNAL"/>
 <wire x1="144.78" y1="172.72" x2="138.43" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="2">
+<segment>
+<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="156.21" y1="172.72" x2="152.4" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="172.72" x2="156.21" y2="172.72" width="0.1524" layer="91"/>
+<junction x="156.21" y="172.72"/>
 </segment>
 </net>
 </nets>
