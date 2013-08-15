@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11365,11 +11365,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="295.91" y1="154.94" x2="270.51" y2="154.94" width="0.1524" layer="91"/>
 <label x="270.51" y="154.94" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="/OE"/>
-<wire x1="198.12" y1="55.88" x2="180.34" y2="55.88" width="0.1524" layer="91"/>
-<label x="182.88" y="55.88" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="USBM" class="0">
 <segment>
@@ -11642,6 +11637,11 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <pinref part="U1" gate="G$1" pin="SPI_CS"/>
 <wire x1="172.72" y1="91.44" x2="172.72" y2="76.2" width="0.1524" layer="91"/>
 <label x="172.72" y="68.58" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="/OE"/>
+<wire x1="198.12" y1="55.88" x2="180.34" y2="55.88" width="0.1524" layer="91"/>
+<label x="182.88" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI_MOSI" class="0">
