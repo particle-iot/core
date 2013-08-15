@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -67,7 +67,7 @@
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -11888,7 +11888,19 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <approved hash="102,1,233.68,78.74,3.3V,+3V3,,,,"/>
 <approved hash="102,1,398.78,116.84,VCC,VDDA,,,,"/>
 <approved hash="102,1,477.52,167.64,VCC,VDDA,,,,"/>
+<approved hash="102,1,220.98,60.96,3.3V,+3V3,,,,"/>
+<approved hash="104,1,401.32,167.64,U2POWER,VDD_1,+3V3,,,"/>
+<approved hash="104,1,401.32,162.56,U2POWER,VDD_2,+3V3,,,"/>
+<approved hash="104,1,401.32,157.48,U2POWER,VDD_3,+3V3,,,"/>
+<approved hash="104,1,401.32,147.32,U2POWER,VSS_1,GND,,,"/>
+<approved hash="104,1,401.32,142.24,U2POWER,VSS_2,GND,,,"/>
+<approved hash="104,1,401.32,137.16,U2POWER,VSS_3,GND,,,"/>
+<approved hash="104,1,401.32,104.14,U2AN_POWER,VBAT,+3V3,,,"/>
+<approved hash="104,1,401.32,109.22,U2AN_POWER,VSSA,GND,,,"/>
 <approved hash="202,1,144.78,111.76,U1,WL_RS232_RX,,,,"/>
+<approved hash="104,1,213.36,106.68,U1,VBAT_IN,+3V3,,,"/>
+<approved hash="104,1,213.36,116.84,U1,VIO_HOST,+3V3,,,"/>
+<approved hash="104,1,457.2,76.2,U3,VDD,+3V3,,,"/>
 <approved hash="208,1,393.7,172.72,+3V3,sup,,,,"/>
 <approved hash="208,1,393.7,119.38,+3V3,sup,,,,"/>
 <approved hash="208,1,482.6,120.65,+3V3,sup,,,,"/>
@@ -11902,11 +11914,12 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <approved hash="208,1,38.1,72.39,+3V3,sup,,,,"/>
 <approved hash="208,1,488.95,170.18,+3V3,sup,,,,"/>
 <approved hash="208,1,336.55,76.2,+3V3,sup,,,,"/>
+<approved hash="208,1,220.98,60.96,+3V3,sup,,,,"/>
 <approved hash="209,1,144.78,114.3,N$9,,,,,"/>
 <approved hash="209,1,144.78,119.38,N$9,,,,,"/>
-<approved hash="206,1,175.26,91.44,SPI_MISO,,,,,"/>
-<approved hash="206,1,492.76,76.2,SPI_MISO,,,,,"/>
-<approved hash="115,1,31.75,165.587,D1,,,,,"/>
+<approved hash="115,1,178.95,121.379,U1,,,,,"/>
+<approved hash="115,1,336.872,62.6801,LED_USR,,,,,"/>
+<approved hash="115,1,346.71,75.4671,LED_RGB,,,,,"/>
 </errors>
 </schematic>
 </drawing>
