@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="13" fill="1" visible="no" active="no"/>
@@ -1060,7 +1060,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-2.54" y="1.27" size="0.4064" layer="25">&gt;Name</text>
 <text x="-2.54" y="-1.27" size="0.4064" layer="27">&gt;Value</text>
 </package>
-<package name="C0402">
+<package name="C0402@1">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
 chip</description>
 <wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
@@ -1381,7 +1381,7 @@ SRN6045- 33uH, 20% 1.4A</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="0402" package="C0402">
+<device name="0402" package="C0402@1">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -6223,8 +6223,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<wire x1="-0.1016" y1="0.3556" x2="0.1016" y2="0.3556" width="0.2032" layer="21"/>
-<wire x1="-0.1016" y1="-0.3556" x2="0.1016" y2="-0.3556" width="0.2032" layer="21"/>
 </package>
 <package name="C0402">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
@@ -10449,7 +10447,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="U1" library="CC3000" deviceset="CC3000" device=""/>
 <part name="FRAME2" library="SparkFun" deviceset="FRAME-LETTER" device=""/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="2.2pF"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0402" value="2.2pF"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
@@ -10509,12 +10507,12 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="JP1" library="Spark" deviceset="M12" device="PTH"/>
 <part name="JP2" library="Spark" deviceset="M12" device="PTH"/>
 <part name="D1" library="Spark" deviceset="DIODE" device=""/>
-<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="2.2nH"/>
+<part name="L1" library="rcl" deviceset="C-EU" device="C0402" value="2.2nH"/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
 <part name="U4" library="Spark" deviceset="NL17SZ125" device="SOT553"/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+2" library="SparkFun" deviceset="3.3V" device="" value="+3V3"/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="10pF"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0402" value="10pF"/>
 </parts>
 <sheets>
 <sheet>
@@ -10761,7 +10759,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <instance part="JP1" gate="G$1" x="358.14" y="22.86" rot="R180"/>
 <instance part="JP2" gate="G$1" x="365.76" y="22.86" rot="MR180"/>
 <instance part="D1" gate="G$1" x="30.48" y="165.1"/>
-<instance part="L1" gate="G$1" x="156.21" y="165.1"/>
+<instance part="L1" gate="G$1" x="156.21" y="170.18"/>
 <instance part="GND21" gate="1" x="156.21" y="153.67"/>
 <instance part="U4" gate="G$1" x="203.2" y="53.34"/>
 <instance part="GND2" gate="1" x="198.12" y="43.18"/>
@@ -11028,7 +11026,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <segment>
 <pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="156.21" y1="157.48" x2="156.21" y2="156.21" width="0.1524" layer="91"/>
+<wire x1="156.21" y1="165.1" x2="156.21" y2="156.21" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND@11"/>
