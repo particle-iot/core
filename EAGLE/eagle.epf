@@ -10,10 +10,10 @@ AutoSaveProject=1
 
 [Win_1]
 Type="Control Panel"
-Loc="332 182 931 581"
-State=1
+Loc="583 258 1182 657"
+State=2
 Number=0
 
 [Desktop]
-Screen="2560 1440"
+Screen="1440 900"
 Window="Win_1"
