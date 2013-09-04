@@ -2346,7 +2346,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="17.2212" y="33.0962" size="1.27" layer="26" ratio="10" rot="MR270"/>
 </element>
 <element name="D1" library="Spark" package="DIODE-DO-220AA(SMP)" value="DIODE" x="3.048" y="34.036" locked="yes"/>
-<element name="C4" library="SparkFun-Capacitors" package="0603-CAP" value="0.8pF" x="6.985" y="6.477" rot="R180"/>
+<element name="C4" library="SparkFun-Capacitors" package="0603-CAP" value="0.8pF" x="5.207" y="5.08" rot="R180"/>
 <element name="U4" library="Spark" package="SOT-553" value="NL17SZ125SOT553" x="15.6718" y="29.21" rot="MR270"/>
 <element name="L1" library="SparkFun-Passives" package="0603" value="3.3nH" x="12.446" y="5.08"/>
 </elements>
@@ -2567,7 +2567,6 @@ design rules under a new name.</description>
 <wire x1="6.78878125" y1="26.8732" x2="6.7564" y2="26.8732" width="0.2032" layer="16"/>
 <via x="9.7028" y="10.7188" extent="1-16" drill="0.3"/>
 <via x="14.8336" y="10.9982" extent="1-16" drill="0.3"/>
-<via x="4.318" y="4.318" extent="1-16" drill="0.3"/>
 <wire x1="15.506" y1="34.6202" x2="14.3002" y2="34.6202" width="0.6096" layer="1"/>
 <wire x1="14.3002" y1="34.6202" x2="14.2748" y2="34.6456" width="0.6096" layer="1"/>
 <polygon width="0.1524" layer="1" thermals="no">
@@ -3490,13 +3489,10 @@ design rules under a new name.</description>
 <wire x1="6.135" y1="1.0164" x2="6.1346" y2="1.016" width="0.635" layer="1"/>
 <contactref element="L1" pad="1"/>
 <contactref element="C4" pad="1"/>
-<wire x1="11.596" y1="5.08" x2="8.001" y2="5.08" width="0.635" layer="1"/>
-<wire x1="8.001" y1="5.08" x2="6.858" y2="5.08" width="0.635" layer="1"/>
-<wire x1="6.858" y1="5.08" x2="6.096" y2="4.318" width="0.635" layer="1"/>
-<wire x1="6.096" y1="4.318" x2="6.096" y2="1.0546" width="0.635" layer="1"/>
+<wire x1="11.596" y1="5.08" x2="6.057" y2="5.08" width="0.635" layer="1"/>
+<wire x1="6.096" y1="5.08" x2="6.096" y2="1.0546" width="0.635" layer="1"/>
 <wire x1="6.096" y1="1.0546" x2="6.1346" y2="1.016" width="0.635" layer="1"/>
-<wire x1="7.835" y1="6.477" x2="7.835" y2="5.246" width="0.635" layer="1"/>
-<wire x1="7.835" y1="5.246" x2="8.001" y2="5.08" width="0.635" layer="1"/>
+<wire x1="6.057" y1="5.08" x2="6.096" y2="5.08" width="0.635" layer="1"/>
 </signal>
 <signal name="N$5">
 </signal>
