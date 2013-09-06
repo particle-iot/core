@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="$GND" color="13" fill="1" visible="no" active="yes"/>
+<layer number="2" name="$GND" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="$+3V3" color="11" fill="1" visible="no" active="yes"/>
+<layer number="15" name="$+3V3" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -31,7 +31,7 @@
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -52,14 +52,14 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -631,8 +631,8 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="0.5" y1="-1.2" x2="-0.5" y2="-1.2" width="0.2032" layer="21"/>
 <circle x="0" y="0" radius="0.7" width="0.1016" layer="21"/>
 <circle x="0" y="0" radius="0.175" width="0.1016" layer="21"/>
-<smd name="2@1" x="-1.475" y="0" dx="1.05" dy="2.2" layer="1"/>
-<smd name="2@2" x="1.475" y="0" dx="1.05" dy="2.2" layer="1"/>
+<smd name="2@1" x="-1.475" y="0" dx="1.05" dy="1.8" layer="1"/>
+<smd name="2@2" x="1.475" y="0" dx="1.05" dy="1.8" layer="1"/>
 <smd name="1" x="0" y="1.5275" dx="1" dy="1.05" layer="1"/>
 <rectangle x1="-0.3" y1="1.3" x2="0.3" y2="1.55" layer="51"/>
 </package>
@@ -2876,24 +2876,6 @@ design rules under a new name.</description>
 <wire x1="12.4581" y1="16.254134375" x2="12.126034375" y2="16.5862" width="0.2032" layer="16"/>
 <wire x1="12.126034375" y1="16.5862" x2="11.0998" y2="16.5862" width="0.2032" layer="16"/>
 <wire x1="11.0998" y1="16.5862" x2="10.668" y2="17.018" width="0.2032" layer="16"/>
-<contactref element="U4" pad="/OE"/>
-<via x="17.0688" y="29.718" extent="1-16" drill="0.3"/>
-<wire x1="15.6718" y1="29.71" x2="15.6798" y2="29.718" width="0.2032" layer="16"/>
-<wire x1="15.6718" y1="29.71" x2="17.0608" y2="29.71" width="0.2032" layer="16"/>
-<wire x1="10.2616" y1="20.1676" x2="10.7188" y2="19.7104" width="0.2032" layer="15"/>
-<wire x1="10.7188" y1="19.7104" x2="10.7188" y2="17.0688" width="0.2032" layer="15"/>
-<wire x1="10.7188" y1="17.0688" x2="10.668" y2="17.018" width="0.2032" layer="15"/>
-<wire x1="17.0608" y1="29.71" x2="17.0688" y2="29.718" width="0.2032" layer="16"/>
-<wire x1="10.2616" y1="20.1676" x2="9.9314" y2="20.1676" width="0.2032" layer="15"/>
-<wire x1="9.9314" y1="20.1676" x2="9.525" y2="20.574" width="0.2032" layer="15"/>
-<wire x1="9.525" y1="20.574" x2="9.525" y2="21.209" width="0.2032" layer="15"/>
-<wire x1="9.525" y1="21.209" x2="10.287" y2="21.971" width="0.2032" layer="15"/>
-<wire x1="10.287" y1="21.971" x2="11.303" y2="21.971" width="0.2032" layer="15"/>
-<wire x1="11.303" y1="21.971" x2="15.875" y2="26.543" width="0.2032" layer="15"/>
-<wire x1="15.875" y1="26.543" x2="15.875" y2="29.329" width="0.2032" layer="15"/>
-<wire x1="15.875" y1="29.329" x2="16.256" y2="29.71" width="0.2032" layer="15"/>
-<wire x1="16.256" y1="29.71" x2="17.0608" y2="29.71" width="0.2032" layer="15"/>
-<wire x1="17.0608" y1="29.71" x2="17.0688" y2="29.718" width="0.2032" layer="15"/>
 </signal>
 <signal name="USBM">
 <contactref element="U2" pad="32"/>
@@ -3191,6 +3173,20 @@ design rules under a new name.</description>
 <wire x1="12.4714" y1="20.5486" x2="13.0302" y2="21.1074" width="0.3048" layer="1"/>
 <wire x1="13.0302" y1="21.1074" x2="13.0302" y2="22.3302" width="0.3048" layer="1"/>
 <wire x1="13.0302" y1="22.3302" x2="13.16" y2="22.46" width="0.3048" layer="1"/>
+<contactref element="U4" pad="/OE"/>
+<via x="17.0688" y="29.718" extent="1-16" drill="0.3"/>
+<wire x1="16.256" y1="29.718" x2="15.875" y2="29.337" width="0.2032" layer="15"/>
+<wire x1="15.875" y1="29.337" x2="15.875" y2="26.543" width="0.2032" layer="15"/>
+<wire x1="15.875" y1="26.543" x2="11.303" y2="21.971" width="0.2032" layer="15"/>
+<wire x1="11.303" y1="21.971" x2="10.3124" y2="21.971" width="0.2032" layer="15"/>
+<wire x1="10.3124" y1="21.971" x2="9.525" y2="21.1836" width="0.2032" layer="15"/>
+<wire x1="9.525" y1="21.1836" x2="9.525" y2="20.574" width="0.2032" layer="15"/>
+<wire x1="9.525" y1="20.574" x2="9.9314" y2="20.1676" width="0.2032" layer="15"/>
+<wire x1="9.9314" y1="20.1676" x2="10.5918" y2="20.1676" width="0.2032" layer="15"/>
+<wire x1="10.5918" y1="20.1676" x2="10.9728" y2="20.5486" width="0.2032" layer="15"/>
+<wire x1="16.256" y1="29.718" x2="17.0688" y2="29.718" width="0.2032" layer="15"/>
+<wire x1="15.6718" y1="29.71" x2="17.0608" y2="29.71" width="0.2032" layer="16"/>
+<wire x1="17.0608" y1="29.71" x2="17.0688" y2="29.718" width="0.2032" layer="16"/>
 </signal>
 <signal name="SPI_MOSI">
 <contactref element="U2" pad="28"/>
@@ -3380,7 +3376,7 @@ design rules under a new name.</description>
 <contactref element="L1" pad="2"/>
 <wire x1="13.16" y1="7.96" x2="13.16" y2="5.216" width="0.635" layer="1"/>
 <wire x1="13.16" y1="5.216" x2="13.296" y2="5.08" width="0.635" layer="1"/>
-<wire x1="13.296" y1="5.08" x2="13.3315" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="13.296" y1="5.08" x2="13.3315" y2="5.08" width="0.2032" layer="1"/>
 </signal>
 <signal name="LED1">
 <contactref element="LED_USR" pad="A"/>
@@ -3466,53 +3462,12 @@ design rules under a new name.</description>
 <wire x1="6.096" y1="5.08" x2="6.096" y2="1.0546" width="0.635" layer="1"/>
 <wire x1="6.096" y1="1.0546" x2="6.1346" y2="1.016" width="0.635" layer="1"/>
 <contactref element="C4" pad="1"/>
-<wire x1="11.596" y1="5.08" x2="6.057" y2="5.08" width="0.635" layer="1"/>
-<wire x1="6.096" y1="5.08" x2="6.057" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="11.596" y1="5.08" x2="6.096" y2="5.08" width="0.635" layer="1"/>
+<wire x1="6.096" y1="5.08" x2="6.057" y2="5.08" width="0.635" layer="1"/>
 </signal>
 <signal name="N$5">
 </signal>
 </signals>
-<errors>
-<approved hash="4,1,46e74d814d8b8491"/>
-<approved hash="4,1,04e0ddf93d8da697"/>
-<approved hash="5,1,bd6ecb9ffd291a9d"/>
-<approved hash="5,1,4f5d4d9a638c785d"/>
-<approved hash="5,1,d27858e6bea8d020"/>
-<approved hash="5,1,60db46cefa4a9f61"/>
-<approved hash="5,1,66c77998b5695f65"/>
-<approved hash="5,1,46044c1f76ae98a3"/>
-<approved hash="5,1,27136d958e65bfd3"/>
-<approved hash="5,1,12f5707b71f6601e"/>
-<approved hash="5,1,3f608832b04d88a3"/>
-<approved hash="5,1,4c46ab2ecbc85d91"/>
-<approved hash="5,1,b30b0bbb23690426"/>
-<approved hash="19,1,b22667bad846e722"/>
-<approved hash="5,1,f457020311722b3c"/>
-<approved hash="19,1,8bcdfa7d0ac41a85"/>
-<approved hash="5,1,e5333dc7531575ba"/>
-<approved hash="5,1,13460c0623b7c9a4"/>
-<approved hash="5,1,dbed3afde509f35a"/>
-<approved hash="5,1,c117d568d027cb77"/>
-<approved hash="5,1,880e0c957617d925"/>
-<approved hash="5,1,c8281ca8bba49897"/>
-<approved hash="5,1,dcacc281550dd031"/>
-<approved hash="5,1,fac47f9273f42c4c"/>
-<approved hash="19,1,bf5974c6f8bb3324"/>
-<approved hash="5,1,2613c55dfbae954b"/>
-<approved hash="5,1,1fb874a44c76ad09"/>
-<approved hash="5,1,2d33d1bdf9ae954b"/>
-<approved hash="5,1,1fb876a45896a629"/>
-<approved hash="5,1,4b61e3bc7e61f496"/>
-<approved hash="5,1,39cfed99c43b04db"/>
-<approved hash="5,1,545780a86ba448e8"/>
-<approved hash="5,1,54826f7e334e83da"/>
-<approved hash="5,1,4e894d9a40bbdae4"/>
-<approved hash="5,1,ac13f6db390521f2"/>
-<approved hash="5,1,0c8a657585e4a712"/>
-<approved hash="4,16,46e74d814d8b8491"/>
-<approved hash="4,16,788fb434ab2bf070"/>
-<approved hash="4,16,04e0ddf93d8da697"/>
-</errors>
 </board>
 </drawing>
 </eagle>
