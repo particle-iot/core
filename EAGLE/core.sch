@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -67,7 +67,7 @@
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -1025,8 +1025,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<wire x1="-0.1016" y1="0.3556" x2="0.1016" y2="0.3556" width="0.2032" layer="21"/>
-<wire x1="-0.1016" y1="-0.3556" x2="0.1016" y2="-0.3556" width="0.2032" layer="21"/>
 </package>
 <package name="CR54">
 <wire x1="2.8" y1="2.98" x2="-2.8" y2="2.98" width="0.127" layer="51"/>
@@ -1285,40 +1283,6 @@ chip</description>
 <smd name="P$1" x="-1.9" y="0" dx="0.9" dy="1.3" layer="1"/>
 <smd name="P$2" x="1.9" y="0" dx="0.9" dy="1.3" layer="1"/>
 </package>
-<package name="AXIAL-0.6">
-<description>1W Resistor, 0.6" wide&lt;p&gt;
-
-Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf"&gt;http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pdf&lt;/a&gt;</description>
-<wire x1="-5.75" y1="-2.25" x2="-5.75" y2="2.25" width="0.2032" layer="21"/>
-<wire x1="-5.75" y1="2.25" x2="5.75" y2="2.25" width="0.2032" layer="21"/>
-<wire x1="5.75" y1="2.25" x2="5.75" y2="-2.25" width="0.2032" layer="21"/>
-<wire x1="5.75" y1="-2.25" x2="-5.75" y2="-2.25" width="0.2032" layer="21"/>
-<pad name="P$1" x="-7.62" y="0" drill="1.2" diameter="1.8796"/>
-<pad name="P$2" x="7.62" y="0" drill="1.2" diameter="1.8796"/>
-<text x="-5.715" y="3.175" size="0.8128" layer="25" font="vector" ratio="15">&gt;Name</text>
-<text x="-4.064" y="-0.381" size="0.8128" layer="21" font="vector" ratio="15">&gt;Value</text>
-</package>
-<package name="RLB0912">
-<circle x="0" y="0" radius="4.445" width="0.2032" layer="21"/>
-<pad name="2" x="-2.5019" y="0" drill="0.8128" diameter="1.651"/>
-<text x="-1.905" y="-3.048" size="0.8128" layer="27">&gt;Value</text>
-<text x="-0.762" y="2.921" size="0.4064" layer="25">&gt;Name</text>
-<pad name="1" x="2.5019" y="0" drill="0.8128" diameter="1.651"/>
-</package>
-<package name="SRN6045">
-<smd name="1" x="-2.175" y="-0.175" dx="6" dy="2.5" layer="1" rot="R90"/>
-<smd name="2" x="2.125" y="-0.175" dx="6" dy="2.5" layer="1" rot="R90"/>
-<wire x1="-2.175" y1="-3.175" x2="-3.175" y2="-2.175" width="0.127" layer="51"/>
-<wire x1="-3.175" y1="-2.175" x2="-3.175" y2="1.825" width="0.127" layer="51"/>
-<wire x1="-3.175" y1="1.825" x2="-2.175" y2="2.825" width="0.127" layer="51"/>
-<wire x1="-2.175" y1="2.825" x2="2.125" y2="2.825" width="0.127" layer="51"/>
-<wire x1="2.125" y1="2.825" x2="3.125" y2="1.825" width="0.127" layer="51"/>
-<wire x1="3.125" y1="1.825" x2="3.125" y2="-2.175" width="0.127" layer="51"/>
-<wire x1="3.125" y1="-2.175" x2="2.125" y2="-3.175" width="0.127" layer="51"/>
-<wire x1="2.125" y1="-3.175" x2="-2.175" y2="-3.175" width="0.127" layer="51"/>
-<text x="-4.175" y="3.825" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.175" y="-5.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -1338,9 +1302,8 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 </symbols>
 <devicesets>
 <deviceset name="INDUCTOR" prefix="L" uservalue="yes">
-<description>&lt;b&gt;Inductors&lt;/b&gt;&lt;p&gt;
-Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly between part numbers.&lt;br&gt;
-SRN6045- 33uH, 20% 1.4A</description>
+<description>&lt;b&gt;Inductors&lt;/b&gt;
+Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly between part numbers.</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
@@ -1523,36 +1486,6 @@ SRN6045- 33uH, 20% 1.4A</description>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-<device name="AXIAL-0.6" package="AXIAL-0.6">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="RLB0912" package="RLB0912">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="BOURNS_SRN6045" package="SRN6045">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-11627"/>
-<attribute name="VALUE" value="33uH"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -2408,8 +2341,8 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="0.5" y1="-1.2" x2="-0.5" y2="-1.2" width="0.2032" layer="21"/>
 <circle x="0" y="0" radius="0.7" width="0.1016" layer="21"/>
 <circle x="0" y="0" radius="0.175" width="0.1016" layer="21"/>
-<smd name="2@1" x="-1.475" y="0" dx="1.05" dy="2.2" layer="1"/>
-<smd name="2@2" x="1.475" y="0" dx="1.05" dy="2.2" layer="1"/>
+<smd name="2@1" x="-1.475" y="0" dx="1.05" dy="1.8" layer="1"/>
+<smd name="2@2" x="1.475" y="0" dx="1.05" dy="1.8" layer="1"/>
 <smd name="1" x="0" y="1.5275" dx="1" dy="1.05" layer="1"/>
 <rectangle x1="-0.3" y1="1.3" x2="0.3" y2="1.55" layer="51"/>
 </package>
@@ -2716,6 +2649,22 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="0.525" y1="0.855" x2="-0.525" y2="0.855" width="0.127" layer="51"/>
 <wire x1="-0.525" y1="0.855" x2="-0.525" y2="0.005" width="0.127" layer="51"/>
 <wire x1="-0.52" y1="0.42" x2="0.52" y2="0.42" width="0.127" layer="21"/>
+</package>
+<package name="USB-MICROB-MALE-SANDWICH">
+<smd name="D-" x="-0.65" y="0" dx="2.2" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="ID" x="0.65" y="0" dx="2.2" dy="0.8" layer="1" rot="R90" cream="no"/>
+<smd name="D+" x="0" y="0" dx="2.2" dy="0.8" layer="16" rot="R90" cream="no"/>
+<smd name="GND" x="1.3" y="0" dx="2.2" dy="0.8" layer="16" rot="R90" cream="no"/>
+<smd name="VBUS" x="-1.35" y="0" dx="2.2" dy="0.8" layer="16" rot="R90" cream="no"/>
+<wire x1="2.25" y1="1.2" x2="-2.25" y2="1.2" width="0.127" layer="51"/>
+<wire x1="-2.25" y1="1.2" x2="-2.25" y2="0.2" width="0.127" layer="51"/>
+<wire x1="2.25" y1="1.2" x2="2.25" y2="0.2" width="0.127" layer="51"/>
+<wire x1="-2.25" y1="0.2" x2="-4.1" y2="0.2" width="0.127" layer="51"/>
+<wire x1="2.25" y1="0.2" x2="4.1" y2="0.2" width="0.127" layer="51"/>
+<wire x1="-4.1" y1="0.2" x2="-4.1" y2="-2.36" width="0.127" layer="51"/>
+<wire x1="4.1" y1="-2.36" x2="4.1" y2="0.2" width="0.127" layer="51"/>
+<smd name="GNDPAD1" x="-2.95" y="-1.1" dx="2" dy="1.5" layer="1" rot="R90" cream="no"/>
+<smd name="GNDPAD2" x="2.95" y="-1.1" dx="2" dy="1.5" layer="1" rot="R90" cream="no"/>
 </package>
 </packages>
 <symbols>
@@ -3184,6 +3133,17 @@ Source: http://www.osram.convergy.de/</description>
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND MT1 MT2"/>
+<connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FCI" package="USB-MICROB-MALE-SANDWICH">
+<connects>
+<connect gate="G$1" pin="D+" pad="D+"/>
+<connect gate="G$1" pin="D-" pad="D-"/>
+<connect gate="G$1" pin="GND" pad="GND GNDPAD1 GNDPAD2"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
@@ -10449,7 +10409,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="U1" library="CC3000" deviceset="CC3000" device=""/>
 <part name="FRAME2" library="SparkFun" deviceset="FRAME-LETTER" device=""/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="2.2pF"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
@@ -10502,7 +10461,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="RN1" library="resistor-dil" deviceset="4R-N" device="EXB38V" value="EXB-38V102JV"/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="X2" library="Spark" deviceset="IPEX-20279-001E" device=""/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="10pF"/>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
 <part name="ANT1" library="Spark" deviceset="AT8010" device=""/>
 <part name="C15" library="Spark" deviceset="TANT-CAP" device="1206" value="10uF"/>
@@ -10510,11 +10468,12 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="JP1" library="Spark" deviceset="M12" device="PTH"/>
 <part name="JP2" library="Spark" deviceset="M12" device="PTH"/>
 <part name="D1" library="Spark" deviceset="DIODE" device=""/>
-<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="2.2nH"/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
 <part name="U4" library="Spark" deviceset="NL17SZ125" device="SOT553"/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+2" library="SparkFun" deviceset="3.3V" device="" value="+3V3"/>
+<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="3.3nH"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="0.8pF"/>
 </parts>
 <sheets>
 <sheet>
@@ -10626,10 +10585,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <instance part="U1" gate="G$1" x="180.34" y="119.38"/>
 <instance part="FRAME2" gate="G$1" x="254" y="0"/>
 <instance part="FRAME2" gate="G$2" x="401.32" y="0"/>
-<instance part="C4" gate="G$1" x="157.48" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="156.464" y="175.641" size="1.778" layer="95"/>
-<attribute name="VALUE" x="153.924" y="168.021" size="1.778" layer="96"/>
-</instance>
 <instance part="GND5" gate="1" x="203.2" y="152.4"/>
 <instance part="GND6" gate="1" x="127" y="91.44"/>
 <instance part="GND9" gate="1" x="226.06" y="91.44"/>
@@ -10754,10 +10709,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <attribute name="VALUE" x="336.55" y="73.66" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="X2" gate="G$1" x="207.01" y="175.26" rot="MR270"/>
-<instance part="C5" gate="G$1" x="185.42" y="172.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="184.404" y="175.641" size="1.778" layer="95"/>
-<attribute name="VALUE" x="181.864" y="168.021" size="1.778" layer="96"/>
-</instance>
 <instance part="GND20" gate="1" x="226.06" y="152.4"/>
 <instance part="ANT1" gate="G$1" x="133.35" y="172.72" rot="R90"/>
 <instance part="C15" gate="G$1" x="488.95" y="144.78"/>
@@ -10765,11 +10716,18 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <instance part="JP1" gate="G$1" x="358.14" y="22.86" rot="R180"/>
 <instance part="JP2" gate="G$1" x="365.76" y="22.86" rot="MR180"/>
 <instance part="D1" gate="G$1" x="30.48" y="165.1"/>
-<instance part="L1" gate="G$1" x="142.24" y="165.1"/>
-<instance part="GND21" gate="1" x="142.24" y="154.94"/>
+<instance part="GND21" gate="1" x="152.4" y="153.67"/>
 <instance part="U4" gate="G$1" x="203.2" y="53.34"/>
 <instance part="GND2" gate="1" x="198.12" y="43.18"/>
 <instance part="P+2" gate="G$1" x="220.98" y="60.96"/>
+<instance part="L1" gate="G$1" x="165.1" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="164.084" y="175.641" size="1.778" layer="95"/>
+<attribute name="VALUE" x="162.814" y="169.291" size="1.778" layer="96"/>
+</instance>
+<instance part="C4" gate="G$1" x="152.4" y="165.1" smashed="yes">
+<attribute name="NAME" x="154.178" y="165.989" size="1.778" layer="95"/>
+<attribute name="VALUE" x="153.416" y="159.766" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11026,8 +10984,9 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="273.05" y1="72.39" x2="273.05" y2="62.23" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="152.4" y1="160.02" x2="152.4" y2="156.21" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND@11"/>
@@ -11816,30 +11775,12 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 </net>
 <net name="N$2" class="2">
 <segment>
-<pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="X2" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="172.72" x2="207.01" y2="172.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="2">
-<segment>
-<pinref part="ANT1" gate="G$1" pin="SIGNAL"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="138.43" y1="172.72" x2="142.24" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="172.72" x2="154.94" y2="172.72" width="0.1524" layer="91"/>
-<junction x="142.24" y="172.72"/>
-</segment>
-</net>
-<net name="N$5" class="2">
-<segment>
-<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="RF_ANT"/>
 <wire x1="172.72" y1="147.32" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="207.01" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="2"/>
 <junction x="172.72" y="172.72"/>
-<wire x1="172.72" y1="172.72" x2="162.56" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED1" class="0">
@@ -11880,6 +11821,17 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <label x="182.88" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="N$3" class="2">
+<segment>
+<pinref part="ANT1" gate="G$1" pin="SIGNAL"/>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="172.72" x2="152.4" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="172.72" x2="138.43" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="167.64" x2="152.4" y2="172.72" width="0.1524" layer="91"/>
+<junction x="152.4" y="172.72"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -11917,9 +11869,9 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <approved hash="208,1,220.98,60.96,+3V3,sup,,,,"/>
 <approved hash="209,1,144.78,114.3,N$9,,,,,"/>
 <approved hash="209,1,144.78,119.38,N$9,,,,,"/>
-<approved hash="115,1,178.95,121.379,U1,,,,,"/>
-<approved hash="115,1,336.872,62.6801,LED_USR,,,,,"/>
-<approved hash="115,1,346.71,75.4671,LED_RGB,,,,,"/>
+<approved hash="113,1,178.95,121.379,U1,,,,,"/>
+<approved hash="113,1,336.872,62.6801,LED_USR,,,,,"/>
+<approved hash="113,1,346.71,75.4671,LED_RGB,,,,,"/>
 </errors>
 </schematic>
 </drawing>

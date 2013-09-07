@@ -1,7 +1,7 @@
 The Spark Core
 =====
 
-These are the design files for the Spark Core, developed by Hex Labs, Inc. dba Spark Devices.
+These are the hardware design files for the Spark Core, developed by Hex Labs, Inc. dba Spark Devices.
 
 These files have been made available online through a [Creative Commons Attribution-ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0/) license.
 
@@ -13,15 +13,15 @@ Development of the Spark Core in its current form began in January 2013 in Shenz
 
 ## What's Included
 
-**BOM** — Current bill of materials for the most updated version of the Spark Core.  Includes part number labels from design files, component values, quantities, and package types.
+**BOM** — Current bill of materials for the latestversion of the Spark Core.  Includes part number labels from design files, component values, quantities, and package types.
 
-**Datasheets** — Datasheets for the STM32F103 microcontroller and CC3000 Wi-Fi module.
+**Datasheets** — Datasheets for the various components included on the Spark Core, including the STM32F103CBT6 microcontroller and the CC3000 Wi-Fi module.
 
-**EAGLE** — Schematic and board files for the Spark Core.  We use EAGLE, a free PCB design software package, for the design and development of the Spark Core.
+**EAGLE** — Schematic and board files for the Spark Core.  We use EAGLE, a freemium PCB design software package, for the design and development of the Spark Core.
 
 **Gerber** — Complete set of Gerber files for the current version of the Core.  Use these files to spin up and assemble your own Cores!
 
-**Libraries** — EAGLE libraries for the components used on the Spark Core
+**Libraries** — EAGLE libraries for the components used on the Spark Core.
 
 **PDFs** — Includes detailed description of component placement on the Core (especially useful during assembly).  Also includes mechanical drawings and a detailed schematic of the Core for reference and debugging.
 
