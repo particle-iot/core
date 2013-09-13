@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="$GND" color="13" fill="1" visible="no" active="yes"/>
+<layer number="2" name="$GND" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -23,14 +23,14 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="$+3V3" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -3464,31 +3464,76 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$5">
 </signal>
+<signal name="N$4">
+<polygon width="0" layer="2" pour="cutout">
+<vertex x="7.52" y="32.19" curve="-90"/>
+<vertex x="8.21" y="32.88"/>
+<vertex x="8.22" y="32.88" curve="-90.836469"/>
+<vertex x="8.9" y="32.19" curve="-88.327809"/>
+<vertex x="8.21" y="31.5" curve="-91.670893"/>
+</polygon>
+</signal>
+<signal name="N$17">
+<polygon width="0" layer="2" pour="cutout">
+<vertex x="11.42" y="32.19" curve="-90"/>
+<vertex x="12.11" y="32.88"/>
+<vertex x="12.12" y="32.88" curve="-90.836469"/>
+<vertex x="12.8" y="32.19" curve="-88.327809"/>
+<vertex x="12.11" y="31.5" curve="-91.670893"/>
+</polygon>
+</signal>
+<signal name="N$18">
+<polygon width="0" layer="15" pour="cutout">
+<vertex x="7.52" y="32.19" curve="-90"/>
+<vertex x="8.21" y="32.88"/>
+<vertex x="8.22" y="32.88" curve="-90.836469"/>
+<vertex x="8.9" y="32.19" curve="-88.327809"/>
+<vertex x="8.21" y="31.5" curve="-91.670893"/>
+</polygon>
+</signal>
+<signal name="N$19">
+<polygon width="0" layer="15" pour="cutout">
+<vertex x="11.42" y="32.19" curve="-90"/>
+<vertex x="12.11" y="32.88"/>
+<vertex x="12.12" y="32.88" curve="-90.836469"/>
+<vertex x="12.8" y="32.19" curve="-88.327809"/>
+<vertex x="12.11" y="31.5" curve="-91.670893"/>
+</polygon>
+</signal>
+<signal name="N$20">
+<polygon width="0" layer="16" pour="cutout">
+<vertex x="7.52" y="32.19" curve="-90"/>
+<vertex x="8.21" y="32.88"/>
+<vertex x="8.22" y="32.88" curve="-90.836469"/>
+<vertex x="8.9" y="32.19" curve="-88.327809"/>
+<vertex x="8.21" y="31.5" curve="-91.670893"/>
+</polygon>
+</signal>
+<signal name="N$21">
+<polygon width="0" layer="16" pour="cutout">
+<vertex x="11.42" y="32.19" curve="-90"/>
+<vertex x="12.11" y="32.88"/>
+<vertex x="12.12" y="32.88" curve="-90.836469"/>
+<vertex x="12.8" y="32.19" curve="-88.327809"/>
+<vertex x="12.11" y="31.5" curve="-91.670893"/>
+</polygon>
+</signal>
 </signals>
 <errors>
 <approved hash="3,1,f10a318a315bf1db"/>
 <approved hash="4,1,46e74d814d8b8491"/>
 <approved hash="4,1,04e0ddf93d8da697"/>
-<approved hash="5,1,02c71da325d2cfe5"/>
 <approved hash="5,1,12f5707b71f6601e"/>
 <approved hash="19,1,b22667bad846e722"/>
 <approved hash="19,1,8bcdfa7d0ac41a85"/>
 <approved hash="5,1,e5333dc7531575ba"/>
-<approved hash="5,1,13460c0623b7c9a4"/>
-<approved hash="5,1,dbed3afde509f35a"/>
-<approved hash="5,1,880e0c957617d925"/>
 <approved hash="5,1,c117d568d027cb77"/>
-<approved hash="5,1,c8281ca8bba49897"/>
 <approved hash="5,1,dcacc281550dd031"/>
 <approved hash="5,1,fac47f9273f42c4c"/>
 <approved hash="19,1,bf5974c6f8bb3324"/>
 <approved hash="5,1,19b902a64c74ad0e"/>
-<approved hash="5,1,2611c55c8da99349"/>
 <approved hash="5,1,19b900a65894a62e"/>
-<approved hash="5,1,2d31d1bc8fa99349"/>
-<approved hash="5,1,4b61e3bc7e61f496"/>
 <approved hash="5,1,2d88715dc138109b"/>
-<approved hash="5,1,545780a86ba448e8"/>
 <approved hash="5,1,a8998fabaf0fc838"/>
 <approved hash="5,1,0c8a657585e4a712"/>
 <approved hash="4,16,46e74d814d8b8491"/>
