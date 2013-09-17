@@ -2197,7 +2197,6 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <wire x1="-0.3048" y1="2.6924" x2="-2.6924" y2="2.6924" width="0" layer="51"/>
 <wire x1="-2.6924" y1="2.6924" x2="-2.6924" y2="-2.6924" width="0" layer="51"/>
 <wire x1="0.3048" y1="2.6924" x2="-0.3048" y2="2.6924" width="0" layer="51" curve="-180"/>
-<text x="-4.4704" y="2.3368" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <wire x1="2.6924" y1="2.4384" x2="2.6924" y2="2.6924" width="0.1524" layer="21"/>
 <wire x1="2.6924" y1="1.1684" x2="2.6924" y2="1.3716" width="0.1524" layer="21"/>
 <wire x1="2.6924" y1="-0.1016" x2="2.6924" y2="0.1016" width="0.1524" layer="21"/>
@@ -2213,9 +2212,9 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <wire x1="-2.6924" y1="2.6924" x2="-2.6924" y2="2.4384" width="0.1524" layer="21"/>
 <wire x1="-2.6924" y1="1.3716" x2="-2.6924" y2="1.1684" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="2.6924" x2="-0.3048" y2="2.6924" width="0.1524" layer="21" curve="-180"/>
-<text x="-4.4704" y="2.3368" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <text x="-3.4544" y="4.445" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-5.715" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<circle x="-1.905" y="1.905" radius="0.127" width="0.4064" layer="21"/>
 </package>
 <package name="SOT223">
 <description>&lt;b&gt;SOT-223&lt;/b&gt;</description>
@@ -2616,7 +2615,7 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="2.505" y1="-0.35" x2="2.505" y2="0.35" width="0" layer="46"/>
 </package>
 <package name="DIODE-DO-220AA(SMP)">
-<smd name="CATHODE" x="0" y="0" dx="2.667" dy="2.54" layer="1"/>
+<smd name="CATHODE" x="0" y="0" dx="2.667" dy="2.286" layer="1"/>
 <smd name="ANODE" x="2.3495" y="0" dx="0.762" dy="1.27" layer="1"/>
 <wire x1="-1.1176" y1="-1.0922" x2="-1.1176" y2="1.0922" width="0.127" layer="51"/>
 <wire x1="-1.1176" y1="1.0922" x2="2.4892" y2="1.0922" width="0.127" layer="51"/>
@@ -2649,22 +2648,6 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="0.525" y1="0.855" x2="-0.525" y2="0.855" width="0.127" layer="51"/>
 <wire x1="-0.525" y1="0.855" x2="-0.525" y2="0.005" width="0.127" layer="51"/>
 <wire x1="-0.52" y1="0.42" x2="0.52" y2="0.42" width="0.127" layer="21"/>
-</package>
-<package name="USB-MICROB-MALE-SANDWICH">
-<smd name="D-" x="-0.65" y="0" dx="2.2" dy="0.8" layer="1" rot="R90" cream="no"/>
-<smd name="ID" x="0.65" y="0" dx="2.2" dy="0.8" layer="1" rot="R90" cream="no"/>
-<smd name="D+" x="0" y="0" dx="2.2" dy="0.8" layer="16" rot="R90" cream="no"/>
-<smd name="GND" x="1.3" y="0" dx="2.2" dy="0.8" layer="16" rot="R90" cream="no"/>
-<smd name="VBUS" x="-1.35" y="0" dx="2.2" dy="0.8" layer="16" rot="R90" cream="no"/>
-<wire x1="2.25" y1="1.2" x2="-2.25" y2="1.2" width="0.127" layer="51"/>
-<wire x1="-2.25" y1="1.2" x2="-2.25" y2="0.2" width="0.127" layer="51"/>
-<wire x1="2.25" y1="1.2" x2="2.25" y2="0.2" width="0.127" layer="51"/>
-<wire x1="-2.25" y1="0.2" x2="-4.1" y2="0.2" width="0.127" layer="51"/>
-<wire x1="2.25" y1="0.2" x2="4.1" y2="0.2" width="0.127" layer="51"/>
-<wire x1="-4.1" y1="0.2" x2="-4.1" y2="-2.36" width="0.127" layer="51"/>
-<wire x1="4.1" y1="-2.36" x2="4.1" y2="0.2" width="0.127" layer="51"/>
-<smd name="GNDPAD1" x="-2.95" y="-1.1" dx="2" dy="1.5" layer="1" rot="R90" cream="no"/>
-<smd name="GNDPAD2" x="2.95" y="-1.1" dx="2" dy="1.5" layer="1" rot="R90" cream="no"/>
 </package>
 </packages>
 <symbols>
@@ -3133,17 +3116,6 @@ Source: http://www.osram.convergy.de/</description>
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND MT1 MT2"/>
-<connect gate="G$1" pin="VBUS" pad="VBUS"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="FCI" package="USB-MICROB-MALE-SANDWICH">
-<connects>
-<connect gate="G$1" pin="D+" pad="D+"/>
-<connect gate="G$1" pin="D-" pad="D-"/>
-<connect gate="G$1" pin="GND" pad="GND GNDPAD1 GNDPAD2"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
