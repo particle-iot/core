@@ -6,10 +6,10 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="$GND" color="13" fill="1" visible="no" active="yes"/>
+<layer number="2" name="$GND" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -26,7 +26,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
@@ -37,7 +37,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -53,7 +53,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -2606,8 +2606,8 @@ design rules under a new name.</description>
 <wire x1="12.573" y1="31.369" x2="13.208" y2="32.004" width="0.6096" layer="1"/>
 <wire x1="13.208" y1="32.004" x2="13.208" y2="32.512" width="0.6096" layer="1"/>
 <via x="13.208" y="32.512" extent="1-16" drill="0.3"/>
-<wire x1="6.223" y1="33.147" x2="12.573" y2="33.147" width="0.8128" layer="15"/>
-<wire x1="12.573" y1="33.147" x2="13.208" y2="32.512" width="0.8128" layer="15"/>
+<wire x1="6.223" y1="33.147" x2="12.573" y2="33.147" width="0.6096" layer="15"/>
+<wire x1="12.573" y1="33.147" x2="13.208" y2="32.512" width="0.6096" layer="15"/>
 </signal>
 <signal name="N$6">
 <contactref element="R6" pad="2"/>
@@ -3516,6 +3516,28 @@ design rules under a new name.</description>
 <vertex x="12.12" y="32.88" curve="-90.836469"/>
 <vertex x="12.8" y="32.19" curve="-88.327809"/>
 <vertex x="12.11" y="31.5" curve="-91.670893"/>
+</polygon>
+</signal>
+<signal name="N$22">
+<polygon width="0" layer="15" pour="cutout">
+<vertex x="6.8199" y="34.8488" curve="-90"/>
+<vertex x="7.3787" y="35.4076"/>
+<vertex x="7.3914" y="35.4076" curve="-90"/>
+<vertex x="7.9502" y="34.8488"/>
+<vertex x="7.9502" y="33.7566"/>
+<vertex x="7.9502" y="33.7312" curve="-90"/>
+<vertex x="7.3914" y="33.1724" curve="-90"/>
+<vertex x="6.8199" y="33.7439"/>
+</polygon>
+<polygon width="0" layer="15" pour="cutout">
+<vertex x="12.3698" y="34.8488" curve="-90"/>
+<vertex x="12.9286" y="35.4076"/>
+<vertex x="12.9413" y="35.4076" curve="-90"/>
+<vertex x="13.5001" y="34.8488"/>
+<vertex x="13.5001" y="33.7566"/>
+<vertex x="13.5001" y="33.7312" curve="-90"/>
+<vertex x="12.9413" y="33.1724" curve="-90"/>
+<vertex x="12.3698" y="33.7439"/>
 </polygon>
 </signal>
 </signals>
