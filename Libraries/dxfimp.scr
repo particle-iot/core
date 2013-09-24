@@ -1,0 +1,8 @@
+# dxfimport generated script file.
+Grid mic 1 off;
+Set Wire_Bend 2;
+Layer Dimension;
+Change Font Vector;
+Window Fit;
+# lines=0, arcs=0, circles=0, polylines=0
+Grid last;

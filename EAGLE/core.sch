@@ -2599,8 +2599,8 @@ Source: http://www.osram.convergy.de/</description>
 <smd name="P$2" x="1" y="0.01" dx="1.5" dy="1.9" layer="1"/>
 <hole x="-1.95" y="2.1" drill="0.6"/>
 <hole x="1.95" y="2.1" drill="0.6"/>
-<pad name="MT1" x="-2.775" y="0" drill="0.5" diameter="1.1" shape="long" rot="R90"/>
-<pad name="MT2" x="2.775" y="0" drill="0.5" diameter="1.1" shape="long" rot="R90"/>
+<pad name="MT1" x="-2.775" y="0" drill="0.3" diameter="1.1" shape="long" rot="R90"/>
+<pad name="MT2" x="2.775" y="0" drill="0.3" diameter="1.1" shape="long" rot="R90"/>
 <wire x1="-3.03" y1="0.35" x2="-2.78" y2="0.6" width="0" layer="46" curve="-90"/>
 <wire x1="-2.78" y1="0.6" x2="-2.52" y2="0.34" width="0" layer="46" curve="-90"/>
 <wire x1="-2.52" y1="0.34" x2="-2.52" y2="-0.34" width="0" layer="46"/>
