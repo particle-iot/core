@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="13" fill="1" visible="no" active="no"/>
@@ -10500,6 +10500,25 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <text x="226.06" y="40.64" size="1.778" layer="97">Wi-Fi Module</text>
 <text x="396.24" y="123.19" size="1.778" layer="91">VDDA</text>
 <text x="474.98" y="173.99" size="1.778" layer="91">VDDA</text>
+<text x="510.54" y="2.54" size="1.778" layer="95">Reference Designs ARE PROVIDED "AS IS" AND "WITH ALL FAULTS. SPARK LABS, INC 
+("SPARK") DISCLAIMS ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, REGARDING 
+PRODUCTS OR THE REFERENCE DESIGNS, INCLUDING BUT NOT LIMITED TO, ANY 
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+ OR NON-INFRINGEMENT.
+
+Spark may make changes to specifications and product descriptions at any 
+time, without notice. The Customer must not rely on the absence or 
+characteristics of any features or instructions marked "reserved" or 
+"undefined." Spark reserves these for future definition and shall have 
+no responsibility whatsoever for conflicts or incompatibilities arising 
+from future changes to them. The product information on the Web Site or 
+Materials is subject to change without notice. Do not finalize a design 
+with this information. 
+Spark is a registered trademark.</text>
+<wire x1="508" y1="0" x2="508" y2="48.26" width="0.4064" layer="94"/>
+<wire x1="508" y1="48.26" x2="622.3" y2="48.26" width="0.4064" layer="94"/>
+<wire x1="622.3" y1="48.26" x2="622.3" y2="0" width="0.4064" layer="94"/>
+<wire x1="622.3" y1="0" x2="508" y2="0" width="0.4064" layer="94"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -11847,4 +11866,10 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
