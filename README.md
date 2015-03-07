@@ -1,11 +1,11 @@
 The Spark Core
 =====
 
-These are the hardware design files for the Spark Core, developed by Hex Labs, Inc. dba Spark Devices.
+These are the hardware design files for the Spark Core, developed by Hex Labs, Inc. dba Spark.
 
 These files have been made available online through a [Creative Commons Attribution-ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0/) license.
 
-You are welcome to distribute, remix, and use these files for commercial purposes. If you do so, please attribute the original design to Spark Devices both on the website and on the physical packaging of the product or in the instruction manual. All derivative works must be published under the same or a similar license.
+You are welcome to distribute, remix, and use these files for commercial purposes. If you do so, please attribute the original design to Spark both on the website and on the physical packaging of the product or in the instruction manual. All derivative works must be published under the same or a similar license.
 
 ## The Story
 
